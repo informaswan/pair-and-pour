@@ -1,0 +1,946 @@
+{
+  "redWines": [
+    {
+      "name": "Cabernet Sauvignon",
+      "pairings": {
+        "chocolate": [
+          "Dark chocolate",
+          "Bittersweet chocolate",
+          "Chocolate truffles",
+          "Chocolate-covered espresso beans",
+          "Chocolate fudge"
+        ],
+        "nuts": [
+          "Walnuts",
+          "Pecans",
+          "Roasted almonds",
+          "Hazelnuts",
+          "Marcona almonds"
+        ],
+        "fruit": [
+          "Blackberries",
+          "Cherries",
+          "Dried figs",
+          "Currants",
+          "Plums"
+        ],
+        "carbs": [
+          "Sourdough bread",
+          "Multigrain crackers",
+          "Baguette slices",
+          "Rye bread",
+          "Walnut bread"
+        ],
+        "meat": [
+          "Grilled steak",
+          "Roast lamb",
+          "Smoked brisket",
+          "Sausage",
+          "Venison"
+        ],
+        "cheese": [
+          "Aged cheddar",
+          "Gouda",
+          "Blue cheese",
+          "Parmesan",
+          "Manchego"
+        ]
+      }
+    },
+    {
+      "name": "Merlot",
+      "pairings": {
+        "chocolate": [
+          "Milk chocolate",
+          "Chocolate-covered cherries",
+          "Chocolate mousse",
+          "Chocolate bark with nuts",
+          "Caramel-filled chocolates"
+        ],
+        "nuts": [
+          "Cashews",
+          "Pistachios",
+          "Roasted hazelnuts",
+          "Almonds",
+          "Brazil nuts"
+        ],
+        "fruit": [
+          "Raspberries",
+          "Strawberries",
+          "Dried dates",
+          "Red grapes",
+          "Fresh plums"
+        ],
+        "carbs": [
+          "Ciabatta bread",
+          "French baguette",
+          "Water crackers",
+          "Whole wheat crackers",
+          "Focaccia"
+        ],
+        "meat": [
+          "Roast chicken",
+          "Turkey breast",
+          "Grilled pork chops",
+          "Duck",
+          "Meatloaf"
+        ],
+        "cheese": [
+          "Brie",
+          "Camembert",
+          "Fontina",
+          "Monterey Jack",
+          "Young Gouda"
+        ]
+      }
+    },
+    {
+      "name": "Pinot Noir",
+      "pairings": {
+        "chocolate": [
+          "Milk chocolate",
+          "Chocolate-covered strawberries",
+          "Cherry cordial chocolates",
+          "Light chocolate mousse",
+          "Chocolate-covered almonds"
+        ],
+        "nuts": [
+          "Pecans",
+          "Walnuts",
+          "Hazelnuts",
+          "Marcona almonds",
+          "Chestnuts"
+        ],
+        "fruit": [
+          "Cherries",
+          "Raspberries",
+          "Strawberries",
+          "Dried cranberries",
+          "Fresh figs"
+        ],
+        "carbs": [
+          "Baguette slices",
+          "Water crackers",
+          "Sourdough bread",
+          "Multigrain crackers",
+          "Rye crisps"
+        ],
+        "meat": [
+          "Salmon",
+          "Roast duck",
+          "Grilled pork tenderloin",
+          "Game hen",
+          "Charcuterie ham"
+        ],
+        "cheese": [
+          "Brie",
+          "Gruyère",
+          "Goat cheese",
+          "Camembert",
+          "Comté"
+        ]
+      }
+    },
+    {
+      "name": "Syrah / Shiraz",
+      "pairings": {
+        "chocolate": [
+          "Dark chocolate",
+          "Spiced chocolate",
+          "Chocolate chili truffles",
+          "Chocolate bark with nuts",
+          "Bittersweet chocolate"
+        ],
+        "nuts": [
+          "Roasted almonds",
+          "Pecans",
+          "Hazelnuts",
+          "Spiced walnuts",
+          "Cashews"
+        ],
+        "fruit": [
+          "Blackberries",
+          "Dried cherries",
+          "Plums",
+          "Currants",
+          "Figs"
+        ],
+        "carbs": [
+          "French baguette",
+          "Multigrain crackers",
+          "Ciabatta",
+          "Rye bread",
+          "Pumpernickel"
+        ],
+        "meat": [
+          "BBQ ribs",
+          "Spicy sausages",
+          "Grilled lamb",
+          "Venison",
+          "Smoked pork"
+        ],
+        "cheese": [
+          "Blue cheese",
+          "Aged cheddar",
+          "Smoked gouda",
+          "Gruyère",
+          "Manchego"
+        ]
+      }
+    },
+    {
+      "name": "Zinfandel",
+      "pairings": {
+        "chocolate": [
+          "Milk chocolate",
+          "Chocolate-covered raisins",
+          "Chocolate chip cookies",
+          "Chocolate fudge",
+          "Dark chocolate"
+        ],
+        "nuts": [
+          "Candied pecans",
+          "Roasted almonds",
+          "Walnuts",
+          "Cashews",
+          "Pistachios"
+        ],
+        "fruit": [
+          "Dried apricots",
+          "Cherries",
+          "Raspberries",
+          "Fresh blackberries",
+          "Plums"
+        ],
+        "carbs": [
+          "Sourdough bread",
+          "Cornbread",
+          "Multigrain crackers",
+          "Baguette",
+          "Pita chips"
+        ],
+        "meat": [
+          "Barbecue chicken",
+          "Pulled pork",
+          "Spicy sausages",
+          "Grilled burgers",
+          "Bratwurst"
+        ],
+        "cheese": [
+          "Cheddar",
+          "Pepper jack",
+          "Smoked gouda",
+          "Monterey Jack",
+          "Colby"
+        ]
+      }
+    },
+    {
+      "name": "Malbec",
+      "pairings": {
+        "chocolate": [
+          "Bittersweet chocolate",
+          "Chocolate-covered espresso beans",
+          "Chocolate truffles",
+          "Dark chocolate bark",
+          "Chocolate mousse"
+        ],
+        "nuts": [
+          "Roasted almonds",
+          "Pecans",
+          "Marcona almonds",
+          "Walnuts",
+          "Hazelnuts"
+        ],
+        "fruit": [
+          "Black cherries",
+          "Dried figs",
+          "Plums",
+          "Raspberries",
+          "Fresh blueberries"
+        ],
+        "carbs": [
+          "Rustic bread",
+          "French baguette",
+          "Multigrain crackers",
+          "Sourdough bread",
+          "Rye bread"
+        ],
+        "meat": [
+          "Grilled meats",
+          "Chorizo",
+          "Roast beef",
+          "Smoked brisket",
+          "Lamb chops"
+        ],
+        "cheese": [
+          "Aged cheddar",
+          "Gouda",
+          "Blue cheese",
+          "Parmesan",
+          "Manchego"
+        ]
+      }
+    },
+    {
+      "name": "Tempranillo",
+      "pairings": {
+        "chocolate": [
+          "Dark chocolate",
+          "Chocolate-covered nuts",
+          "Chocolate bark",
+          "Milk chocolate",
+          "Chocolate truffles"
+        ],
+        "nuts": [
+          "Roasted almonds",
+          "Marcona almonds",
+          "Pistachios",
+          "Walnuts",
+          "Hazelnuts"
+        ],
+        "fruit": [
+          "Dried figs",
+          "Fresh cherries",
+          "Plums",
+          "Raisins",
+          "Apricots"
+        ],
+        "carbs": [
+          "Baguette",
+          "Ciabatta",
+          "Multigrain crackers",
+          "Sourdough bread",
+          "Olive bread"
+        ],
+        "meat": [
+          "Chorizo",
+          "Roast pork",
+          "Grilled lamb",
+          "Jamón ibérico",
+          "Sausage"
+        ],
+        "cheese": [
+          "Manchego",
+          "Aged cheddar",
+          "Pecorino",
+          "Gouda",
+          "Blue cheese"
+        ]
+      }
+    },
+    {
+      "name": "Sangiovese",
+      "pairings": {
+        "chocolate": [
+          "Milk chocolate",
+          "Chocolate-covered cherries",
+          "Chocolate truffles",
+          "Dark chocolate",
+          "Chocolate bark"
+        ],
+        "nuts": [
+          "Hazelnuts",
+          "Walnuts",
+          "Almonds",
+          "Pecans",
+          "Marcona almonds"
+        ],
+        "fruit": [
+          "Fresh strawberries",
+          "Cherries",
+          "Dried figs",
+          "Plums",
+          "Raspberries"
+        ],
+        "carbs": [
+          "Italian bread",
+          "Focaccia",
+          "Ciabatta",
+          "Crackers",
+          "Sourdough"
+        ],
+        "meat": [
+          "Pizza",
+          "Lasagna",
+          "Grilled sausage",
+          "Roast chicken",
+          "Prosciutto"
+        ],
+        "cheese": [
+          "Parmigiano-Reggiano",
+          "Pecorino",
+          "Mozzarella",
+          "Aged provolone",
+          "Ricotta salata"
+        ]
+      }
+    },
+    {
+      "name": "Grenache",
+      "pairings": {
+        "chocolate": [
+          "Milk chocolate",
+          "Chocolate truffles",
+          "Dark chocolate",
+          "Chocolate-covered nuts",
+          "Chocolate mousse"
+        ],
+        "nuts": [
+          "Pistachios",
+          "Walnuts",
+          "Hazelnuts",
+          "Marcona almonds",
+          "Cashews"
+        ],
+        "fruit": [
+          "Dried apricots",
+          "Fresh raspberries",
+          "Blackberries",
+          "Plums",
+          "Cherries"
+        ],
+        "carbs": [
+          "Rustic bread",
+          "French baguette",
+          "Ciabatta",
+          "Multigrain crackers",
+          "Sourdough"
+        ],
+        "meat": [
+          "Roast lamb",
+          "Spicy sausages",
+          "Grilled pork",
+          "Duck",
+          "Game meats"
+        ],
+        "cheese": [
+          "Goat cheese",
+          "Manchego",
+          "Gruyère",
+          "Fontina",
+          "Aged cheddar"
+        ]
+      }
+    },
+    {
+      "name": "Nebbiolo",
+      "pairings": {
+        "chocolate": [
+          "Bittersweet chocolate",
+          "Dark chocolate",
+          "Chocolate truffles",
+          "Chocolate-covered espresso beans",
+          "Chocolate bark"
+        ],
+        "nuts": [
+          "Hazelnuts",
+          "Walnuts",
+          "Pecans",
+          "Roasted almonds",
+          "Marcona almonds"
+        ],
+        "fruit": [
+          "Cherries",
+          "Dried figs",
+          "Blackberries",
+          "Plums",
+          "Currants"
+        ],
+        "carbs": [
+          "Ciabatta",
+          "Focaccia",
+          "Sourdough",
+          "Baguette",
+          "Rye bread"
+        ],
+        "meat": [
+          "Truffle dishes",
+          "Wild game",
+          "Roast beef",
+          "Braised lamb",
+          "Sausages"
+        ],
+        "cheese": [
+          "Parmesan",
+          "Fontina",
+          "Gorgonzola",
+          "Pecorino",
+          "Aged Asiago"
+        ]
+      }
+    }
+  ],
+  "whiteWines": [
+    {
+      "name": "Chardonnay",
+      "pairings": {
+        "chocolate": [
+          "White chocolate",
+          "Milk chocolate",
+          "Lemon white chocolate",
+          "White chocolate truffles",
+          "Butterscotch chocolates"
+        ],
+        "nuts": [
+          "Almonds",
+          "Hazelnuts",
+          "Macadamia nuts",
+          "Pistachios",
+          "Cashews"
+        ],
+        "fruit": [
+          "Green apple",
+          "Pear",
+          "Peach",
+          "Apricot",
+          "Melon"
+        ],
+        "carbs": [
+          "Sourdough bread",
+          "Baguette",
+          "Butter croissant",
+          "Multigrain crackers",
+          "French bread"
+        ],
+        "meat": [
+          "Roast chicken",
+          "Turkey",
+          "Pork loin",
+          "Grilled shrimp",
+          "Crab"
+        ],
+        "cheese": [
+          "Brie",
+          "Camembert",
+          "Gruyère",
+          "Monterey Jack",
+          "Aged cheddar"
+        ]
+      }
+    },
+    {
+      "name": "Sauvignon Blanc",
+      "pairings": {
+        "chocolate": [
+          "White chocolate",
+          "Lemon white chocolate",
+          "Citrus-flavored chocolates",
+          "Light milk chocolate",
+          "Chocolate-covered orange peel"
+        ],
+        "nuts": [
+          "Pistachios",
+          "Almonds",
+          "Walnuts",
+          "Hazelnuts",
+          "Cashews"
+        ],
+        "fruit": [
+          "Gooseberries",
+          "Green apple",
+          "Lime",
+          "Kiwi",
+          "Pear"
+        ],
+        "carbs": [
+          "French baguette",
+          "Water crackers",
+          "Rice crackers",
+          "Multigrain crackers",
+          "Sourdough"
+        ],
+        "meat": [
+          "Goat cheese (considered meat alternative here)",
+          "Shellfish",
+          "Grilled chicken",
+          "Turkey breast",
+          "Light fish"
+        ],
+        "cheese": [
+          "Goat cheese",
+          "Feta",
+          "Ricotta",
+          "Fresh mozzarella",
+          "Cottage cheese"
+        ]
+      }
+    },
+    {
+      "name": "Pinot Grigio",
+      "pairings": {
+        "chocolate": [
+          "White chocolate",
+          "Milk chocolate",
+          "Lemon-flavored chocolates",
+          "Light chocolate bark",
+          "Butterscotch candies"
+        ],
+        "nuts": [
+          "Almonds",
+          "Hazelnuts",
+          "Pistachios",
+          "Cashews",
+          "Marcona almonds"
+        ],
+        "fruit": [
+          "Green apple",
+          "Citrus fruits",
+          "Pineapple",
+          "Peach",
+          "Melon"
+        ],
+        "carbs": [
+          "Ciabatta",
+          "Baguette",
+          "Water crackers",
+          "Sourdough",
+          "Multigrain crackers"
+        ],
+        "meat": [
+          "Light seafood",
+          "Grilled chicken",
+          "Turkey breast",
+          "Prosciutto",
+          "Shrimp"
+        ],
+        "cheese": [
+          "Mozzarella",
+          "Ricotta",
+          "Goat cheese",
+          "Parmesan",
+          "Fontina"
+        ]
+      }
+    },
+    {
+      "name": "Riesling",
+      "pairings": {
+        "chocolate": [
+          "White chocolate",
+          "Lemon white chocolate",
+          "Milk chocolate",
+          "Fruit-filled chocolates",
+          "Honeyed chocolates"
+        ],
+        "nuts": [
+          "Pistachios",
+          "Almonds",
+          "Cashews",
+          "Walnuts",
+          "Macadamia nuts"
+        ],
+        "fruit": [
+          "Peach",
+          "Apricot",
+          "Apple",
+          "Pear",
+          "Dried mango"
+        ],
+        "carbs": [
+          "Multigrain crackers",
+          "Baguette",
+          "Water crackers",
+          "Sourdough",
+          "Ciabatta"
+        ],
+        "meat": [
+          "Pork",
+          "Spicy Asian dishes (duck, pork)",
+          "Grilled chicken",
+          "Turkey",
+          "Duck"
+        ],
+        "cheese": [
+          "Gouda",
+          "Cream cheese",
+          "Monterey Jack",
+          "Havarti",
+          "Brie"
+        ]
+      }
+    },
+    {
+      "name": "Moscato",
+      "pairings": {
+        "chocolate": [
+          "White chocolate",
+          "Milk chocolate",
+          "Fruit-filled chocolates",
+          "Caramel chocolates",
+          "Honeyed chocolates"
+        ],
+        "nuts": [
+          "Candied pecans",
+          "Marcona almonds",
+          "Almonds",
+          "Pistachios",
+          "Walnuts"
+        ],
+        "fruit": [
+          "Fresh berries",
+          "Peach",
+          "Apricot",
+          "Melon",
+          "Grapes"
+        ],
+        "carbs": [
+          "Sweet crackers",
+          "Shortbread",
+          "Butter cookies",
+          "Sourdough",
+          "Brioche"
+        ],
+        "meat": [
+          "Light ham",
+          "Prosciutto",
+          "Turkey breast",
+          "Chicken salad",
+          "Smoked salmon"
+        ],
+        "cheese": [
+          "Mascarpone",
+          "Ricotta",
+          "Fresh mozzarella",
+          "Cream cheese",
+          "Goat cheese"
+        ]
+      }
+    },
+    {
+      "name": "Gewürztraminer",
+      "pairings": {
+        "chocolate": [
+          "White chocolate",
+          "Spiced chocolate",
+          "Milk chocolate",
+          "Chai-spiced chocolates",
+          "Ginger chocolates"
+        ],
+        "nuts": [
+          "Pistachios",
+          "Almonds",
+          "Candied pecans",
+          "Hazelnuts",
+          "Cashews"
+        ],
+        "fruit": [
+          "Lychee",
+          "Apricot",
+          "Peach",
+          "Dried mango",
+          "Orange segments"
+        ],
+        "carbs": [
+          "Brioche",
+          "Water crackers",
+          "Multigrain crackers",
+          "Sourdough",
+          "French baguette"
+        ],
+        "meat": [
+          "Spicy sausages",
+          "Indian cuisine (tandoori chicken)",
+          "Duck",
+          "Pork loin",
+          "Smoked turkey"
+        ],
+        "cheese": [
+          "Munster",
+          "Gouda",
+          "Brie",
+          "Cream cheese",
+          "Aged cheddar"
+        ]
+      }
+    },
+    {
+      "name": "Viognier",
+      "pairings": {
+        "chocolate": [
+          "White chocolate",
+          "Honeyed chocolates",
+          "Milk chocolate",
+          "Caramel chocolates",
+          "Fruit-filled chocolates"
+        ],
+        "nuts": [
+          "Almonds",
+          "Pistachios",
+          "Cashews",
+          "Hazelnuts",
+          "Macadamia nuts"
+        ],
+        "fruit": [
+          "Peach",
+          "Apricot",
+          "Pear",
+          "Melon",
+          "Mango"
+        ],
+        "carbs": [
+          "French baguette",
+          "Brioche",
+          "Multigrain crackers",
+          "Sourdough",
+          "Water crackers"
+        ],
+        "meat": [
+          "Roasted chicken",
+          "Peach-glazed pork",
+          "Turkey breast",
+          "Duck",
+          "Grilled shrimp"
+        ],
+        "cheese": [
+          "Brie",
+          "Camembert",
+          "Goat cheese",
+          "Monterey Jack",
+          "Gruyère"
+        ]
+      }
+    },
+    {
+      "name": "Albariño",
+      "pairings": {
+        "chocolate": [
+          "White chocolate",
+          "Lemon-flavored chocolates",
+          "Light milk chocolate",
+          "Fruit-flavored chocolates",
+          "Butterscotch candies"
+        ],
+        "nuts": [
+          "Almonds",
+          "Pistachios",
+          "Hazelnuts",
+          "Walnuts",
+          "Cashews"
+        ],
+        "fruit": [
+          "Fresh peaches",
+          "Green apple",
+          "Lime",
+          "Pear",
+          "Melon"
+        ],
+        "carbs": [
+          "Ciabatta",
+          "Baguette",
+          "Water crackers",
+          "Multigrain crackers",
+          "French bread"
+        ],
+        "meat": [
+          "Shrimp",
+          "Clams",
+          "Light fish",
+          "Crab",
+          "Oysters"
+        ],
+        "cheese": [
+          "Goat cheese",
+          "Ricotta",
+          "Feta",
+          "Fresh mozzarella",
+          "Cream cheese"
+        ]
+      }
+    },
+    {
+      "name": "Grüner Veltliner",
+      "pairings": {
+        "chocolate": [
+          "White chocolate",
+          "Light milk chocolate",
+          "Lemon chocolates",
+          "Honey chocolates",
+          "Butterscotch candies"
+        ],
+        "nuts": [
+          "Walnuts",
+          "Almonds",
+          "Hazelnuts",
+          "Pistachios",
+          "Cashews"
+        ],
+        "fruit": [
+          "Green apple",
+          "Pear",
+          "Lemon",
+          "Peach",
+          "Apricot"
+        ],
+        "carbs": [
+          "Sourdough",
+          "Baguette",
+          "Multigrain crackers",
+          "Water crackers",
+          "Rye bread"
+        ],
+        "meat": [
+          "Schnitzel",
+          "Grilled chicken",
+          "Pork loin",
+          "Turkey breast",
+          "Light fish"
+        ],
+        "cheese": [
+          "Gruyère",
+          "Swiss",
+          "Monterey Jack",
+          "Emmental",
+          "Young cheddar"
+        ]
+      }
+    },
+    {
+      "name": "Chenin Blanc",
+      "pairings": {
+        "chocolate": [
+          "White chocolate",
+          "Milk chocolate",
+          "Honeyed chocolates",
+          "Lemon-flavored chocolates",
+          "Butterscotch candies"
+        ],
+        "nuts": [
+          "Almonds",
+          "Cashews",
+          "Pistachios",
+          "Hazelnuts",
+          "Walnuts"
+        ],
+        "fruit": [
+          "Apple",
+          "Pear",
+          "Peach",
+          "Apricot",
+          "Melon"
+        ],
+        "carbs": [
+          "French bread",
+          "Sourdough",
+          "Multigrain crackers",
+          "Water crackers",
+          "Baguette"
+        ],
+        "meat": [
+          "Pâté",
+          "Grilled chicken",
+          "Turkey breast",
+          "Prosciutto",
+          "Light seafood"
+        ],
+        "cheese": [
+          "Goat cheese",
+          "Brie",
+          "Camembert",
+          "Ricotta",
+          "Fresh mozzarella"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "lagers": [
+    {
+      "name": "Pale Lager",
+      "pairings": [
+        "Fried chicken",
+        "Seafood",
+        "Grilled vegetables",
+        "Soft pretzels",
+        "Light salads"
+      ]
+    },
+    {
+      "name": "Pilsner",
+      "pairings": [
+        "Grilled chicken",
+        "Salmon",
+        "Brie cheese",
+        "Light salads",
+        "Steamed asparagus"
+      ]
+    },
+    {
+      "name": "Helles Lager",
+      "pairings": [
+        "Roast pork",
+        "Soft pretzels",
+        "Potato salad",
+        "Grilled sausages",
+        "Cucumber salad"
+      ]
+    },
+    {
+      "name": "Vienna Lager",
+      "pairings": [
+        "Roasted turkey",
+        "Swiss cheese",
+        "Toasted nuts",
+        "Pretzels",
+        "Smoked ham"
+      ]
+    },
+    {
+      "name": "Märzen / Oktoberfest",
+      "pairings": [
+        "Bratwurst",
+        "Roast chicken",
+        "Sauerkraut",
+        "Pretzels",
+        "Potato pancakes"
+      ]
+    },
+    {
+      "name": "Bock",
+      "pairings": [
+        "Sausage",
+        "Roasted meats",
+        "Gouda cheese",
+        "Caramelized onions",
+        "Spiced nuts"
+      ]
+    },
+    {
+      "name": "Doppelbock",
+      "pairings": [
+        "Lamb",
+        "Stews",
+        "Chocolate desserts",
+        "Roasted root vegetables",
+        "Blue cheese"
+      ]
+    },
+    {
+      "name": "Eisbock",
+      "pairings": [
+        "Rich chocolate cake",
+        "Game meats",
+        "Blue cheese",
+        "Roasted chestnuts",
+        "Dark fruit compote"
+      ]
+    },
+    {
+      "name": "Schwarzbier",
+      "pairings": [
+        "Grilled steak",
+        "Mushroom dishes",
+        "Smoked meats",
+        "Dark chocolate",
+        "Roasted nuts"
+      ]
+    },
+    {
+      "name": "Cream Ale",
+      "pairings": [
+        "Fried foods",
+        "Corn on the cob",
+        "Light cheeses",
+        "Fresh fruit",
+        "Chicken salad"
+      ]
+    },
+    {
+      "name": "Kölsch",
+      "pairings": [
+        "Shrimp",
+        "Sushi",
+        "Goat cheese",
+        "Light salads",
+        "Fresh herbs"
+      ]
+    },
+    {
+      "name": "American Light Lager",
+      "pairings": [
+        "Burgers",
+        "Fries",
+        "Pizza",
+        "Soft pretzels",
+        "Grilled corn"
+      ]
+    },
+    {
+      "name": "American Amber Lager",
+      "pairings": [
+        "BBQ chicken",
+        "Cheddar cheese",
+        "Sweet potato fries",
+        "Coleslaw",
+        "Grilled sausages"
+      ]
+    },
+    {
+      "name": "Blonde Lager",
+      "pairings": [
+        "Grilled fish",
+        "Caesar salad",
+        "Mozzarella",
+        "Pasta primavera",
+        "Roasted vegetables"
+      ]
+    },
+    {
+      "name": "Munich Dunkel",
+      "pairings": [
+        "Sausages",
+        "Pretzels",
+        "Roast pork",
+        "Braised cabbage",
+        "Potato dumplings"
+      ]
+    }
+  ],
+  "ales": [
+    {
+      "name": "Pale Ale",
+      "pairings": [
+        "Fish and chips",
+        "Spicy wings",
+        "Aged cheddar",
+        "Grilled vegetables",
+        "Coleslaw"
+      ]
+    },
+    {
+      "name": "IPA",
+      "pairings": [
+        "Spicy curry",
+        "BBQ ribs",
+        "Sharp cheddar",
+        "Buffalo wings",
+        "Crispy fried onion rings"
+      ]
+    },
+    {
+      "name": "New England IPA",
+      "pairings": [
+        "Tacos",
+        "Citrus-glazed chicken",
+        "Buffalo wings",
+        "Guacamole",
+        "Spicy shrimp"
+      ]
+    },
+    {
+      "name": "Double IPA",
+      "pairings": [
+        "Spicy dishes",
+        "Blue cheese",
+        "Grilled lamb",
+        "Barbecue pork",
+        "Strong cheeses"
+      ]
+    },
+    {
+      "name": "Session IPA",
+      "pairings": [
+        "Bar snacks",
+        "Nachos",
+        "Grilled shrimp",
+        "Light salads",
+        "Soft pretzels"
+      ]
+    },
+    {
+      "name": "Black IPA",
+      "pairings": [
+        "Char-grilled meats",
+        "Roast beef",
+        "Dark chocolate",
+        "Smoked sausages",
+        "Grilled mushrooms"
+      ]
+    },
+    {
+      "name": "Amber Ale",
+      "pairings": [
+        "Burgers",
+        "Pulled pork",
+        "Colby cheese",
+        "Sweet potato fries",
+        "Roasted nuts"
+      ]
+    },
+    {
+      "name": "Brown Ale",
+      "pairings": [
+        "Roast duck",
+        "Toasted nuts",
+        "Gouda",
+        "Mushroom risotto",
+        "Caramel desserts"
+      ]
+    },
+    {
+      "name": "Porter",
+      "pairings": [
+        "BBQ meats",
+        "Brownies",
+        "Toasted marshmallows",
+        "Grilled sausages",
+        "Cheddar cheese"
+      ]
+    },
+    {
+      "name": "Stout",
+      "pairings": [
+        "Oysters",
+        "Chocolate cake",
+        "Stews",
+        "Roasted coffee",
+        "Blue cheese"
+      ]
+    },
+    {
+      "name": "Dry Stout",
+      "pairings": [
+        "Grilled meats",
+        "Coffee desserts",
+        "Shepherd’s pie",
+        "Roasted vegetables",
+        "Dark chocolate"
+      ]
+    },
+    {
+      "name": "Imperial Stout",
+      "pairings": [
+        "Blue cheese",
+        "Dark chocolate",
+        "Rich desserts",
+        "Roasted nuts",
+        "Spiced meats"
+      ]
+    },
+    {
+      "name": "Milk Stout",
+      "pairings": [
+        "Chocolate chip cookies",
+        "Vanilla ice cream",
+        "Brisket",
+        "Caramel sauce",
+        "Cheese platter"
+      ]
+    },
+    {
+      "name": "Oatmeal Stout",
+      "pairings": [
+        "Beef stew",
+        "Molasses cookies",
+        "Soft cheeses",
+        "Roasted root vegetables",
+        "Apple pie"
+      ]
+    },
+    {
+      "name": "Saison",
+      "pairings": [
+        "Goat cheese",
+        "Seafood",
+        "Rustic bread",
+        "Herb roasted chicken",
+        "Fresh fruit salad"
+      ]
+    },
+    {
+      "name": "Dubbel",
+      "pairings": [
+        "Stews",
+        "Fruitcake",
+        "Roasted meats",
+        "Spiced nuts",
+        "Hard cheeses"
+      ]
+    },
+    {
+      "name": "Tripel",
+      "pairings": [
+        "Shellfish",
+        "Cream sauces",
+        "Washed-rind cheese",
+        "Roasted chicken",
+        "Light salads"
+      ]
+    },
+    {
+      "name": "Quadrupel",
+      "pairings": [
+        "Chocolate desserts",
+        "Strong cheeses",
+        "Game meats",
+        "Roasted root vegetables",
+        "Dried fruits"
+      ]
+    },
+    {
+      "name": "Belgian Blonde",
+      "pairings": [
+        "Chicken",
+        "Pork",
+        "Light cheeses",
+        "Salads with vinaigrette",
+        "Soft breads"
+      ]
+    },
+    {
+      "name": "Belgian Dark Strong",
+      "pairings": [
+        "Lamb",
+        "Dates",
+        "Aged cheese",
+        "Roasted nuts",
+        "Dark chocolate"
+      ]
+    },
+    {
+      "name": "Wheat Beer / Hefeweizen",
+      "pairings": [
+        "Weisswurst",
+        "Pretzels",
+        "Citrusy desserts",
+        "Fresh fruit",
+        "Soft cheeses"
+      ]
+    },
+    {
+      "name": "Berliner Weisse",
+      "pairings": [
+        "Light fruit desserts",
+        "Shellfish",
+        "Goat cheese",
+        "Fresh berries",
+        "Salads"
+      ]
+    },
+    {
+      "name": "Gose",
+      "pairings": [
+        "Sushi",
+        "Ceviche",
+        "Salted nuts",
+        "Grilled vegetables",
+        "Light cheeses"
+      ]
+    },
+    {
+      "name": "Scottish Ale",
+      "pairings": [
+        "Lamb",
+        "Root vegetables",
+        "Buttery pastries",
+        "Roast pork",
+        "Mild cheddar"
+      ]
+    },
+    {
+      "name": "Barleywine",
+      "pairings": [
+        "Strong cheeses",
+        "Toffee pudding",
+        "Grilled steak",
+        "Roasted nuts",
+        "Dark chocolate"
+      ]
+    },
+    {
+      "name": "Lambic",
+      "pairings": [
+        "Fruit tarts",
+        "Duck",
+        "Brie",
+        "Fresh berries",
+        "Light salads"
+      ]
+    },
+    {
+      "name": "Gueuze",
+      "pairings": [
+        "Sour cheeses",
+        "Cured meats",
+        "Pickled vegetables",
+        "Rustic bread",
+        "Smoked salmon"
+      ]
+    },
+    {
+      "name": "Flanders Red",
+      "pairings": [
+        "Blue cheese",
+        "Game meats",
+        "Dark fruits",
+        "Roast pork",
+        "Pâté"
+      ]
+    },
+    {
+      "name": "American Wild Ale",
+      "pairings": [
+        "Farmhouse dishes",
+        "Funky cheeses",
+        "Fermented veggies",
+        "Charcuterie",
+        "Grilled sausages"
+      ]
+    },
+    {
+      "name": "Rye Beer",
+      "pairings": [
+        "Spicy sausage",
+        "Grilled mushrooms",
+        "Caraway bread",
+        "Smoked meats",
+        "Sharp cheeses"
+      ]
+    },
+    {
+      "name": "Fruit Beer",
+      "pairings": [
+        "Fruit tarts",
+        "Salads with berries",
+        "Soft cheeses",
+        "Fresh fruit",
+        "Light desserts"
+      ]
+    },
+    {
+      "name": "Spiced Beer",
+      "pairings": [
+        "Pumpkin pie",
+        "Spiced ham",
+        "Ginger cookies",
+        "Roasted squash",
+        "Mulled wine"
+      ]
+    },
+    {
+      "name": "Smoked Beer",
+      "pairings": [
+        "Smoked meats",
+        "BBQ ribs",
+        "Aged cheddar",
+        "Grilled sausages",
+        "Roasted peppers"
+      ]
+    }
+  ]
+}

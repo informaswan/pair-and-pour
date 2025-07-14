@@ -239,6 +239,9 @@
   #cs-navigation .cs-button-solid {
     display: none;
   }
+  body{
+    padding-top: 120px;
+  }
 }
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->
@@ -365,8 +368,11 @@
   #cs-navigation .cs-button-solid:hover:before {
     width: 100%;
   }
+  body {
+   padding-top: 125px; /* adjust to match actual header height */
+  }
 }
-    /*-- -------------------------- -->
+/*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
 
@@ -378,6 +384,9 @@
     padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
     position: relative;
     z-index: 1;
+  }
+  body {
+  padding-top: 125px; /* adjust to match actual header height */
   }
   #hero-1618 .cs-container {
     width: 100%;
@@ -432,6 +441,16 @@
     color: #fff;
     position: relative;
   }
+  #hero-1618 .cs-subHeader {
+    /* 39px - 61px */
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 100%;
+    margin: 0 0 2.5rem 0;
+    color: #fff;
+    position: relative;
+  }
   #hero-1618 .cs-text {
     /* 16px - 20px */
     font-size: clamp(1rem, 1.95vw, 1.25rem);
@@ -458,7 +477,7 @@
     z-index: 1;
   }
   #hero-1618 .cs-button-solid:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
@@ -468,7 +487,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: width .3s;
+    transition: width 0.3s;
   }
   #hero-1618 .cs-button-solid:hover:before {
     width: 100%;
@@ -503,9 +522,11 @@
     z-index: 1;
   }
   #hero-1618 .cs-icon {
-    width: 3rem;
-    height: auto;
-    margin: 0 0 1.5rem 0;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 1rem; /* optional spacing */
   }
   #hero-1618 .cs-h3 {
     /* 20px - 25px */
@@ -525,6 +546,11 @@
     padding: 0;
     color: var(--bodyTextColor);
   }
+  .cs-item-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
   #hero-1618 .cs-background {
     width: 100%;
     height: 55%;
@@ -536,11 +562,11 @@
   }
   #hero-1618 .cs-background:before {
     /* Overlay */
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     background: #111926;
-    opacity: .8;
+    opacity: 0.8;
     position: absolute;
     display: block;
     top: 0;
@@ -580,8 +606,16 @@
     height: 87%;
   }
   #hero-1618 .cs-background:before {
-    background: linear-gradient(90deg, #111926 21.41%, rgba(17, 25, 38, 0.72) 34.98%, rgba(17, 25, 38, 0) 62.53%);
+    background: linear-gradient(
+      90deg,
+      #111926 21.41%,
+      rgba(17, 25, 38, 0.72) 34.98%,
+      rgba(17, 25, 38, 0) 62.53%
+    );
     opacity: 1;
+  }
+  body {
+  padding-top: 120px; /* adjust to match actual header height */
   }
 }
 /* Large Desktop Parallax Effect - 100px */
@@ -597,16 +631,65 @@
   #hero-1618 .cs-background img {
     display: none;
   }
+  body {
+  padding-top: 80px; /* adjust to match actual header height */
 }
-     .cs-logo {
-    text-decoration: none;       /* remove underline */
-    color: inherit;              /* use the same color as surrounding text */
-    cursor: pointer;             /* keep it obvious it's clickable */
-    }
+}
+.cs-logo {
+  text-decoration: none; /* remove underline */
+  color: inherit; /* use the same color as surrounding text */
+  cursor: pointer; /* keep it obvious it's clickable */
+}
 
-    .cs-logo:hover,
-    .cs-logo:visited,
-    .cs-logo:focus {
-    text-decoration: none;
-    color: inherit;
-    }
+.cs-logo:hover,
+.cs-logo:visited,
+.cs-logo:focus {
+  text-decoration: none;
+  color: inherit;
+}
+.grid-layout-beer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+.grid-layout-wine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-layout > div {
+  padding: 1rem;
+  cursor: pointer; /* makes them feel interactive */
+}
+
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "center center"
+      "left right";
+  }
+
+  .center {
+    grid-area: center;
+  }
+  .left {
+    grid-area: left;
+  }
+  .right {
+    grid-area: right;
+  }
+}
+
+#cs-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
