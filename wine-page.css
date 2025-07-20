@@ -1,0 +1,251 @@
+/* Only wine page gets wood background */
+.wine-page .wine-section {
+  background-color: #e8e1de;
+  background-image: url('https://www.transparenttextures.com/patterns/wood-pattern-dark.png');
+  background-repeat: repeat;
+  background-size: auto;
+  padding: 17rem 1rem 3rem; /* increased top padding to push content below nav */
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+  overflow: visible; /* <-- should NOT be hidden */
+  position: relative; /* <-- add this if not present */
+  z-index: auto; /* or just remove if interfering */
+}
+
+
+.wine-page .grid-layout-wine {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .wine-page .grid-layout-wine {
+    grid-template-columns: 1fr 1fr; /* two equal columns */
+    grid-template-areas:
+      "left right"  /* left and right side by side on top */
+      "center center"; /* center full width below */
+    gap: 1rem;
+  }
+
+  .wine-page .left {
+    grid-area: left;
+  }
+  .wine-page .right {
+    grid-area: right;
+  }
+  .wine-page .center {
+    grid-area: center;
+  }
+}
+.wine-page .center {
+  background-color: #e3d5c0;
+background-image: url('/images/cuttingboardCropped.PNG');
+
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow:
+    inset 0 0 10px rgba(0,0,0,0.1),
+    0 8px 20px rgba(0,0,0,0.15);
+  border: 2px solid #d5c3aa;
+  transition: all 0.3s ease;
+}
+
+
+.wine-page .center ul li {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  padding: 0.5rem 0.8rem;
+  font-weight: 500;
+}
+
+
+.wine-page .left,
+.wine-page .right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  border-radius: 60px 60px 20px 20px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(0,0,0,0.15)),
+              var(--bottle-gradient);
+  box-shadow: 
+    inset 0 10px 20px rgba(255,255,255,0.12),
+    inset 0 -6px 10px rgba(0,0,0,0.25),
+    0 12px 30px rgba(0,0,0,0.35);
+  overflow: visible;
+}
+
+.wine-page .left {
+  --bottle-gradient: linear-gradient(to bottom, #872d2d, #4b0c0c);
+}
+
+.wine-page .right {
+  --bottle-gradient: linear-gradient(to bottom, #f3e8b1, #bfa84c);
+}
+
+.wine-page .left::after,
+.wine-page .right::after {
+  content: '';
+  position: absolute;
+  top: -200px; /* raise it higher above the bottle */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;  /* wider */
+  height: 200px; /* taller */
+  background-color: #2a1f19;
+  border-radius: 14px 14px 6px 6px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 50;  /* ensure it’s on top of any background */
+}
+.wine-page .left,
+.wine-page .right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  border-radius: 60px 60px 20px 20px;
+  box-shadow: 
+    inset 0 8px 12px rgba(255, 255, 255, 0.1),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.2),
+    0 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(0,0,0,0.15)),
+              linear-gradient(to bottom, #872d2d, #4b0c0c);
+}
+.wine-page .right {
+  background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(0,0,0,0.12)),
+              linear-gradient(to bottom, #f3e8b1, #bfa84c);
+}
+
+
+/* Fancy serif wine titles */
+.wine-page .left h1,
+.wine-page .right h1,
+.wine-page #winePairingsBox h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Red Wine Title Better Visibility */
+.wine-page .left h1 {
+  color: #fff5f5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Pairings Box */
+#winePairingsBox {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  background: transparent;
+}
+
+/* Pairing Section Titles */
+#winePairingsBox h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4b0000;
+  font-family: 'Cinzel', serif;
+  border-bottom: 1px solid #d7ccc8;
+  padding-bottom: 0.5rem;
+}
+
+#winePairingsBox .pairing-category {
+  margin-bottom: 1.5rem;
+}
+
+#winePairingsBox .pairing-category h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: #2d2b29;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+}
+
+/* Pairing Item Styles */
+#winePairingsBox .pairing-category ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#winePairingsBox .pairing-category ul li {
+  background-color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+/* Remove bullets for wine lists */
+#redWineList ul,
+#whiteWineList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Wine list items (clean spacing + subtle hover) */
+#redWineList li,
+#whiteWineList li {
+  padding: 0.6rem 1.2rem;
+  margin-bottom: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  color: rgba(0, 0, 0, 0.75); /* softer text color */
+}
+
+/* Remove selected look completely */
+#redWineList li.selected,
+#whiteWineList li.selected {
+  background-color: rgba(255, 255, 255, 0.9); /* same as normal */
+  font-weight: normal;
+  box-shadow: none;
+}
+
+/* Hover effect with more elegant contrast */
+#redWineList li:hover {
+  background-color: rgba(255, 229, 229, 0.8);
+  color: rgba(80, 0, 0, 0.85);
+}
+
+#whiteWineList li:hover {
+  background-color: rgba(255, 251, 224, 0.85);
+  color: rgba(60, 50, 0, 0.8);
+}
+.wine-page .left::before,
+.wine-page .right::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  width: 25%;
+  height: 60%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.25), rgba(255,255,255,0));
+  transform: rotate(-10deg);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 3;
+  filter: blur(1px);
+}
+
