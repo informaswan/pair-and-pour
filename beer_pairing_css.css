@@ -1,0 +1,337 @@
+/* Beer page gets industrial/brewery background - only affects main content area */
+.grid-layout-beer {
+  background-color: #2a2a2a;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
+  background-size: 20px 20px;
+  color: #f0f0f0;
+}
+
+.grid-layout-beer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8rem 1rem 3rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .grid-layout-beer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "left right"
+      "center center";
+    gap: 1rem;
+    padding: 6rem 1rem 2rem;
+  }
+
+  .grid-layout-beer .left {
+    grid-area: left;
+  }
+  .grid-layout-beer .right {
+    grid-area: right;
+  }
+  .grid-layout-beer .center {
+    grid-area: center;
+  }
+}
+
+/* Center section - realistic brick wall */
+.grid-layout-beer .center {
+  background: 
+    /* Base brick color */
+    #8B4513,
+    /* Horizontal mortar lines */
+    repeating-linear-gradient(
+      0deg,
+      #654321 0px,
+      #654321 2px,
+      #8B4513 2px,
+      #8B4513 32px,
+      #654321 32px,
+      #654321 34px
+    ),
+    /* Vertical mortar lines with brick offset pattern */
+    repeating-linear-gradient(
+      90deg,
+      #8B4513 0px,
+      #8B4513 60px,
+      #654321 60px,
+      #654321 62px,
+      #8B4513 62px,
+      #8B4513 122px,
+      #654321 122px,
+      #654321 124px
+    );
+  background-size: 100% 100%, 100% 34px, 124px 100%;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow:
+    inset 0 0 20px rgba(0,0,0,0.4),
+    0 8px 25px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  border: 2px solid #5D2F02;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add texture and depth to bricks */
+.grid-layout-beer .center::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    /* Add brick texture */
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 16px,
+      rgba(139, 69, 19, 0.3) 16px,
+      rgba(139, 69, 19, 0.3) 17px,
+      transparent 17px,
+      transparent 33px
+    ),
+    /* Offset pattern for alternating brick rows */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 62px,
+      rgba(101, 67, 33, 0.8) 62px,  
+      rgba(101, 67, 33, 0.8) 64px,
+      transparent 64px,
+      transparent 126px
+    );
+  background-size: 100% 34px, 124px 68px;
+  background-position: 0 0, 62px 34px; /* Offset every other row */
+  pointer-events: none;
+}
+
+/* Beer bottle containers */
+.beer-bottle-container {
+  position: relative;
+  width: 275px;
+  height: 800px;
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.beer-bottle-container img {
+  width: 280px;
+  height: 750px;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+}
+
+/* Beer list styling */
+.beer-label-list {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  width: 85%;
+  background: rgba(20,20,20,0.95);
+  border-radius: 8px;
+  box-shadow: 
+    0 4px 15px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+  padding: 1.2rem 0.8rem;
+  text-align: center;
+  z-index: 10;
+  border: 1px solid #444;
+}
+
+/* Remove bullets from all beer page lists */
+.grid-layout-beer ul,
+.beer-label-list ul,
+#pairingsBox ul,
+#lagerList ul,
+#aleList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.beer-label-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.beer-label-list li {
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #e0e0e0;
+  box-shadow: 
+    0 2px 8px rgba(0,0,0,0.2),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #404040;
+}
+
+.beer-label-list li:last-child {
+  margin-bottom: 0;
+}
+
+.beer-label-list li:hover {
+  background: linear-gradient(135deg, #3d3d3d, #2a2a2a);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 4px 12px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+/* Lager section (left) - golden theme */
+#lagerList h1 {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+#lagerList .beer-label-list li {
+  background: linear-gradient(135deg, #4a3c1a, #2d2416);
+  color: #FFD700;
+  border-color: #6b5423;
+}
+
+#lagerList .beer-label-list li:hover {
+  background: linear-gradient(135deg, #5a4c2a, #3d3426);
+  color: #FFED4E;
+}
+
+/* Ale section (right) - amber/copper theme */
+#aleList h1 {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #D2691E;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+#aleList .beer-label-list li {
+  background: linear-gradient(135deg, #3d241a, #261610);
+  color: #D2691E;
+  border-color: #4d2e1a;
+}
+
+#aleList .beer-label-list li:hover {
+  background: linear-gradient(135deg, #4d342a, #362620);
+  color: #E67E22;
+}
+
+/* Pairing box styling */
+#pairingsBox {
+  background: rgba(15,15,15,0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  color: #f0f0f0;
+  position: relative;
+  z-index: 5;
+  border: 2px solid #333;
+  box-shadow: 
+    0 8px 25px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+#pairingsBox h2 {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #FF6B35;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.8rem;
+}
+
+#pairingsBox .pairing-category {
+  margin-bottom: 1.8rem;
+}
+
+#pairingsBox .pairing-category h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #FFD700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Pairing item styles */
+#pairingsBox .pairing-category ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#pairingsBox .pairing-category ul li {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  box-shadow: 
+    0 2px 8px rgba(0,0,0,0.2),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  white-space: nowrap;
+  border: 1px solid #404040;
+  transition: all 0.2s ease;
+}
+
+#pairingsBox .pairing-category ul li:hover {
+  background: linear-gradient(135deg, #3a3a3a, #2a2a2a);
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .beer-bottle-container {
+    width: 200px;
+    height: 600px;
+  }
+  
+  .beer-bottle-container img {
+    width: 200px;
+    height: 550px;
+  }
+  
+  #lagerList h1,
+  #aleList h1 {
+    font-size: 1.6rem;
+  }
+  
+  #pairingsBox h2 {
+    font-size: 1.5rem;
+  }
+}

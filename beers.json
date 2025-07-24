@@ -8,7 +8,37 @@
         "Grilled vegetables",
         "Soft pretzels",
         "Light salads"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Asparagus quiche",
+          "Lamb with mint",
+          "Strawberry spinach salad",
+          "Deviled eggs",
+          "Spring pea risotto"
+        ],
+        "summer": [
+          "Fish tacos",
+          "Grilled peaches",
+          "BBQ ribs",
+          "Caprese salad",
+          "Watermelon feta salad"
+        ],
+        "fall": [
+          "Apple pork chops",
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Pumpkin ravioli"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Potato gratin",
+          "Baked brie",
+          "Roast duck",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Pilsner",
@@ -18,7 +48,37 @@
         "Brie cheese",
         "Light salads",
         "Steamed asparagus"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Deviled eggs",
+          "Asparagus quiche",
+          "Spring pea risotto",
+          "Strawberry spinach salad"
+        ],
+        "summer": [
+          "Grilled peaches",
+          "Caprese salad",
+          "Fish tacos",
+          "Watermelon feta salad",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Apple pork chops",
+          "Sweet potato casserole",
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Roasted brussels sprouts"
+        ],
+        "winter": [
+          "Baked brie",
+          "Gingerbread cookies",
+          "Beef stew",
+          "Potato gratin",
+          "Roast duck"
+        ]
+      }
     },
     {
       "name": "Helles Lager",
@@ -28,7 +88,37 @@
         "Potato salad",
         "Grilled sausages",
         "Cucumber salad"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Strawberry spinach salad",
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "Caprese salad",
+          "Fish tacos",
+          "Watermelon feta salad",
+          "Grilled peaches",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Apple pork chops",
+          "Pumpkin ravioli",
+          "Sweet potato casserole"
+        ],
+        "winter": [
+          "Beef stew",
+          "Roast duck",
+          "Potato gratin",
+          "Baked brie",
+          "Gingerbread cookies"
+        ]
+      }
     },
     {
       "name": "Vienna Lager",
@@ -38,17 +128,77 @@
         "Toasted nuts",
         "Pretzels",
         "Smoked ham"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Spring pea risotto",
+          "Lamb with mint",
+          "Asparagus quiche",
+          "Strawberry spinach salad",
+          "Deviled eggs"
+        ],
+        "summer": [
+          "Fish tacos",
+          "BBQ ribs",
+          "Caprese salad",
+          "Watermelon feta salad",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Apple pork chops",
+          "Pumpkin ravioli",
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Sweet potato casserole"
+        ],
+        "winter": [
+          "Baked brie",
+          "Potato gratin",
+          "Beef stew",
+          "Roast duck",
+          "Gingerbread cookies"
+        ]
+      }
     },
     {
-      "name": "Märzen / Oktoberfest",
+      "name": "M\u00e4rzen / Oktoberfest",
       "pairings": [
         "Bratwurst",
         "Roast chicken",
         "Sauerkraut",
         "Pretzels",
         "Potato pancakes"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Lamb with mint",
+          "Spring pea risotto",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "Grilled peaches",
+          "Caprese salad",
+          "Fish tacos",
+          "Watermelon feta salad",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Butternut squash soup",
+          "Roasted brussels sprouts",
+          "Sweet potato casserole",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Roast duck",
+          "Baked brie",
+          "Potato gratin",
+          "Gingerbread cookies",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Bock",
@@ -58,7 +208,37 @@
         "Gouda cheese",
         "Caramelized onions",
         "Spiced nuts"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Strawberry spinach salad",
+          "Lamb with mint",
+          "Asparagus quiche",
+          "Spring pea risotto",
+          "Deviled eggs"
+        ],
+        "summer": [
+          "Grilled peaches",
+          "BBQ ribs",
+          "Fish tacos",
+          "Watermelon feta salad",
+          "Caprese salad"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Apple pork chops",
+          "Pumpkin ravioli"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Baked brie",
+          "Potato gratin",
+          "Roast duck",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Doppelbock",
@@ -68,7 +248,37 @@
         "Chocolate desserts",
         "Roasted root vegetables",
         "Blue cheese"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Asparagus quiche",
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Spring pea risotto",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "Fish tacos",
+          "Watermelon feta salad",
+          "Grilled peaches",
+          "Caprese salad",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Apple pork chops",
+          "Roasted brussels sprouts",
+          "Sweet potato casserole",
+          "Butternut squash soup"
+        ],
+        "winter": [
+          "Roast duck",
+          "Gingerbread cookies",
+          "Potato gratin",
+          "Beef stew",
+          "Baked brie"
+        ]
+      }
     },
     {
       "name": "Eisbock",
@@ -78,7 +288,37 @@
         "Blue cheese",
         "Roasted chestnuts",
         "Dark fruit compote"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Lamb with mint",
+          "Spring pea risotto",
+          "Asparagus quiche",
+          "Strawberry spinach salad"
+        ],
+        "summer": [
+          "BBQ ribs",
+          "Watermelon feta salad",
+          "Grilled peaches",
+          "Fish tacos",
+          "Caprese salad"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Apple pork chops",
+          "Sweet potato casserole",
+          "Pumpkin ravioli",
+          "Butternut squash soup"
+        ],
+        "winter": [
+          "Baked brie",
+          "Gingerbread cookies",
+          "Beef stew",
+          "Potato gratin",
+          "Roast duck"
+        ]
+      }
     },
     {
       "name": "Schwarzbier",
@@ -88,7 +328,37 @@
         "Smoked meats",
         "Dark chocolate",
         "Roasted nuts"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Asparagus quiche",
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Lamb with mint",
+          "Strawberry spinach salad"
+        ],
+        "summer": [
+          "Fish tacos",
+          "BBQ ribs",
+          "Caprese salad",
+          "Watermelon feta salad",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Apple pork chops",
+          "Sweet potato casserole",
+          "Pumpkin ravioli",
+          "Roasted brussels sprouts",
+          "Butternut squash soup"
+        ],
+        "winter": [
+          "Potato gratin",
+          "Roast duck",
+          "Beef stew",
+          "Baked brie",
+          "Gingerbread cookies"
+        ]
+      }
     },
     {
       "name": "Cream Ale",
@@ -98,17 +368,77 @@
         "Light cheeses",
         "Fresh fruit",
         "Chicken salad"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Strawberry spinach salad",
+          "Spring pea risotto",
+          "Lamb with mint",
+          "Deviled eggs",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "Caprese salad",
+          "Watermelon feta salad",
+          "Fish tacos",
+          "Grilled peaches",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Apple pork chops",
+          "Roasted brussels sprouts",
+          "Sweet potato casserole",
+          "Pumpkin ravioli",
+          "Butternut squash soup"
+        ],
+        "winter": [
+          "Beef stew",
+          "Gingerbread cookies",
+          "Roast duck",
+          "Potato gratin",
+          "Baked brie"
+        ]
+      }
     },
     {
-      "name": "Kölsch",
+      "name": "K\u00f6lsch",
       "pairings": [
         "Shrimp",
         "Sushi",
         "Goat cheese",
         "Light salads",
         "Fresh herbs"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Asparagus quiche",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "BBQ ribs",
+          "Watermelon feta salad",
+          "Caprese salad",
+          "Fish tacos",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Sweet potato casserole",
+          "Butternut squash soup",
+          "Roasted brussels sprouts",
+          "Apple pork chops",
+          "Pumpkin ravioli"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Beef stew",
+          "Baked brie",
+          "Roast duck",
+          "Potato gratin"
+        ]
+      }
     },
     {
       "name": "American Light Lager",
@@ -118,7 +448,37 @@
         "Pizza",
         "Soft pretzels",
         "Grilled corn"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Strawberry spinach salad",
+          "Asparagus quiche",
+          "Deviled eggs",
+          "Spring pea risotto",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "Watermelon feta salad",
+          "Caprese salad",
+          "BBQ ribs",
+          "Grilled peaches",
+          "Fish tacos"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Butternut squash soup",
+          "Roasted brussels sprouts",
+          "Apple pork chops",
+          "Sweet potato casserole"
+        ],
+        "winter": [
+          "Potato gratin",
+          "Gingerbread cookies",
+          "Baked brie",
+          "Roast duck",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "American Amber Lager",
@@ -128,7 +488,37 @@
         "Sweet potato fries",
         "Coleslaw",
         "Grilled sausages"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "Fish tacos",
+          "Caprese salad",
+          "Watermelon feta salad",
+          "BBQ ribs",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Apple pork chops",
+          "Sweet potato casserole"
+        ],
+        "winter": [
+          "Potato gratin",
+          "Beef stew",
+          "Roast duck",
+          "Gingerbread cookies",
+          "Baked brie"
+        ]
+      }
     },
     {
       "name": "Blonde Lager",
@@ -138,7 +528,37 @@
         "Mozzarella",
         "Pasta primavera",
         "Roasted vegetables"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Spring pea risotto",
+          "Strawberry spinach salad",
+          "Asparagus quiche",
+          "Deviled eggs"
+        ],
+        "summer": [
+          "Caprese salad",
+          "Fish tacos",
+          "Watermelon feta salad",
+          "BBQ ribs",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Butternut squash soup",
+          "Roasted brussels sprouts",
+          "Pumpkin ravioli",
+          "Sweet potato casserole",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Baked brie",
+          "Gingerbread cookies",
+          "Roast duck",
+          "Potato gratin",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Munich Dunkel",
@@ -148,7 +568,37 @@
         "Roast pork",
         "Braised cabbage",
         "Potato dumplings"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Spring pea risotto",
+          "Asparagus quiche",
+          "Strawberry spinach salad",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "Caprese salad",
+          "Watermelon feta salad",
+          "Grilled peaches",
+          "Fish tacos",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Sweet potato casserole",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Roast duck",
+          "Gingerbread cookies",
+          "Potato gratin",
+          "Beef stew",
+          "Baked brie"
+        ]
+      }
     }
   ],
   "ales": [
@@ -160,7 +610,37 @@
         "Aged cheddar",
         "Grilled vegetables",
         "Coleslaw"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Asparagus quiche",
+          "Lamb with mint",
+          "Spring pea risotto",
+          "Strawberry spinach salad",
+          "Deviled eggs"
+        ],
+        "summer": [
+          "Grilled peaches",
+          "Watermelon feta salad",
+          "BBQ ribs",
+          "Caprese salad",
+          "Fish tacos"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Sweet potato casserole",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Potato gratin",
+          "Beef stew",
+          "Baked brie",
+          "Roast duck"
+        ]
+      }
     },
     {
       "name": "IPA",
@@ -170,7 +650,37 @@
         "Sharp cheddar",
         "Buffalo wings",
         "Crispy fried onion rings"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Spring pea risotto",
+          "Strawberry spinach salad",
+          "Asparagus quiche",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "BBQ ribs",
+          "Watermelon feta salad",
+          "Caprese salad",
+          "Grilled peaches",
+          "Fish tacos"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Pumpkin ravioli",
+          "Sweet potato casserole",
+          "Butternut squash soup",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Potato gratin",
+          "Baked brie",
+          "Roast duck",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "New England IPA",
@@ -180,7 +690,37 @@
         "Buffalo wings",
         "Guacamole",
         "Spicy shrimp"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Spring pea risotto",
+          "Asparagus quiche",
+          "Lamb with mint",
+          "Strawberry spinach salad"
+        ],
+        "summer": [
+          "Fish tacos",
+          "Grilled peaches",
+          "BBQ ribs",
+          "Caprese salad",
+          "Watermelon feta salad"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Sweet potato casserole",
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Roast duck",
+          "Beef stew",
+          "Baked brie",
+          "Potato gratin"
+        ]
+      }
     },
     {
       "name": "Double IPA",
@@ -190,7 +730,37 @@
         "Grilled lamb",
         "Barbecue pork",
         "Strong cheeses"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Strawberry spinach salad",
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Lamb with mint",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "Grilled peaches",
+          "Fish tacos",
+          "Caprese salad",
+          "Watermelon feta salad",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Apple pork chops",
+          "Sweet potato casserole",
+          "Roasted brussels sprouts"
+        ],
+        "winter": [
+          "Beef stew",
+          "Gingerbread cookies",
+          "Potato gratin",
+          "Baked brie",
+          "Roast duck"
+        ]
+      }
     },
     {
       "name": "Session IPA",
@@ -200,7 +770,37 @@
         "Grilled shrimp",
         "Light salads",
         "Soft pretzels"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Deviled eggs",
+          "Spring pea risotto",
+          "Asparagus quiche",
+          "Strawberry spinach salad"
+        ],
+        "summer": [
+          "Caprese salad",
+          "Watermelon feta salad",
+          "Fish tacos",
+          "BBQ ribs",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Apple pork chops",
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Sweet potato casserole"
+        ],
+        "winter": [
+          "Potato gratin",
+          "Beef stew",
+          "Roast duck",
+          "Baked brie",
+          "Gingerbread cookies"
+        ]
+      }
     },
     {
       "name": "Black IPA",
@@ -210,7 +810,37 @@
         "Dark chocolate",
         "Smoked sausages",
         "Grilled mushrooms"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Asparagus quiche",
+          "Strawberry spinach salad",
+          "Lamb with mint",
+          "Deviled eggs",
+          "Spring pea risotto"
+        ],
+        "summer": [
+          "BBQ ribs",
+          "Caprese salad",
+          "Fish tacos",
+          "Watermelon feta salad",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Apple pork chops",
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Roasted brussels sprouts",
+          "Pumpkin ravioli"
+        ],
+        "winter": [
+          "Potato gratin",
+          "Beef stew",
+          "Roast duck",
+          "Baked brie",
+          "Gingerbread cookies"
+        ]
+      }
     },
     {
       "name": "Amber Ale",
@@ -220,7 +850,37 @@
         "Colby cheese",
         "Sweet potato fries",
         "Roasted nuts"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Spring pea risotto",
+          "Asparagus quiche",
+          "Strawberry spinach salad",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "Caprese salad",
+          "BBQ ribs",
+          "Fish tacos",
+          "Grilled peaches",
+          "Watermelon feta salad"
+        ],
+        "fall": [
+          "Sweet potato casserole",
+          "Pumpkin ravioli",
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Beef stew",
+          "Roast duck",
+          "Baked brie",
+          "Potato gratin"
+        ]
+      }
     },
     {
       "name": "Brown Ale",
@@ -230,7 +890,37 @@
         "Gouda",
         "Mushroom risotto",
         "Caramel desserts"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Asparagus quiche",
+          "Strawberry spinach salad"
+        ],
+        "summer": [
+          "Caprese salad",
+          "Fish tacos",
+          "Watermelon feta salad",
+          "Grilled peaches",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Apple pork chops",
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Pumpkin ravioli"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Potato gratin",
+          "Baked brie",
+          "Roast duck",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Porter",
@@ -240,7 +930,37 @@
         "Toasted marshmallows",
         "Grilled sausages",
         "Cheddar cheese"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Spring pea risotto",
+          "Asparagus quiche",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "Caprese salad",
+          "Watermelon feta salad",
+          "BBQ ribs",
+          "Grilled peaches",
+          "Fish tacos"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Apple pork chops",
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Sweet potato casserole"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Roast duck",
+          "Potato gratin",
+          "Beef stew",
+          "Baked brie"
+        ]
+      }
     },
     {
       "name": "Stout",
@@ -250,17 +970,77 @@
         "Stews",
         "Roasted coffee",
         "Blue cheese"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Deviled eggs",
+          "Spring pea risotto",
+          "Asparagus quiche",
+          "Strawberry spinach salad"
+        ],
+        "summer": [
+          "BBQ ribs",
+          "Caprese salad",
+          "Watermelon feta salad",
+          "Grilled peaches",
+          "Fish tacos"
+        ],
+        "fall": [
+          "Sweet potato casserole",
+          "Pumpkin ravioli",
+          "Apple pork chops",
+          "Roasted brussels sprouts",
+          "Butternut squash soup"
+        ],
+        "winter": [
+          "Beef stew",
+          "Gingerbread cookies",
+          "Baked brie",
+          "Potato gratin",
+          "Roast duck"
+        ]
+      }
     },
     {
       "name": "Dry Stout",
       "pairings": [
         "Grilled meats",
         "Coffee desserts",
-        "Shepherd’s pie",
+        "Shepherd\u2019s pie",
         "Roasted vegetables",
         "Dark chocolate"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Lamb with mint",
+          "Spring pea risotto",
+          "Strawberry spinach salad",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "Fish tacos",
+          "Grilled peaches",
+          "BBQ ribs",
+          "Caprese salad",
+          "Watermelon feta salad"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Roast duck",
+          "Potato gratin",
+          "Beef stew",
+          "Baked brie",
+          "Gingerbread cookies"
+        ]
+      }
     },
     {
       "name": "Imperial Stout",
@@ -270,7 +1050,37 @@
         "Rich desserts",
         "Roasted nuts",
         "Spiced meats"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Asparagus quiche",
+          "Lamb with mint",
+          "Spring pea risotto"
+        ],
+        "summer": [
+          "BBQ ribs",
+          "Watermelon feta salad",
+          "Fish tacos",
+          "Grilled peaches",
+          "Caprese salad"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Apple pork chops",
+          "Pumpkin ravioli",
+          "Sweet potato casserole"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Potato gratin",
+          "Beef stew",
+          "Roast duck",
+          "Baked brie"
+        ]
+      }
     },
     {
       "name": "Milk Stout",
@@ -280,7 +1090,37 @@
         "Brisket",
         "Caramel sauce",
         "Cheese platter"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Lamb with mint",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "Watermelon feta salad",
+          "Fish tacos",
+          "BBQ ribs",
+          "Grilled peaches",
+          "Caprese salad"
+        ],
+        "fall": [
+          "Sweet potato casserole",
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Apple pork chops",
+          "Roasted brussels sprouts"
+        ],
+        "winter": [
+          "Potato gratin",
+          "Roast duck",
+          "Baked brie",
+          "Gingerbread cookies",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Oatmeal Stout",
@@ -290,7 +1130,37 @@
         "Soft cheeses",
         "Roasted root vegetables",
         "Apple pie"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Asparagus quiche",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "Caprese salad",
+          "BBQ ribs",
+          "Watermelon feta salad",
+          "Fish tacos",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Apple pork chops",
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Roasted brussels sprouts"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Beef stew",
+          "Roast duck",
+          "Potato gratin",
+          "Baked brie"
+        ]
+      }
     },
     {
       "name": "Saison",
@@ -300,7 +1170,37 @@
         "Rustic bread",
         "Herb roasted chicken",
         "Fresh fruit salad"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Asparagus quiche",
+          "Deviled eggs",
+          "Spring pea risotto",
+          "Strawberry spinach salad"
+        ],
+        "summer": [
+          "Fish tacos",
+          "Grilled peaches",
+          "Watermelon feta salad",
+          "Caprese salad",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Apple pork chops",
+          "Pumpkin ravioli",
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Roasted brussels sprouts"
+        ],
+        "winter": [
+          "Beef stew",
+          "Gingerbread cookies",
+          "Roast duck",
+          "Potato gratin",
+          "Baked brie"
+        ]
+      }
     },
     {
       "name": "Dubbel",
@@ -310,7 +1210,37 @@
         "Roasted meats",
         "Spiced nuts",
         "Hard cheeses"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Spring pea risotto",
+          "Asparagus quiche",
+          "Strawberry spinach salad",
+          "Lamb with mint",
+          "Deviled eggs"
+        ],
+        "summer": [
+          "Fish tacos",
+          "Grilled peaches",
+          "Watermelon feta salad",
+          "Caprese salad",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Sweet potato casserole",
+          "Roasted brussels sprouts",
+          "Pumpkin ravioli",
+          "Butternut squash soup",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Roast duck",
+          "Potato gratin",
+          "Gingerbread cookies",
+          "Beef stew",
+          "Baked brie"
+        ]
+      }
     },
     {
       "name": "Tripel",
@@ -320,7 +1250,37 @@
         "Washed-rind cheese",
         "Roasted chicken",
         "Light salads"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Spring pea risotto",
+          "Lamb with mint",
+          "Asparagus quiche",
+          "Deviled eggs",
+          "Strawberry spinach salad"
+        ],
+        "summer": [
+          "Watermelon feta salad",
+          "Grilled peaches",
+          "BBQ ribs",
+          "Caprese salad",
+          "Fish tacos"
+        ],
+        "fall": [
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Pumpkin ravioli",
+          "Roasted brussels sprouts",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Baked brie",
+          "Potato gratin",
+          "Beef stew",
+          "Roast duck",
+          "Gingerbread cookies"
+        ]
+      }
     },
     {
       "name": "Quadrupel",
@@ -330,7 +1290,37 @@
         "Game meats",
         "Roasted root vegetables",
         "Dried fruits"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Asparagus quiche",
+          "Lamb with mint",
+          "Strawberry spinach salad",
+          "Spring pea risotto",
+          "Deviled eggs"
+        ],
+        "summer": [
+          "Watermelon feta salad",
+          "BBQ ribs",
+          "Fish tacos",
+          "Caprese salad",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Roasted brussels sprouts",
+          "Sweet potato casserole",
+          "Apple pork chops",
+          "Butternut squash soup"
+        ],
+        "winter": [
+          "Potato gratin",
+          "Baked brie",
+          "Beef stew",
+          "Roast duck",
+          "Gingerbread cookies"
+        ]
+      }
     },
     {
       "name": "Belgian Blonde",
@@ -340,7 +1330,37 @@
         "Light cheeses",
         "Salads with vinaigrette",
         "Soft breads"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Spring pea risotto",
+          "Asparagus quiche",
+          "Strawberry spinach salad",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "Caprese salad",
+          "Watermelon feta salad",
+          "Grilled peaches",
+          "Fish tacos",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Sweet potato casserole",
+          "Apple pork chops",
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Pumpkin ravioli"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Potato gratin",
+          "Beef stew",
+          "Roast duck",
+          "Baked brie"
+        ]
+      }
     },
     {
       "name": "Belgian Dark Strong",
@@ -350,7 +1370,37 @@
         "Aged cheese",
         "Roasted nuts",
         "Dark chocolate"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Asparagus quiche",
+          "Lamb with mint",
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Spring pea risotto"
+        ],
+        "summer": [
+          "Grilled peaches",
+          "BBQ ribs",
+          "Fish tacos",
+          "Caprese salad",
+          "Watermelon feta salad"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Sweet potato casserole",
+          "Apple pork chops",
+          "Butternut squash soup",
+          "Pumpkin ravioli"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Baked brie",
+          "Roast duck",
+          "Potato gratin",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Wheat Beer / Hefeweizen",
@@ -360,7 +1410,37 @@
         "Citrusy desserts",
         "Fresh fruit",
         "Soft cheeses"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Strawberry spinach salad",
+          "Asparagus quiche",
+          "Lamb with mint",
+          "Spring pea risotto",
+          "Deviled eggs"
+        ],
+        "summer": [
+          "Fish tacos",
+          "Watermelon feta salad",
+          "BBQ ribs",
+          "Grilled peaches",
+          "Caprese salad"
+        ],
+        "fall": [
+          "Apple pork chops",
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Pumpkin ravioli",
+          "Roasted brussels sprouts"
+        ],
+        "winter": [
+          "Baked brie",
+          "Potato gratin",
+          "Gingerbread cookies",
+          "Roast duck",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Berliner Weisse",
@@ -370,7 +1450,37 @@
         "Goat cheese",
         "Fresh berries",
         "Salads"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Lamb with mint",
+          "Spring pea risotto",
+          "Asparagus quiche",
+          "Strawberry spinach salad"
+        ],
+        "summer": [
+          "Grilled peaches",
+          "Watermelon feta salad",
+          "Fish tacos",
+          "Caprese salad",
+          "BBQ ribs"
+        ],
+        "fall": [
+          "Apple pork chops",
+          "Roasted brussels sprouts",
+          "Pumpkin ravioli",
+          "Sweet potato casserole",
+          "Butternut squash soup"
+        ],
+        "winter": [
+          "Beef stew",
+          "Roast duck",
+          "Baked brie",
+          "Potato gratin",
+          "Gingerbread cookies"
+        ]
+      }
     },
     {
       "name": "Gose",
@@ -380,7 +1490,37 @@
         "Salted nuts",
         "Grilled vegetables",
         "Light cheeses"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Strawberry spinach salad",
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "Fish tacos",
+          "Caprese salad",
+          "BBQ ribs",
+          "Watermelon feta salad",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Roasted brussels sprouts",
+          "Apple pork chops",
+          "Sweet potato casserole",
+          "Pumpkin ravioli",
+          "Butternut squash soup"
+        ],
+        "winter": [
+          "Roast duck",
+          "Baked brie",
+          "Potato gratin",
+          "Gingerbread cookies",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Scottish Ale",
@@ -390,7 +1530,37 @@
         "Buttery pastries",
         "Roast pork",
         "Mild cheddar"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Spring pea risotto",
+          "Lamb with mint",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "BBQ ribs",
+          "Caprese salad",
+          "Grilled peaches",
+          "Watermelon feta salad",
+          "Fish tacos"
+        ],
+        "fall": [
+          "Apple pork chops",
+          "Sweet potato casserole",
+          "Roasted brussels sprouts",
+          "Pumpkin ravioli",
+          "Butternut squash soup"
+        ],
+        "winter": [
+          "Roast duck",
+          "Potato gratin",
+          "Gingerbread cookies",
+          "Baked brie",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Barleywine",
@@ -400,7 +1570,37 @@
         "Grilled steak",
         "Roasted nuts",
         "Dark chocolate"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Asparagus quiche",
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Lamb with mint",
+          "Spring pea risotto"
+        ],
+        "summer": [
+          "Watermelon feta salad",
+          "Fish tacos",
+          "Grilled peaches",
+          "BBQ ribs",
+          "Caprese salad"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Roasted brussels sprouts",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Roast duck",
+          "Baked brie",
+          "Beef stew",
+          "Gingerbread cookies",
+          "Potato gratin"
+        ]
+      }
     },
     {
       "name": "Lambic",
@@ -410,7 +1610,37 @@
         "Brie",
         "Fresh berries",
         "Light salads"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Deviled eggs",
+          "Lamb with mint",
+          "Strawberry spinach salad",
+          "Asparagus quiche",
+          "Spring pea risotto"
+        ],
+        "summer": [
+          "Fish tacos",
+          "Caprese salad",
+          "Watermelon feta salad",
+          "BBQ ribs",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Sweet potato casserole",
+          "Roasted brussels sprouts",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Beef stew",
+          "Baked brie",
+          "Roast duck",
+          "Gingerbread cookies",
+          "Potato gratin"
+        ]
+      }
     },
     {
       "name": "Gueuze",
@@ -420,7 +1650,37 @@
         "Pickled vegetables",
         "Rustic bread",
         "Smoked salmon"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Asparagus quiche",
+          "Strawberry spinach salad",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "Caprese salad",
+          "Fish tacos",
+          "Grilled peaches",
+          "BBQ ribs",
+          "Watermelon feta salad"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Butternut squash soup",
+          "Sweet potato casserole",
+          "Apple pork chops",
+          "Roasted brussels sprouts"
+        ],
+        "winter": [
+          "Potato gratin",
+          "Roast duck",
+          "Baked brie",
+          "Gingerbread cookies",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Flanders Red",
@@ -429,8 +1689,38 @@
         "Game meats",
         "Dark fruits",
         "Roast pork",
-        "Pâté"
-      ]
+        "P\u00e2t\u00e9"
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Asparagus quiche",
+          "Lamb with mint",
+          "Deviled eggs",
+          "Strawberry spinach salad",
+          "Spring pea risotto"
+        ],
+        "summer": [
+          "BBQ ribs",
+          "Caprese salad",
+          "Grilled peaches",
+          "Watermelon feta salad",
+          "Fish tacos"
+        ],
+        "fall": [
+          "Sweet potato casserole",
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Roasted brussels sprouts",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Potato gratin",
+          "Beef stew",
+          "Baked brie",
+          "Roast duck"
+        ]
+      }
     },
     {
       "name": "American Wild Ale",
@@ -440,7 +1730,37 @@
         "Fermented veggies",
         "Charcuterie",
         "Grilled sausages"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Asparagus quiche",
+          "Strawberry spinach salad",
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Lamb with mint"
+        ],
+        "summer": [
+          "Grilled peaches",
+          "Watermelon feta salad",
+          "BBQ ribs",
+          "Fish tacos",
+          "Caprese salad"
+        ],
+        "fall": [
+          "Sweet potato casserole",
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Gingerbread cookies",
+          "Baked brie",
+          "Potato gratin",
+          "Roast duck",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Rye Beer",
@@ -450,7 +1770,37 @@
         "Caraway bread",
         "Smoked meats",
         "Sharp cheeses"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Strawberry spinach salad",
+          "Spring pea risotto",
+          "Deviled eggs",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "BBQ ribs",
+          "Caprese salad",
+          "Watermelon feta salad",
+          "Fish tacos",
+          "Grilled peaches"
+        ],
+        "fall": [
+          "Sweet potato casserole",
+          "Roasted brussels sprouts",
+          "Butternut squash soup",
+          "Apple pork chops",
+          "Pumpkin ravioli"
+        ],
+        "winter": [
+          "Beef stew",
+          "Gingerbread cookies",
+          "Roast duck",
+          "Potato gratin",
+          "Baked brie"
+        ]
+      }
     },
     {
       "name": "Fruit Beer",
@@ -460,7 +1810,37 @@
         "Soft cheeses",
         "Fresh fruit",
         "Light desserts"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Asparagus quiche",
+          "Spring pea risotto",
+          "Strawberry spinach salad",
+          "Deviled eggs"
+        ],
+        "summer": [
+          "Watermelon feta salad",
+          "BBQ ribs",
+          "Grilled peaches",
+          "Fish tacos",
+          "Caprese salad"
+        ],
+        "fall": [
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Apple pork chops",
+          "Roasted brussels sprouts",
+          "Sweet potato casserole"
+        ],
+        "winter": [
+          "Baked brie",
+          "Roast duck",
+          "Beef stew",
+          "Potato gratin",
+          "Gingerbread cookies"
+        ]
+      }
     },
     {
       "name": "Spiced Beer",
@@ -470,7 +1850,37 @@
         "Ginger cookies",
         "Roasted squash",
         "Mulled wine"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Strawberry spinach salad",
+          "Deviled eggs",
+          "Lamb with mint",
+          "Spring pea risotto",
+          "Asparagus quiche"
+        ],
+        "summer": [
+          "Caprese salad",
+          "Grilled peaches",
+          "BBQ ribs",
+          "Fish tacos",
+          "Watermelon feta salad"
+        ],
+        "fall": [
+          "Pumpkin ravioli",
+          "Sweet potato casserole",
+          "Butternut squash soup",
+          "Apple pork chops",
+          "Roasted brussels sprouts"
+        ],
+        "winter": [
+          "Roast duck",
+          "Potato gratin",
+          "Gingerbread cookies",
+          "Baked brie",
+          "Beef stew"
+        ]
+      }
     },
     {
       "name": "Smoked Beer",
@@ -480,7 +1890,37 @@
         "Aged cheddar",
         "Grilled sausages",
         "Roasted peppers"
-      ]
+      ],
+      "seasonal_pairings": {
+        "spring": [
+          "Lamb with mint",
+          "Asparagus quiche",
+          "Strawberry spinach salad",
+          "Deviled eggs",
+          "Spring pea risotto"
+        ],
+        "summer": [
+          "Grilled peaches",
+          "Fish tacos",
+          "BBQ ribs",
+          "Watermelon feta salad",
+          "Caprese salad"
+        ],
+        "fall": [
+          "Butternut squash soup",
+          "Pumpkin ravioli",
+          "Sweet potato casserole",
+          "Roasted brussels sprouts",
+          "Apple pork chops"
+        ],
+        "winter": [
+          "Potato gratin",
+          "Beef stew",
+          "Baked brie",
+          "Gingerbread cookies",
+          "Roast duck"
+        ]
+      }
     }
   ]
 }

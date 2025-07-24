@@ -31,7 +31,6 @@ for (const item of dropDowns) {
 	};
 	item.addEventListener('click', onClick);
 }
-
 fetch('beers.json')
   .then(response => response.json())
   .then(data => {
@@ -41,7 +40,6 @@ fetch('beers.json')
 
     function createBeerList(beers, container) {
       const ul = document.createElement('ul');
-      ul.classList.add('beer-label-list');
 
       beers.forEach(beer => {
         const li = document.createElement('li');
@@ -49,57 +47,25 @@ fetch('beers.json')
         li.style.cursor = 'pointer';
 
         li.addEventListener('click', () => {
-          // Create classic pairings section
-          let pairingsHTML = `
+          pairingsBox.innerHTML = `
             <h2>${beer.name}</h2>
-            <div class="pairing-category">
-              <h4>Classic Pairings:</h4>
-              <ul>
-                ${beer.pairings.map(item => `<li>${item}</li>`).join('')}
-              </ul>
-            </div>
+            <h4>Food Pairings:</h4>
+            <ul>
+              ${beer.pairings.map(item => `<li>${item}</li>`).join('')}
+            </ul>
           `;
-
-          // Add seasonal pairings if they exist
-          if (beer.seasonal_pairings) {
-            pairingsHTML += `
-              <div class="pairing-category">
-                <h4>Seasonal Pairings:</h4>
-            `;
-
-            // Add each season
-            for (const season in beer.seasonal_pairings) {
-              const seasonTitle = season.charAt(0).toUpperCase() + season.slice(1);
-              pairingsHTML += `
-                <div class="pairing-category">
-                  <h4>${seasonTitle}:</h4>
-                  <ul>
-                    ${beer.seasonal_pairings[season].map(item => `<li>${item}</li>`).join('')}
-                  </ul>
-                </div>
-              `;
-            }
-
-            pairingsHTML += `</div>`;
-          }
-
-          pairingsBox.innerHTML = pairingsHTML;
         });
 
         ul.appendChild(li);
       });
 
-      const listContainer = document.createElement('div');
-      listContainer.classList.add('beer-bottle-container');
-      listContainer.appendChild(ul);
-      container.appendChild(listContainer);
+      container.appendChild(ul);
     }
 
     createBeerList(data.lagers, lagerList);
     createBeerList(data.ales, aleList);
   })
   .catch(error => console.error('Error loading beer data:', error));
-
 fetch('wines.json')
   .then(response => response.json())
   .then(data => {
@@ -169,3 +135,5 @@ fetch('wines.json')
     createWineList(data.whiteWines, whiteWineList, 'white');
   })
   .catch(error => console.error('Error loading wine data:', error));
+
+
