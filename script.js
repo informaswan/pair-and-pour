@@ -32,6 +32,36 @@ for (const item of dropDowns) {
 	item.addEventListener('click', onClick);
 }
 
+// Function to add click listeners to pairing items for recipe search
+function addRecipeSearchListeners(container) {
+  const pairingItems = container.querySelectorAll('.pairing-category ul li');
+  
+  pairingItems.forEach(item => {
+    item.style.cursor = 'pointer';
+    item.title = `Click to search for ${item.textContent} recipes`;
+    
+    item.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent any parent click events
+      
+      const ingredient = item.textContent.trim();
+      const searchQuery = `${ingredient} recipes`;
+      const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+      
+      // Open in new tab
+      window.open(googleSearchUrl, '_blank');
+    });
+    
+    // Add hover effect to indicate clickability
+    item.addEventListener('mouseenter', () => {
+      item.style.opacity = '0.8';
+    });
+    
+    item.addEventListener('mouseleave', () => {
+      item.style.opacity = '1';
+    });
+  });
+}
+
 fetch('beers.json')
   .then(response => response.json())
   .then(data => {
@@ -39,61 +69,75 @@ fetch('beers.json')
     const aleList = document.getElementById('aleList');
     const pairingsBox = document.getElementById('pairingsBox');
 
-    function createBeerList(beers, container) {
-      const ul = document.createElement('ul');
-      ul.classList.add('beer-label-list');
+  // Replace the createBeerList function in your script.js with this:
 
-      beers.forEach(beer => {
-        const li = document.createElement('li');
-        li.textContent = beer.name;
-        li.style.cursor = 'pointer';
+function createBeerList(beers, container) {
+  // Create the container div with beer-label-list class
+  const beerListContainer = document.createElement('div');
+  beerListContainer.classList.add('beer-label-list');
 
-        li.addEventListener('click', () => {
-          // Create classic pairings section
-          let pairingsHTML = `
-            <h2>${beer.name}</h2>
+  // Create the ul element
+  const ul = document.createElement('ul');
+
+  beers.forEach(beer => {
+    const li = document.createElement('li');
+    li.textContent = beer.name;
+    li.style.cursor = 'pointer';
+
+    li.addEventListener('click', () => {
+      // Create classic pairings section
+      let pairingsHTML = `
+        <h2>${beer.name}</h2>
+        <div class="pairing-category">
+          <h4>Classic Pairings:</h4>
+          <ul>
+            ${beer.pairings.map(item => `<li>${item}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+
+      // Add seasonal pairings if they exist
+      if (beer.seasonal_pairings) {
+        pairingsHTML += `
+          <div class="pairing-category">
+            <h4>Seasonal Pairings:</h4>
+        `;
+
+        // Add each season
+        for (const season in beer.seasonal_pairings) {
+          const seasonTitle = season.charAt(0).toUpperCase() + season.slice(1);
+          pairingsHTML += `
             <div class="pairing-category">
-              <h4>Classic Pairings:</h4>
+              <h4>${seasonTitle}:</h4>
               <ul>
-                ${beer.pairings.map(item => `<li>${item}</li>`).join('')}
+                ${beer.seasonal_pairings[season].map(item => `<li>${item}</li>`).join('')}
               </ul>
             </div>
           `;
+        }
 
-          // Add seasonal pairings if they exist
-          if (beer.seasonal_pairings) {
-            pairingsHTML += `
-              <div class="pairing-category">
-                <h4>Seasonal Pairings:</h4>
-            `;
+        pairingsHTML += `</div>`;
+      }
 
-            // Add each season
-            for (const season in beer.seasonal_pairings) {
-              const seasonTitle = season.charAt(0).toUpperCase() + season.slice(1);
-              pairingsHTML += `
-                <div class="pairing-category">
-                  <h4>${seasonTitle}:</h4>
-                  <ul>
-                    ${beer.seasonal_pairings[season].map(item => `<li>${item}</li>`).join('')}
-                  </ul>
-                </div>
-              `;
-            }
+      pairingsBox.innerHTML = pairingsHTML;
+      
+      // Add recipe search functionality to the newly created pairing items
+      addRecipeSearchListeners(pairingsBox);
+    });
 
-            pairingsHTML += `</div>`;
-          }
+    ul.appendChild(li);
+  });
 
-          pairingsBox.innerHTML = pairingsHTML;
-        });
+  // Add the ul to the beer list container
+  beerListContainer.appendChild(ul);
 
-        ul.appendChild(li);
-      });
-
-      const listContainer = document.createElement('div');
-      listContainer.classList.add('beer-bottle-container');
-      listContainer.appendChild(ul);
-      container.appendChild(listContainer);
-    }
+  // Create the main container with beer-bottle-container class
+  const mainContainer = document.createElement('div');
+  mainContainer.classList.add('beer-bottle-container');
+  mainContainer.appendChild(beerListContainer);
+  
+  container.appendChild(mainContainer);
+}
 
     createBeerList(data.lagers, lagerList);
     createBeerList(data.ales, aleList);
@@ -133,6 +177,9 @@ fetch('wines.json')
           winePairingsBox.appendChild(section);
         }
       }
+      
+      // Add recipe search functionality to wine pairings too
+      addRecipeSearchListeners(winePairingsBox);
     }
 
     function createWineList(wines, container, type) {

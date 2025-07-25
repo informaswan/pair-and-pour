@@ -42,43 +42,45 @@
 /* Center section - realistic brick wall */
 .grid-layout-beer .center {
   background: 
-    /* Base brick color */
-    #8B4513,
-    /* Horizontal mortar lines */
-    repeating-linear-gradient(
-      0deg,
-      #654321 0px,
-      #654321 2px,
-      #8B4513 2px,
-      #8B4513 32px,
-      #654321 32px,
-      #654321 34px
-    ),
-    /* Vertical mortar lines with brick offset pattern */
+    /* Vertical mortar lines with brick offset pattern - on top */
     repeating-linear-gradient(
       90deg,
-      #8B4513 0px,
-      #8B4513 60px,
-      #654321 60px,
-      #654321 62px,
-      #8B4513 62px,
-      #8B4513 122px,
-      #654321 122px,
-      #654321 124px
-    );
-  background-size: 100% 100%, 100% 34px, 124px 100%;
+      transparent 0px,
+      transparent 60px,
+      #8B4A2F 60px,
+      #8B4A2F 62px,
+      transparent 62px,
+      transparent 122px,
+      #8B4A2F 122px,
+      #8B4A2F 124px
+    ),
+    /* Horizontal mortar lines - middle layer */
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 2px,
+      #8B4A2F 2px,
+      #8B4A2F 4px,
+      transparent 4px,
+      transparent 32px,
+      #8B4A2F 32px,
+      #8B4A2F 34px
+    ),
+    /* Base brick color - bottom layer shows through transparent areas */
+    #B85C3E;
+  background-size: 124px 100%, 100% 34px, 100% 100%;
   padding: 2rem;
   border-radius: 12px;
   box-shadow:
-    inset 0 0 20px rgba(0,0,0,0.4),
+    inset 0 0 20px rgba(0,0,0,0.3),
     0 8px 25px rgba(0,0,0,0.4),
     inset 0 1px 0 rgba(255,255,255,0.05);
-  border: 2px solid #5D2F02;
+  border: 2px solid #7A3E24;
   position: relative;
   overflow: hidden;
 }
 
-/* Add texture and depth to bricks */
+/* Add subtle texture and depth to bricks - much more subtle overlay */
 .grid-layout-beer .center::before {
   content: '';
   position: absolute;
@@ -87,29 +89,30 @@
   right: 0;
   bottom: 0;
   background: 
-    /* Add brick texture */
+    /* Very subtle brick texture */
     repeating-linear-gradient(
       0deg,
       transparent 0px,
       transparent 16px,
-      rgba(139, 69, 19, 0.3) 16px,
-      rgba(139, 69, 19, 0.3) 17px,
+      rgba(139, 74, 47, 0.1) 16px,
+      rgba(139, 74, 47, 0.1) 17px,
       transparent 17px,
       transparent 33px
     ),
-    /* Offset pattern for alternating brick rows */
+    /* Much more subtle offset pattern */
     repeating-linear-gradient(
       90deg,
       transparent 0px,
       transparent 62px,
-      rgba(101, 67, 33, 0.8) 62px,  
-      rgba(101, 67, 33, 0.8) 64px,
+      rgba(139, 74, 47, 0.15) 62px,  
+      rgba(139, 74, 47, 0.15) 64px,
       transparent 64px,
       transparent 126px
     );
   background-size: 100% 34px, 124px 68px;
   background-position: 0 0, 62px 34px; /* Offset every other row */
   pointer-events: none;
+  z-index: 1; /* Keep it behind text content */
 }
 
 /* Beer bottle containers */
@@ -243,12 +246,12 @@
 
 /* Pairing box styling */
 #pairingsBox {
-  background: rgba(15,15,15,0.95);
+  background: rgba(15,15,15,0.92);
   border-radius: 12px;
   padding: 2rem;
   color: #f0f0f0;
   position: relative;
-  z-index: 5;
+  z-index: 5; /* Ensure content stays above the brick texture */
   border: 2px solid #333;
   box-shadow: 
     0 8px 25px rgba(0,0,0,0.3),
@@ -266,10 +269,14 @@
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   border-bottom: 2px solid #444;
   padding-bottom: 0.8rem;
+  position: relative;
+  z-index: 6; /* Ensure headers are clearly visible */
 }
 
 #pairingsBox .pairing-category {
   margin-bottom: 1.8rem;
+  position: relative;
+  z-index: 6; /* Ensure all content is above brick texture */
 }
 
 #pairingsBox .pairing-category h4 {
@@ -281,6 +288,8 @@
   font-weight: bold;
   margin-top: 1.2rem;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 6;
 }
 
 /* Pairing item styles */
@@ -291,6 +300,8 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: relative;
+  z-index: 6;
 }
 
 #pairingsBox .pairing-category ul li {
@@ -306,6 +317,8 @@
   white-space: nowrap;
   border: 1px solid #404040;
   transition: all 0.2s ease;
+  position: relative;
+  z-index: 6;
 }
 
 #pairingsBox .pairing-category ul li:hover {
@@ -333,5 +346,112 @@
   
   #pairingsBox h2 {
     font-size: 1.5rem;
+  }
+}
+/* Add this to your beer_pairing_css.css file - replace the conflicting styles */
+
+/* Container for left and right sections to manage layout */
+#lagerList, #aleList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: calc(100vh);
+}
+
+/* Headers remain fixed at top */
+#lagerList h1, #aleList h1 {
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+
+/* Override the original beer-bottle-container for scrollable lists */
+#lagerList .beer-bottle-container,
+#aleList .beer-bottle-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: calc(100vh - 16rem);
+  margin: 0;
+  display: block;
+  justify-content: unset;
+  align-items: unset;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+}
+
+/* Remove the absolute positioning from beer lists in the columns */
+#lagerList .beer-label-list,
+#aleList .beer-label-list {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  transform: none;
+  width: 100%;
+  background: rgba(20,20,20,0.95);
+  border-radius: 8px;
+  box-shadow: 
+    0 4px 15px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+  padding: 1.2rem 0.8rem;
+  text-align: center;
+  border: 1px solid #444;
+  margin: 0;
+}
+
+/* Custom scrollbar styling for the beer containers in columns */
+#lagerList .beer-bottle-container::-webkit-scrollbar,
+#aleList .beer-bottle-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+#lagerList .beer-bottle-container::-webkit-scrollbar-track,
+#aleList .beer-bottle-container::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+#lagerList .beer-bottle-container::-webkit-scrollbar-thumb,
+#aleList .beer-bottle-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #555, #333);
+  border-radius: 4px;
+  border: 1px solid #444;
+}
+
+#lagerList .beer-bottle-container::-webkit-scrollbar-thumb:hover,
+#aleList .beer-bottle-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #666, #444);
+}
+
+/* For Firefox */
+#lagerList .beer-bottle-container,
+#aleList .beer-bottle-container {
+  scrollbar-width: thin;
+  scrollbar-color: #555 rgba(0,0,0,0.3);
+}
+
+/* Make sure the ul inside takes full space and is scrollable */
+#lagerList .beer-label-list ul,
+#aleList .beer-label-list ul {
+  max-height: none;
+  overflow: visible;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #lagerList, #aleList {
+    max-height: calc(50vh - 8rem);
+  }
+  
+  #lagerList .beer-bottle-container,
+  #aleList .beer-bottle-container {
+    max-height: calc(50vh - 12rem);
+    padding-right: 4px;
+  }
+  
+  #lagerList .beer-bottle-container::-webkit-scrollbar,
+  #aleList .beer-bottle-container::-webkit-scrollbar {
+    width: 6px;
   }
 }
