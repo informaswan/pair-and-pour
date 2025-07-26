@@ -1,0 +1,300 @@
+[
+  {
+    "drinkName": "Virgin Mojito",
+    "ingredients": ["Mint Leaves", "Lime Juice", "Sugar Syrup", "Soda Water", "Lime Wedge"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/ABcL3PiVqgo",
+      "variationVideo": "https://www.youtube.com/embed/sy4aH4Nk7A8"
+    },
+    "instructions": [
+      "Muddle fresh mint leaves with 1 oz lime juice and 0.5 oz sugar syrup in a glass.",
+      "Fill glass with ice.",
+      "Top with soda water.",
+      "Stir gently.",
+      "Garnish with a lime wedge and mint sprig."
+    ]
+  },
+  {
+    "drinkName": "Nojito",
+    "ingredients": ["Mint Leaves", "Lime Juice", "Brown Sugar", "Ginger Ale", "Mint Sprig"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/gKBu1q3mGTI",
+      "variationVideo": "https://www.youtube.com/embed/Wv9dm7Dq4j8"
+    },
+    "instructions": [
+      "Muddle 8 mint leaves with 1 tsp brown sugar and 1 oz lime juice in a glass.",
+      "Fill glass with crushed ice.",
+      "Top with ginger ale.",
+      "Stir gently.",
+      "Garnish with a mint sprig."
+    ]
+  },
+  {
+    "drinkName": "Virgin Mary",
+    "ingredients": ["Tomato Juice", "Lemon Juice", "Worcestershire Sauce", "Tabasco", "Celery Salt", "Black Pepper", "Celery Stick"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/LhLmgj7Qdkk",
+      "variationVideo": "https://www.youtube.com/embed/pJQ6b5gwChY"
+    },
+    "instructions": [
+      "Fill a glass with ice.",
+      "Add 4 oz tomato juice, 0.5 oz lemon juice, 2 dashes Worcestershire sauce, 2 dashes Tabasco, a pinch of celery salt, and black pepper.",
+      "Stir well.",
+      "Garnish with a celery stick."
+    ]
+  },
+  {
+    "drinkName": "Shirley Temple",
+    "ingredients": ["Ginger Ale", "Grenadine", "Maraschino Cherry", "Orange Slice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/0Zj3-MC_vQc",
+      "variationVideo": "https://www.youtube.com/embed/Lsw9lD52oYk"
+    },
+    "instructions": [
+      "Fill a glass with ice.",
+      "Add 4 oz ginger ale and 0.5 oz grenadine.",
+      "Stir gently.",
+      "Garnish with a maraschino cherry and orange slice."
+    ]
+  },
+  {
+    "drinkName": "Cucumber Cooler",
+    "ingredients": ["Cucumber Slices", "Lime Juice", "Sugar Syrup", "Soda Water", "Mint Leaves"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/hztNwSKyehE",
+      "variationVideo": "https://www.youtube.com/embed/k2TVy9EsxGQ"
+    },
+    "instructions": [
+      "Muddle cucumber slices and 5 mint leaves with 1 oz lime juice and 0.5 oz sugar syrup in a glass.",
+      "Fill glass with ice.",
+      "Top with soda water.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Virgin Pina Colada",
+    "ingredients": ["Pineapple Juice", "Coconut Cream", "Ice", "Pineapple Wedge"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/t7KXogtQkOY",
+      "variationVideo": "https://www.youtube.com/embed/WyPZVLa6yGo"
+    },
+    "instructions": [
+      "Add 4 oz pineapple juice and 2 oz coconut cream to a blender.",
+      "Add ice and blend until smooth.",
+      "Pour into a chilled glass.",
+      "Garnish with a pineapple wedge."
+    ]
+  },
+  {
+    "drinkName": "Apple Fizz",
+    "ingredients": ["Apple Juice", "Lemon Juice", "Soda Water", "Lemon Slice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/6TnK16V0x6E",
+      "variationVideo": "https://www.youtube.com/embed/UXFcdD5wZyQ"
+    },
+    "instructions": [
+      "Fill a glass with ice.",
+      "Add 3 oz apple juice and 0.5 oz lemon juice.",
+      "Top with soda water.",
+      "Stir gently.",
+      "Garnish with a lemon slice."
+    ]
+  },
+  {
+    "drinkName": "Tropical Sunrise",
+    "ingredients": ["Orange Juice", "Pineapple Juice", "Grenadine", "Orange Slice", "Cherry"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/6nEmvLF_K9k",
+      "variationVideo": "https://www.youtube.com/embed/QCq3eI2u9G8"
+    },
+    "instructions": [
+      "Fill a glass with ice.",
+      "Add 2 oz orange juice and 2 oz pineapple juice.",
+      "Slowly pour 0.5 oz grenadine to create a layered effect.",
+      "Do not stir.",
+      "Garnish with an orange slice and cherry."
+    ]
+  },
+  {
+    "drinkName": "Ginger Lemonade",
+    "ingredients": ["Lemon Juice", "Ginger Syrup", "Soda Water", "Lemon Wheel"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/3wPR6gwqfhM",
+      "variationVideo": "https://www.youtube.com/embed/v7mx1hp36F4"
+    },
+    "instructions": [
+      "Add 1.5 oz lemon juice and 1 oz ginger syrup to a glass.",
+      "Fill with ice.",
+      "Top with soda water.",
+      "Stir gently.",
+      "Garnish with a lemon wheel."
+    ]
+  },
+  {
+    "drinkName": "Berry Lemonade",
+    "ingredients": ["Mixed Berries", "Lemon Juice", "Sugar Syrup", "Soda Water", "Lemon Slice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/EGHDIq5Tlwo",
+      "variationVideo": "https://www.youtube.com/embed/F-cx-QOn1_g"
+    },
+    "instructions": [
+      "Muddle mixed berries with 1 oz lemon juice and 0.5 oz sugar syrup in a glass.",
+      "Fill glass with ice.",
+      "Top with soda water.",
+      "Stir gently.",
+      "Garnish with a lemon slice."
+    ]
+  },
+  {
+    "drinkName": "Virgin Strawberry Daiquiri",
+    "ingredients": ["Strawberries", "Lime Juice", "Sugar Syrup", "Ice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/IuYPtXOloJQ",
+      "variationVideo": "https://www.youtube.com/embed/2vnLOdQ3hrQ"
+    },
+    "instructions": [
+      "Add 5 strawberries, 1 oz lime juice, 0.5 oz sugar syrup, and ice to a blender.",
+      "Blend until smooth.",
+      "Pour into a chilled glass."
+    ]
+  },
+  {
+    "drinkName": "Coconut Water Cooler",
+    "ingredients": ["Coconut Water", "Lime Juice", "Mint Leaves", "Ice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/zO5C6D2Lwkc",
+      "variationVideo": "https://www.youtube.com/embed/WbD2Us-wLCM"
+    },
+    "instructions": [
+      "Muddle 5 mint leaves with 1 oz lime juice in a glass.",
+      "Fill with ice.",
+      "Add 4 oz coconut water.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Virgin Bellini",
+    "ingredients": ["Peach Nectar", "Sparkling Water", "Peach Slice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/HZaw9HxI77c",
+      "variationVideo": "https://www.youtube.com/embed/M5XfKTR5Yxw"
+    },
+    "instructions": [
+      "Pour 3 oz peach nectar into a flute glass.",
+      "Top with 3 oz sparkling water.",
+      "Garnish with a peach slice."
+    ]
+  },
+  {
+    "drinkName": "Sparkling Raspberry Lemonade",
+    "ingredients": ["Raspberry Syrup", "Lemon Juice", "Sparkling Water", "Raspberries"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/8vP3WX-cqqc",
+      "variationVideo": "https://www.youtube.com/embed/HNxF1zHltgI"
+    },
+    "instructions": [
+      "Add 1 oz raspberry syrup and 1 oz lemon juice to a glass.",
+      "Fill with ice.",
+      "Top with sparkling water.",
+      "Garnish with fresh raspberries."
+    ]
+  },
+  {
+    "drinkName": "Virgin Cucumber Collins",
+    "ingredients": ["Cucumber Juice", "Lemon Juice", "Sugar Syrup", "Soda Water", "Cucumber Slice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/0I-AQZJPWTQ",
+      "variationVideo": "https://www.youtube.com/embed/8Lj8D89CgkY"
+    },
+    "instructions": [
+      "Add 2 oz cucumber juice, 1 oz lemon juice, and 0.5 oz sugar syrup to a glass with ice.",
+      "Top with soda water.",
+      "Stir gently.",
+      "Garnish with a cucumber slice."
+    ]
+  },
+  {
+    "drinkName": "Virgin Strawberry Basil Smash",
+    "ingredients": ["Strawberries", "Basil Leaves", "Lemon Juice", "Sugar Syrup", "Soda Water"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/7y-khrA6LxM",
+      "variationVideo": "https://www.youtube.com/embed/5cTK7bRfq28"
+    },
+    "instructions": [
+      "Muddle 3 strawberries and 5 basil leaves with 1 oz lemon juice and 0.5 oz sugar syrup in a glass.",
+      "Fill glass with ice.",
+      "Top with soda water.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Virgin Orange Creamsicle",
+    "ingredients": ["Orange Juice", "Vanilla Syrup", "Cream", "Ice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/gDCjUYX71xY",
+      "variationVideo": "https://www.youtube.com/embed/tJ7Yr7x-0nI"
+    },
+    "instructions": [
+      "Fill a glass with ice.",
+      "Add 4 oz orange juice and 1 oz vanilla syrup.",
+      "Top with cream.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Lemon Basil Fizz",
+    "ingredients": ["Lemon Juice", "Basil Leaves", "Sugar Syrup", "Soda Water", "Lemon Slice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/ZP7fR9N0ncw",
+      "variationVideo": "https://www.youtube.com/embed/5_GVZ3z6JHE"
+    },
+    "instructions": [
+      "Muddle 5 basil leaves with 1 oz lemon juice and 0.5 oz sugar syrup in a glass.",
+      "Fill glass with ice.",
+      "Top with soda water.",
+      "Garnish with a lemon slice."
+    ]
+  },
+  {
+    "drinkName": "Virgin Grapefruit Spritz",
+    "ingredients": ["Grapefruit Juice", "Simple Syrup", "Soda Water", "Grapefruit Slice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/UR9wjTZ4m7I",
+      "variationVideo": "https://www.youtube.com/embed/LNsRoI2BT48"
+    },
+    "instructions": [
+      "Fill a glass with ice.",
+      "Add 3 oz grapefruit juice and 0.5 oz simple syrup.",
+      "Top with soda water.",
+      "Garnish with a grapefruit slice."
+    ]
+  },
+  {
+    "drinkName": "Virgin Mango Mule",
+    "ingredients": ["Mango Juice", "Lime Juice", "Ginger Beer", "Mint Leaves"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/Hfj41stqfQU",
+      "variationVideo": "https://www.youtube.com/embed/68pqUqQo5UM"
+    },
+    "instructions": [
+      "Fill a glass with ice.",
+      "Add 3 oz mango juice and 0.5 oz lime juice.",
+      "Top with ginger beer.",
+      "Garnish with mint leaves."
+    ]
+  },
+  {
+    "drinkName": "Virgin Cherry Limeade",
+    "ingredients": ["Cherry Juice", "Lime Juice", "Simple Syrup", "Soda Water", "Lime Wedge", "Cherries"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/6lo7P_3PnOg",
+      "variationVideo": "https://www.youtube.com/embed/kRJ8afqShkQ"
+    },
+    "instructions": [
+      "Fill a glass with ice.",
+      "Add 2 oz cherry juice, 1 oz lime juice, and 0.5 oz simple syrup.",
+      "Top with soda water.",
+      "Garnish with lime wedge and cherries."
+    ]
+  }
+]

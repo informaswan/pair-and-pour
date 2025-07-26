@@ -1,0 +1,365 @@
+/* Cocktail Finder Specific Styles */
+
+.cocktail-main {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Dark blue-gray gradient */
+    /* Alternative options you can try:
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); - Blue gradient
+    background: linear-gradient(135deg, #134e5e 0%, #71b280 100%); - Teal to green
+    background: linear-gradient(135deg, #333333 0%, #555555 100%); - Gray gradient
+    background: #2c3e50; - Solid dark blue-gray
+    background: #1a252f; - Solid dark navy
+    */
+    min-height: 100vh;
+    color: #333;
+    padding-top: 100px; /* Account for fixed navigation */
+}
+
+.cocktail-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cocktail-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.cocktail-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.tab {
+    padding: 12px 30px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.tab.active {
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    transform: scale(1.05);
+}
+
+.filters {
+    background: rgba(255,255,255,0.95);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+}
+
+.ingredient-select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    transition: border-color 0.3s ease;
+}
+
+.ingredient-select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.selected-ingredients {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.ingredient-tag {
+    background: #667eea;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.remove-ingredient {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-mode {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.filter-mode label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.drink-card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.drink-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.drink-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.drink-ingredients {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #333;
+}
+
+.modal-drink-name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-section {
+    margin-bottom: 25px;
+}
+
+.modal-section h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 5px;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.ingredient-item {
+    background: #f0f0f0;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.instructions-list {
+    list-style: none;
+    counter-reset: step-counter;
+}
+
+.instructions-list li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.instructions-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #667eea;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.video-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.video-container h4 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+.no-results {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 50px;
+    opacity: 0.8;
+}
+
+.clear-filters {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.clear-filters:hover {
+    background: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .cocktail-main {
+        padding-top: 80px;
+    }
+    
+    .video-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .cocktail-header h1 {
+        font-size: 2em;
+    }
+    
+    .drinks-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .filter-mode {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

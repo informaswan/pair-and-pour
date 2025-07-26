@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Home</title>
+    <title>Cocktail Finder</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="cocktail-finder.css" />
+    <script src="cocktail-finder.js" defer></script>
   </head>
   <body>
     <!-- ============================================ -->
@@ -31,7 +32,7 @@
           <div class="cs-ul-wrapper">
             <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
               <li class="cs-li">
-                <a href="index.html" class="cs-li-link cs-active"> Home </a>
+                <a href="index.html" class="cs-li-link"> Home </a>
               </li>
               <li class="cs-li">
                 <a href="beer-pairing.html" class="cs-li-link">
@@ -44,30 +45,68 @@
                 </a>
               </li>
               <li class="cs-li">
-                <a href="cocktail-finder.html" class="cs-li-link">
+                <a href="cocktail-finder.html" class="cs-li-link cs-active">
                   Cocktail Finder by Ingredients
                 </a>
               </li>
             </ul>
           </div>
         </nav>
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
-            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
-        </button> -->
       </div>
     </header>
-    <div class="grid-layout">
-        <div class="left">
 
-        </div>
-        <div class="center">
-          
-        </div>
-        <div class="right">
+    <!-- ============================================ -->
+    <!--                 Main Content                 -->
+    <!-- ============================================ -->
 
+    <main class="cocktail-main">
+      <div class="cocktail-container">
+        <header class="cocktail-header">
+          <h1>🍹 Cocktail & Mocktail Finder</h1>
+          <p class="subtitle">Discover the perfect drink for any occasion</p>
+        </header>
+
+        <div class="tabs">
+          <button class="tab active" onclick="switchTab('cocktails')">Cocktails</button>
+          <button class="tab" onclick="switchTab('mocktails')">Mocktails</button>
         </div>
-    </div>
+
+        <div class="filters">
+          <div class="filter-section">
+            <label class="filter-label">Select Ingredients:</label>
+            <select class="ingredient-select" id="ingredientSelect">
+              <option value="">Choose an ingredient...</option>
+            </select>
+            <div class="selected-ingredients" id="selectedIngredients"></div>
+            
+            <div class="filter-mode">
+              <label>
+                <input type="radio" name="filterMode" value="all" checked>
+                Must have ALL selected ingredients
+              </label>
+              <label>
+                <input type="radio" name="filterMode" value="any">
+                Must have ANY selected ingredient
+              </label>
+            </div>
+            
+            <button class="clear-filters" onclick="clearFilters()">Clear All Filters</button>
+          </div>
+        </div>
+
+        <div class="drinks-grid" id="drinksGrid"></div>
+        <div class="no-results" id="noResults" style="display: none;">
+          No drinks found matching your criteria. Try adjusting your filters!
+        </div>
+      </div>
+
+      <div class="modal" id="drinkModal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div id="modalContent"></div>
+        </div>
+      </div>
+    </main>
+
   </body>
 </html>

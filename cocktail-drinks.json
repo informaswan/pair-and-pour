@@ -1,0 +1,979 @@
+[
+  {
+    "drinkName": "Americano",
+    "ingredients": ["Campari", "Sweet Vermouth", "Club Soda", "Orange Slice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/Cg_nId_jaOA",
+      "variationVideo": "https://www.youtube.com/embed/xjQMzdvyEOw"
+    },
+    "instructions": [
+      "Fill a highball glass with ice.",
+      "Add 1 oz Campari.",
+      "Add 1 oz Sweet Vermouth.",
+      "Top with club soda.",
+      "Stir gently.",
+      "Garnish with an orange slice."
+    ]
+  },
+  {
+    "drinkName": "Angel Face",
+    "ingredients": ["Gin", "Apricot Brandy", "Calvados"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/kQj0cZEW75g",
+      "variationVideo": "https://www.youtube.com/embed/ULcT0w1JHKA"
+    },
+    "instructions": [
+      "Add 1 oz Gin, 1 oz Apricot Brandy, and 1 oz Calvados to a shaker.",
+      "Fill shaker with ice and shake well.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "Bacardi",
+    "ingredients": ["White Rum", "Lime Juice", "Sugar"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/cmtjwqrsC2o",
+      "variationVideo": "https://www.youtube.com/embed/FS2c5bzrBfs"
+    },
+    "instructions": [
+      "Add 2 oz White Rum, 1 oz Lime Juice, and 1 tsp Sugar to a shaker.",
+      "Shake with ice until chilled.",
+      "Strain into a cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "Bijou",
+    "ingredients": [
+      "Gin",
+      "Green Chartreuse",
+      "Sweet Vermouth",
+      "Orange Bitters"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/TpGZob2ML4g",
+      "variationVideo": "https://www.youtube.com/embed/PuIKLzgPQWg"
+    },
+    "instructions": [
+      "Add 1 oz Gin, 1 oz Green Chartreuse, 1 oz Sweet Vermouth, and 1 dash Orange Bitters to a mixing glass.",
+      "Add ice and stir until chilled.",
+      "Strain into a chilled cocktail glass.",
+      "Garnish with a lemon twist."
+    ]
+  },
+  {
+    "drinkName": "Brandy Alexander",
+    "ingredients": ["Brandy", "Crème de Cacao", "Heavy Cream", "Nutmeg"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/K9QjlWQazr0",
+      "variationVideo": "https://www.youtube.com/embed/HyZrm8YKFuo"
+    },
+    "instructions": [
+      "Add 1 oz Brandy, 1 oz Crème de Cacao, and 1 oz Heavy Cream to a shaker.",
+      "Shake with ice until well chilled.",
+      "Strain into a chilled cocktail glass.",
+      "Garnish with freshly grated nutmeg."
+    ]
+  },
+  {
+    "drinkName": "Dark 'n' Stormy",
+    "ingredients": ["Dark Rum", "Ginger Beer", "Lime Wedge"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/k5nie-r6t3E",
+      "variationVideo": "https://www.youtube.com/embed/3pqIN1pmxZ4"
+    },
+    "instructions": [
+      "Fill a highball glass with ice.",
+      "Add 2 oz Dark Rum.",
+      "Top with ginger beer.",
+      "Garnish with a lime wedge."
+    ]
+  },
+  {
+    "drinkName": "Golden Dream",
+    "ingredients": ["Galliano", "Triple Sec", "Orange Juice", "Cream"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/o_2IdqNlIPM",
+      "variationVideo": "https://www.youtube.com/embed/nqCH0zSu8iA"
+    },
+    "instructions": [
+      "Add 1 oz Galliano, 1 oz Triple Sec, 1 oz Orange Juice, and 1 oz Cream to a shaker.",
+      "Add ice and shake until chilled.",
+      "Strain into a cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "Kir",
+    "ingredients": ["White Wine", "Crème de Cassis"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/WAYTjRBmo8I",
+      "variationVideo": "https://www.youtube.com/embed/ZW-EPEELowA"
+    },
+    "instructions": [
+      "Pour 5 oz chilled white wine into a glass.",
+      "Add 0.5 oz Crème de Cassis.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Kir Royale",
+    "ingredients": ["Champagne", "Crème de Cassis"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/ehROXUY7Q2k",
+      "variationVideo": "https://www.youtube.com/embed/3RL2GsmGKuY"
+    },
+    "instructions": [
+      "Pour 5 oz Champagne into a flute glass.",
+      "Add 0.5 oz Crème de Cassis.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Last Word",
+    "ingredients": [
+      "Gin",
+      "Green Chartreuse",
+      "Maraschino Liqueur",
+      "Lime Juice"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/n8Y4RbrR8xw",
+      "variationVideo": "https://www.youtube.com/embed/NEH9sQDJri8"
+    },
+    "instructions": [
+      "Add 0.75 oz each Gin, Green Chartreuse, Maraschino Liqueur, and Lime Juice to a shaker.",
+      "Shake with ice until chilled.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "Lemon Drop",
+    "ingredients": ["Vodka", "Lemon Juice", "Triple Sec", "Sugar"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/5ElRQqwRY_g",
+      "variationVideo": "https://www.youtube.com/embed/fA6BLGmr0S0"
+    },
+    "instructions": [
+      "Rub lemon wedge around the rim of a glass and dip in sugar to coat.",
+      "Add 2 oz Vodka, 1 oz Lemon Juice, and 0.5 oz Triple Sec to a shaker.",
+      "Shake with ice and strain into the glass."
+    ]
+  },
+  {
+    "drinkName": "Manhattan",
+    "ingredients": [
+      "Rye Whiskey",
+      "Sweet Vermouth",
+      "Angostura Bitters",
+      "Maraschino Cherry"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/cEwRKE0fTFM",
+      "variationVideo": "https://www.youtube.com/embed/6W8U-nJv2jI"
+    },
+    "instructions": [
+      "Add 2 oz Rye Whiskey, 1 oz Sweet Vermouth, and 2 dashes Angostura Bitters to a mixing glass with ice.",
+      "Stir until chilled.",
+      "Strain into a chilled cocktail glass.",
+      "Garnish with a maraschino cherry."
+    ]
+  },
+  {
+    "drinkName": "Margarita",
+    "ingredients": ["Tequila", "Triple Sec", "Lime Juice", "Salt"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/xWxWLvZbUb8",
+      "variationVideo": "https://www.youtube.com/embed/xpKOCvFgULg"
+    },
+    "instructions": [
+      "Rub lime wedge around rim of glass and dip in salt.",
+      "Add 2 oz Tequila, 1 oz Triple Sec, and 1 oz Lime Juice to a shaker.",
+      "Add ice and shake well.",
+      "Strain into prepared glass."
+    ]
+  },
+  {
+    "drinkName": "Martini",
+    "ingredients": ["Gin", "Dry Vermouth", "Lemon Twist or Olive"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/Ko90dV0RNrQ",
+      "variationVideo": "https://www.youtube.com/embed/wJkb9eKYuZ0"
+    },
+    "instructions": [
+      "Add 2 oz Gin and 0.5 oz Dry Vermouth to a mixing glass with ice.",
+      "Stir until chilled.",
+      "Strain into a chilled cocktail glass.",
+      "Garnish with lemon twist or olive."
+    ]
+  },
+  {
+    "drinkName": "Mimosa",
+    "ingredients": ["Champagne", "Orange Juice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/Gy-mExM_dA0",
+      "variationVideo": "https://www.youtube.com/embed/0aJ4s3EGT7g"
+    },
+    "instructions": [
+      "Pour 2 oz chilled orange juice into a flute glass.",
+      "Top with 3 oz Champagne.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Sazerac",
+    "ingredients": [
+      "Rye Whiskey",
+      "Sugar",
+      "Peychaud's Bitters",
+      "Absinthe",
+      "Lemon Peel"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/kGd-kMjcP-Q",
+      "variationVideo": "https://www.youtube.com/embed/q1PqMOMB_Xg"
+    },
+    "instructions": [
+      "Rinse a chilled glass with absinthe and discard excess.",
+      "In a mixing glass, muddle sugar with Peychaud's bitters.",
+      "Add 2 oz rye whiskey and ice.",
+      "Stir until chilled.",
+      "Strain into the prepared glass.",
+      "Garnish with a lemon peel."
+    ]
+  },
+  {
+    "drinkName": "Sea Breeze",
+    "ingredients": ["Vodka", "Cranberry Juice", "Grapefruit Juice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/KM79gTXp5F8",
+      "variationVideo": "https://www.youtube.com/embed/tMYhmNVt-M0"
+    },
+    "instructions": [
+      "Fill a highball glass with ice.",
+      "Add 1.5 oz vodka.",
+      "Add 3 oz cranberry juice and 1 oz grapefruit juice.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Sidecar",
+    "ingredients": ["Cognac", "Triple Sec", "Lemon Juice", "Sugar"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/-YkObXd1-Kg",
+      "variationVideo": "https://www.youtube.com/embed/IzrJH5y2nFw"
+    },
+    "instructions": [
+      "Rub the rim of a glass with lemon and dip in sugar.",
+      "Add 2 oz cognac, 1 oz triple sec, and 0.75 oz lemon juice to a shaker.",
+      "Add ice and shake well.",
+      "Strain into the prepared glass."
+    ]
+  },
+  {
+    "drinkName": "Tequila Sunrise",
+    "ingredients": ["Tequila", "Orange Juice", "Grenadine"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/1DpO6QpXjNQ",
+      "variationVideo": "https://www.youtube.com/embed/EWNLXqK92Eo"
+    },
+    "instructions": [
+      "Fill a glass with ice.",
+      "Add 2 oz tequila and 4 oz orange juice.",
+      "Slowly pour 0.5 oz grenadine, allowing it to settle.",
+      "Do not stir.",
+      "Garnish with an orange slice."
+    ]
+  },
+  {
+    "drinkName": "Tom Collins",
+    "ingredients": [
+      "Gin",
+      "Lemon Juice",
+      "Sugar",
+      "Soda Water",
+      "Lemon Slice",
+      "Maraschino Cherry"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/RXfYx5LD0GU",
+      "variationVideo": "https://www.youtube.com/embed/49z0yDJsB8k"
+    },
+    "instructions": [
+      "Add 2 oz gin, 1 oz lemon juice, and 0.5 oz sugar syrup to a shaker.",
+      "Add ice and shake.",
+      "Strain into a tall glass filled with ice.",
+      "Top with soda water.",
+      "Garnish with lemon slice and maraschino cherry."
+    ]
+  },
+  {
+    "drinkName": "Vesper",
+    "ingredients": ["Gin", "Vodka", "Lillete Blanc", "Lemon Peel"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/M2XOdKnE4FU",
+      "variationVideo": "https://www.youtube.com/embed/qXnAxlNVuE4"
+    },
+    "instructions": [
+      "Add 3 oz gin, 1 oz vodka, and 0.5 oz Lillete Blanc to a shaker.",
+      "Add ice and shake until well chilled.",
+      "Strain into a chilled cocktail glass.",
+      "Garnish with a lemon peel."
+    ]
+  },
+  {
+    "drinkName": "Whiskey Sour",
+    "ingredients": ["Bourbon", "Lemon Juice", "Sugar", "Egg White (optional)"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/MDoy58g_rZk",
+      "variationVideo": "https://www.youtube.com/embed/9-3DKqB8hbM"
+    },
+    "instructions": [
+      "Add 2 oz bourbon, 1 oz lemon juice, 0.75 oz sugar syrup, and optional egg white to a shaker.",
+      "Dry shake (without ice) to emulsify egg white.",
+      "Add ice and shake again.",
+      "Strain into a rocks glass with ice."
+    ]
+  },
+  {
+    "drinkName": "White Russian",
+    "ingredients": ["Vodka", "Coffee Liqueur", "Cream"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/8D4rmWQiFzw",
+      "variationVideo": "https://www.youtube.com/embed/_zULfSk-l5A"
+    },
+    "instructions": [
+      "Fill a rocks glass with ice.",
+      "Add 2 oz vodka and 1 oz coffee liqueur.",
+      "Top with cream and stir gently."
+    ]
+  },
+  {
+    "drinkName": "Alexander",
+    "ingredients": ["Gin", "Dark Crème de Cacao", "Heavy Cream", "Nutmeg"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/O_QTQF_tCS0",
+      "variationVideo": "https://www.youtube.com/embed/UaHlS--APX8"
+    },
+    "instructions": [
+      "Add 1 oz gin, 1 oz dark crème de cacao, and 1 oz heavy cream to a shaker.",
+      "Add ice and shake until chilled.",
+      "Strain into a chilled cocktail glass.",
+      "Garnish with grated nutmeg."
+    ]
+  },
+  {
+    "drinkName": "Aviation",
+    "ingredients": [
+      "Gin",
+      "Maraschino Liqueur",
+      "Lemon Juice",
+      "Crème de Violette"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/Kmw5D32W8sM",
+      "variationVideo": "https://www.youtube.com/embed/1GuV30NFrf0"
+    },
+    "instructions": [
+      "Add 2 oz gin, 0.5 oz maraschino liqueur, 0.75 oz lemon juice, and 0.25 oz crème de violette to a shaker.",
+      "Add ice and shake well.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "B-52",
+    "ingredients": ["Kahlúa", "Baileys Irish Cream", "Grand Marnier"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/uLdQitD47lw",
+      "variationVideo": "https://www.youtube.com/embed/znW1XH0TO6s"
+    },
+    "instructions": [
+      "Layer 1 part Kahlúa, 1 part Baileys Irish Cream, and 1 part Grand Marnier in a shot glass.",
+      "Pour each ingredient slowly over the back of a spoon to create layers."
+    ]
+  },
+  {
+    "drinkName": "Bahama Mama",
+    "ingredients": [
+      "Dark Rum",
+      "Light Rum",
+      "Grenadine",
+      "Orange Juice",
+      "Pineapple Juice"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/aR-Y_uVqKlA",
+      "variationVideo": "https://www.youtube.com/embed/kYlsucvC32M"
+    },
+    "instructions": [
+      "Add 1 oz dark rum, 1 oz light rum, 1 oz grenadine, 2 oz orange juice, and 2 oz pineapple juice to a shaker.",
+      "Add ice and shake well.",
+      "Strain into a tall glass filled with ice."
+    ]
+  },
+  {
+    "drinkName": "Between the Sheets",
+    "ingredients": ["Cognac", "Light Rum", "Triple Sec", "Lemon Juice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/5hvH4R37drM",
+      "variationVideo": "https://www.youtube.com/embed/xqjVxh8kvt0"
+    },
+    "instructions": [
+      "Add 1 oz cognac, 1 oz light rum, 1 oz triple sec, and 0.75 oz lemon juice to a shaker.",
+      "Add ice and shake well.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "Black Russian",
+    "ingredients": ["Vodka", "Coffee Liqueur"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/n86FY5k4A9I",
+      "variationVideo": "https://www.youtube.com/embed/8D4rmWQiFzw"
+    },
+    "instructions": [
+      "Fill a rocks glass with ice.",
+      "Add 2 oz vodka and 1 oz coffee liqueur.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Bloody Mary",
+    "ingredients": [
+      "Vodka",
+      "Tomato Juice",
+      "Lemon Juice",
+      "Worcestershire Sauce",
+      "Tabasco",
+      "Celery Salt",
+      "Pepper",
+      "Celery Stick"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/gmAp1tFHCQw",
+      "variationVideo": "https://www.youtube.com/embed/0ht0ks-U5kc"
+    },
+    "instructions": [
+      "Fill a tall glass with ice.",
+      "Add 1.5 oz vodka, 3 oz tomato juice, 0.5 oz lemon juice.",
+      "Add 2 dashes Worcestershire sauce, 2 dashes Tabasco, pinch of celery salt and pepper.",
+      "Stir gently.",
+      "Garnish with a celery stick."
+    ]
+  },
+  {
+    "drinkName": "Brandy Crusta",
+    "ingredients": [
+      "Brandy",
+      "Lemon Juice",
+      "Maraschino Liqueur",
+      "Sugar Syrup",
+      "Angostura Bitters",
+      "Sugar",
+      "Lemon Peel"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/LEIk5z79TU8",
+      "variationVideo": "https://www.youtube.com/embed/EHg2zUJUShk"
+    },
+    "instructions": [
+      "Rim a glass with sugar.",
+      "Add 2 oz brandy, 0.5 oz lemon juice, 0.5 oz maraschino liqueur, 0.25 oz sugar syrup, and 2 dashes Angostura bitters to a shaker.",
+      "Add ice and shake well.",
+      "Strain into the prepared glass.",
+      "Garnish with a lemon peel."
+    ]
+  },
+  {
+    "drinkName": "Caipirinha",
+    "ingredients": ["Cachaça", "Lime", "Sugar"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/YjMm98w10d0",
+      "variationVideo": "https://www.youtube.com/embed/dc-IaTQq37Y"
+    },
+    "instructions": [
+      "Cut lime into wedges and muddle with 2 tsp sugar in a glass.",
+      "Fill glass with ice.",
+      "Add 2 oz cachaça and stir well."
+    ]
+  },
+  {
+    "drinkName": "Champagne Cocktail",
+    "ingredients": [
+      "Champagne",
+      "Sugar Cube",
+      "Angostura Bitters",
+      "Lemon Peel"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/5yZ8X0pRAGk",
+      "variationVideo": "https://www.youtube.com/embed/8TgNpR2PUYM"
+    },
+    "instructions": [
+      "Place a sugar cube in a champagne flute.",
+      "Add 2-3 dashes Angostura bitters on the sugar cube.",
+      "Fill glass with chilled champagne.",
+      "Garnish with a lemon peel."
+    ]
+  },
+  {
+    "drinkName": "Corpse Reviver #2",
+    "ingredients": [
+      "Gin",
+      "Cointreau",
+      "Lemon Juice",
+      "Lillet Blanc",
+      "Absinthe"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/3NvLZVvVB2g",
+      "variationVideo": "https://www.youtube.com/embed/PR6PR1i2hxI"
+    },
+    "instructions": [
+      "Add 0.75 oz gin, 0.75 oz cointreau, 0.75 oz lemon juice, 0.75 oz Lillet Blanc to shaker.",
+      "Add ice and shake until chilled.",
+      "Rinse glass with absinthe and strain mixture into it."
+    ]
+  },
+  {
+    "drinkName": "Cosmopolitan",
+    "ingredients": ["Vodka", "Triple Sec", "Cranberry Juice", "Lime Juice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/gTGG2BvNE-4",
+      "variationVideo": "https://www.youtube.com/embed/X8n5jdy2ytg"
+    },
+    "instructions": [
+      "Add 1.5 oz vodka, 1 oz triple sec, 0.5 oz cranberry juice, and 0.5 oz lime juice to a shaker.",
+      "Add ice and shake well.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "Daiquiri",
+    "ingredients": ["White Rum", "Lime Juice", "Sugar Syrup"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/2OyHtFDpzGQ",
+      "variationVideo": "https://www.youtube.com/embed/jz-Y0-y1frg"
+    },
+    "instructions": [
+      "Add 2 oz white rum, 1 oz lime juice, and 0.75 oz sugar syrup to a shaker.",
+      "Add ice and shake until chilled.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "Dry Martini",
+    "ingredients": ["Gin", "Dry Vermouth", "Lemon Twist or Olive"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/Ko90dV0RNrQ",
+      "variationVideo": "https://www.youtube.com/embed/wJkb9eKYuZ0"
+    },
+    "instructions": [
+      "Add 2 oz gin and 0.5 oz dry vermouth to a mixing glass with ice.",
+      "Stir until chilled.",
+      "Strain into a chilled cocktail glass.",
+      "Garnish with lemon twist or olive."
+    ]
+  },
+  {
+    "drinkName": "French 75",
+    "ingredients": ["Gin", "Lemon Juice", "Sugar Syrup", "Champagne"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/WBZtUkT4HVo",
+      "variationVideo": "https://www.youtube.com/embed/fMjUNxtL3YU"
+    },
+    "instructions": [
+      "Add 1 oz gin, 0.5 oz lemon juice, and 0.5 oz sugar syrup to shaker.",
+      "Add ice and shake well.",
+      "Strain into champagne flute.",
+      "Top with champagne."
+    ]
+  },
+  {
+    "drinkName": "Gimlet",
+    "ingredients": ["Gin", "Lime Juice", "Simple Syrup"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/jpr07ikHYd0",
+      "variationVideo": "https://www.youtube.com/embed/bkUDxjp6sLE"
+    },
+    "instructions": [
+      "Add 2 oz gin, 0.75 oz lime juice, and 0.75 oz simple syrup to a shaker.",
+      "Add ice and shake until chilled.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "Godfather",
+    "ingredients": ["Scotch Whisky", "Amaretto"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/1EKP9Uw0YBo",
+      "variationVideo": "https://www.youtube.com/embed/4XxFNs9OdOA"
+    },
+    "instructions": [
+      "Fill a rocks glass with ice.",
+      "Add 1.5 oz Scotch whisky and 1.5 oz amaretto.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Grasshopper",
+    "ingredients": ["Green Crème de Menthe", "White Crème de Cacao", "Cream"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/ogEv8D_YF6g",
+      "variationVideo": "https://www.youtube.com/embed/jRkHwiUp3q0"
+    },
+    "instructions": [
+      "Add 1 oz green crème de menthe, 1 oz white crème de cacao, and 1 oz cream to shaker.",
+      "Add ice and shake well.",
+      "Strain into cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "Greyhound",
+    "ingredients": ["Vodka", "Grapefruit Juice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/9sLWQ0Q-ZPk",
+      "variationVideo": "https://www.youtube.com/embed/6Gxt83pLwRI"
+    },
+    "instructions": [
+      "Fill a highball glass with ice.",
+      "Add 2 oz vodka.",
+      "Top with grapefruit juice.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Horse's Neck",
+    "ingredients": ["Brandy", "Ginger Ale", "Lemon Peel"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/74HU-GWpzzQ",
+      "variationVideo": "https://www.youtube.com/embed/m6l8z6M16FI"
+    },
+    "instructions": [
+      "Fill a highball glass with ice.",
+      "Add 2 oz brandy.",
+      "Top with ginger ale.",
+      "Garnish with a long lemon peel twist."
+    ]
+  },
+  {
+    "drinkName": "Irish Coffee",
+    "ingredients": ["Hot Coffee", "Irish Whiskey", "Sugar", "Cream"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/uB3SaSJP5PQ",
+      "variationVideo": "https://www.youtube.com/embed/ZpGpiq7xpLc"
+    },
+    "instructions": [
+      "Pour hot coffee into a glass.",
+      "Add 1.5 oz Irish whiskey and 1 tsp sugar.",
+      "Stir until sugar dissolves.",
+      "Top with lightly whipped cream."
+    ]
+  },
+  {
+    "drinkName": "John Collins",
+    "ingredients": [
+      "Whiskey",
+      "Lemon Juice",
+      "Sugar Syrup",
+      "Soda Water",
+      "Lemon Slice",
+      "Cherry"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/kkWNrF_pXrs",
+      "variationVideo": "https://www.youtube.com/embed/nmjA8Cg7-Ic"
+    },
+    "instructions": [
+      "Add 2 oz whiskey, 1 oz lemon juice, and 0.5 oz sugar syrup to a shaker.",
+      "Shake with ice.",
+      "Strain into a tall glass filled with ice.",
+      "Top with soda water.",
+      "Garnish with lemon slice and cherry."
+    ]
+  },
+  {
+    "drinkName": "Mai Tai",
+    "ingredients": [
+      "Light Rum",
+      "Dark Rum",
+      "Orange Curacao",
+      "Lime Juice",
+      "Orgeat Syrup",
+      "Sugar Syrup"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/cgFszbTqV0s",
+      "variationVideo": "https://www.youtube.com/embed/ljzIeqTr1xk"
+    },
+    "instructions": [
+      "Add 1 oz light rum, 1 oz dark rum, 0.5 oz orange curacao, 0.75 oz lime juice, 0.5 oz orgeat syrup, and 0.25 oz sugar syrup to a shaker.",
+      "Shake with ice.",
+      "Strain into a glass filled with crushed ice."
+    ]
+  },
+  {
+    "drinkName": "Mint Julep",
+    "ingredients": ["Bourbon", "Sugar", "Water", "Mint"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/5OEfXmAbklI",
+      "variationVideo": "https://www.youtube.com/embed/um7_vNU3FjY"
+    },
+    "instructions": [
+      "Muddle 2 sprigs of mint with 0.25 oz sugar syrup and a splash of water in a glass.",
+      "Fill glass with crushed ice.",
+      "Add 2 oz bourbon.",
+      "Stir gently.",
+      "Garnish with a mint sprig."
+    ]
+  },
+  {
+    "drinkName": "Mojito",
+    "ingredients": ["White Rum", "Sugar", "Lime Juice", "Soda Water", "Mint"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/ABcL3PiVqgo",
+      "variationVideo": "https://www.youtube.com/embed/9EVxbLRhx2A"
+    },
+    "instructions": [
+      "Muddle mint leaves with sugar and lime juice in a glass.",
+      "Add ice and 2 oz white rum.",
+      "Top with soda water.",
+      "Stir gently.",
+      "Garnish with a sprig of mint."
+    ]
+  },
+  {
+    "drinkName": "Negroni",
+    "ingredients": ["Gin", "Sweet Vermouth", "Campari", "Orange Peel"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/n_B-JrAz2qA",
+      "variationVideo": "https://www.youtube.com/embed/k1OTe1D5zVg"
+    },
+    "instructions": [
+      "Add 1 oz gin, 1 oz sweet vermouth, and 1 oz Campari to a mixing glass.",
+      "Add ice and stir until chilled.",
+      "Strain into a rocks glass over fresh ice.",
+      "Garnish with an orange peel."
+    ]
+  },
+  {
+    "drinkName": "Old Fashioned",
+    "ingredients": [
+      "Bourbon or Rye Whiskey",
+      "Sugar",
+      "Angostura Bitters",
+      "Orange Peel"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/5Oi6W_FNN28",
+      "variationVideo": "https://www.youtube.com/embed/Nq8vN4j6TW4"
+    },
+    "instructions": [
+      "Place sugar cube in a rocks glass.",
+      "Add 2-3 dashes Angostura bitters and a splash of water.",
+      "Muddle until sugar dissolves.",
+      "Fill glass with ice and add 2 oz bourbon or rye whiskey.",
+      "Stir gently.",
+      "Garnish with an orange peel."
+    ]
+  },
+  {
+    "drinkName": "Paloma",
+    "ingredients": ["Tequila", "Grapefruit Soda", "Lime Juice", "Salt"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/r24hHjE0T_A",
+      "variationVideo": "https://www.youtube.com/embed/wkeuGfAmVvY"
+    },
+    "instructions": [
+      "Rub the rim of a glass with lime and dip in salt.",
+      "Add ice to the glass.",
+      "Pour 2 oz tequila and 1 oz lime juice.",
+      "Top with grapefruit soda.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Pina Colada",
+    "ingredients": [
+      "White Rum",
+      "Coconut Cream",
+      "Pineapple Juice",
+      "Pineapple Wedge"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/Uc62q7kR5Ts",
+      "variationVideo": "https://www.youtube.com/embed/jb-jKvsP6_E"
+    },
+    "instructions": [
+      "Add 2 oz white rum, 1 oz coconut cream, and 3 oz pineapple juice to a blender.",
+      "Add ice and blend until smooth.",
+      "Pour into a chilled glass.",
+      "Garnish with a pineapple wedge."
+    ]
+  },
+  {
+    "drinkName": "Rob Roy",
+    "ingredients": [
+      "Scotch Whisky",
+      "Sweet Vermouth",
+      "Angostura Bitters",
+      "Cherry"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/1jB3FhYY-wA",
+      "variationVideo": "https://www.youtube.com/embed/r8oR3_ZkyN4"
+    },
+    "instructions": [
+      "Add 2 oz Scotch whisky, 1 oz sweet vermouth, and 2 dashes Angostura bitters to a mixing glass.",
+      "Add ice and stir until chilled.",
+      "Strain into a chilled cocktail glass.",
+      "Garnish with a cherry."
+    ]
+  },
+  {
+    "drinkName": "Rusty Nail",
+    "ingredients": ["Scotch Whisky", "Drambuie"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/xvOg0nHtwvM",
+      "variationVideo": "https://www.youtube.com/embed/nYZwlprNs-Q"
+    },
+    "instructions": [
+      "Fill a rocks glass with ice.",
+      "Add 2 oz Scotch whisky and 1 oz Drambuie.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Aperol Spritz",
+    "ingredients": ["Aperol", "Prosecco", "Soda Water", "Orange Slice"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/Fruw8pJu3Qs",
+      "variationVideo": "https://www.youtube.com/embed/B8VXtM3tgSc"
+    },
+    "instructions": [
+      "Fill a large wine glass with ice.",
+      "Add 3 oz Prosecco, 2 oz Aperol, and a splash of soda water.",
+      "Stir gently.",
+      "Garnish with an orange slice."
+    ]
+  },
+  {
+    "drinkName": "Boulevardier",
+    "ingredients": ["Bourbon or Rye Whiskey", "Sweet Vermouth", "Campari"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/H_6OZ_MxkDk",
+      "variationVideo": "https://www.youtube.com/embed/jeLqOJw3s7g"
+    },
+    "instructions": [
+      "Add 1 oz bourbon or rye whiskey, 1 oz sweet vermouth, and 1 oz Campari to a mixing glass.",
+      "Add ice and stir until chilled.",
+      "Strain into a rocks glass filled with ice.",
+      "Garnish with an orange twist."
+    ]
+  },
+  {
+    "drinkName": "Caipiroska",
+    "ingredients": ["Vodka", "Lime", "Sugar"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/1q1OAGHZoSA",
+      "variationVideo": "https://www.youtube.com/embed/WP_Z_T7F3-A"
+    },
+    "instructions": [
+      "Cut lime into wedges and muddle with 2 tsp sugar in a glass.",
+      "Fill the glass with ice.",
+      "Add 2 oz vodka and stir well."
+    ]
+  },
+  {
+    "drinkName": "Clover Club",
+    "ingredients": ["Gin", "Lemon Juice", "Raspberry Syrup", "Egg White"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/L5jptW01Y6M",
+      "variationVideo": "https://www.youtube.com/embed/XWEN2fTocag"
+    },
+    "instructions": [
+      "Add 2 oz gin, 0.75 oz lemon juice, 0.5 oz raspberry syrup, and 1 egg white to a shaker.",
+      "Dry shake (without ice) to emulsify egg white.",
+      "Add ice and shake again until chilled.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "French Connection",
+    "ingredients": ["Cognac", "Amaretto"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/Mxo7KLV0VZI",
+      "variationVideo": "https://www.youtube.com/embed/G9H5FmNLhVU"
+    },
+    "instructions": [
+      "Fill a rocks glass with ice.",
+      "Add 1.5 oz cognac and 1.5 oz amaretto.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Godmother",
+    "ingredients": ["Vodka", "Amaretto"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/H-h48UCrTT8",
+      "variationVideo": "https://www.youtube.com/embed/GdLbn7aOJvQ"
+    },
+    "instructions": [
+      "Fill a rocks glass with ice.",
+      "Add 1.5 oz vodka and 1.5 oz amaretto.",
+      "Stir gently."
+    ]
+  },
+  {
+    "drinkName": "Hemingway Special",
+    "ingredients": [
+      "White Rum",
+      "Maraschino Liqueur",
+      "Grapefruit Juice",
+      "Lime Juice",
+      "Sugar Syrup"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/GvK0osqQOYA",
+      "variationVideo": "https://www.youtube.com/embed/2-Wq0yyTxU4"
+    },
+    "instructions": [
+      "Add 2 oz white rum, 0.5 oz maraschino liqueur, 1 oz grapefruit juice, 0.5 oz lime juice, and 0.25 oz sugar syrup to a shaker.",
+      "Add ice and shake well.",
+      "Strain into a chilled cocktail glass."
+    ]
+  },
+  {
+    "drinkName": "Mai Tai (Classic)",
+    "ingredients": [
+      "White Rum",
+      "Dark Rum",
+      "Orange Curacao",
+      "Lime Juice",
+      "Orgeat Syrup"
+    ],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/ATnqOXcYnzE",
+      "variationVideo": "https://www.youtube.com/embed/vk-gcSkMnV4"
+    },
+    "instructions": [
+      "Add 1 oz white rum, 1 oz dark rum, 0.5 oz orange curacao, 0.75 oz lime juice, and 0.5 oz orgeat syrup to a shaker.",
+      "Shake with ice.",
+      "Strain into a glass filled with crushed ice.",
+      "Garnish as desired."
+    ]
+  },
+  {
+    "drinkName": "Moscow Mule",
+    "ingredients": ["Vodka", "Ginger Beer", "Lime Juice", "Lime Wedge"],
+    "videos": {
+      "instructionalVideo": "https://www.youtube.com/embed/Hfj41stqfQU",
+      "variationVideo": "https://www.youtube.com/embed/Vh06RGHgloY"
+    },
+    "instructions": [
+      "Fill a copper mug with ice.",
+      "Add 2 oz vodka and 0.5 oz lime juice.",
+      "Top with ginger beer.",
+      "Stir gently.",
+      "Garnish with a lime wedge."
+    ]
+  }
+]

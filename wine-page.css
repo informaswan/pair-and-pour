@@ -183,7 +183,7 @@ background-image: url('/images/cuttingboardCropped.PNG');
   width: 275px;
   height: 1125px;
   margin-bottom: 2rem;
-  margin-left: 30px; /* shift right for better look */
+  margin-left: 7px; /* shift right for better look */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -202,7 +202,7 @@ background-image: url('/images/cuttingboardCropped.PNG');
   width: 275px;
   height: 1125px;
   margin-bottom: 2rem;
-  margin-left: 30px; /* shift right for better look */
+  margin-left: 15px; /* shift right for better look */
   display: flex;
   justify-content: center;
   align-items: flex-end;
