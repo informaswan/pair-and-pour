@@ -1,11 +1,18 @@
 [
   {
     "drinkName": "Virgin Mojito",
-    "ingredients": ["Mint Leaves", "Lime Juice", "Sugar Syrup", "Soda Water", "Lime Wedge"],
+    "ingredients": [
+      "Mint Leaves",
+      "Lime Juice",
+      "Sugar Syrup",
+      "Soda Water",
+      "Lime Wedge"
+    ],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/ABcL3PiVqgo",
-      "variationVideo": "https://www.youtube.com/embed/sy4aH4Nk7A8"
+      "instructionalVideo": "https://www.youtube.com/embed/PIM2c_nryRY",
+      "variationVideo": "https://www.youtube.com/embed/sZbTObGG_L4"
     },
+
     "instructions": [
       "Muddle fresh mint leaves with 1 oz lime juice and 0.5 oz sugar syrup in a glass.",
       "Fill glass with ice.",
@@ -15,26 +22,19 @@
     ]
   },
   {
-    "drinkName": "Nojito",
-    "ingredients": ["Mint Leaves", "Lime Juice", "Brown Sugar", "Ginger Ale", "Mint Sprig"],
-    "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/gKBu1q3mGTI",
-      "variationVideo": "https://www.youtube.com/embed/Wv9dm7Dq4j8"
-    },
-    "instructions": [
-      "Muddle 8 mint leaves with 1 tsp brown sugar and 1 oz lime juice in a glass.",
-      "Fill glass with crushed ice.",
-      "Top with ginger ale.",
-      "Stir gently.",
-      "Garnish with a mint sprig."
-    ]
-  },
-  {
     "drinkName": "Virgin Mary",
-    "ingredients": ["Tomato Juice", "Lemon Juice", "Worcestershire Sauce", "Tabasco", "Celery Salt", "Black Pepper", "Celery Stick"],
+    "ingredients": [
+      "Tomato Juice",
+      "Lemon Juice",
+      "Worcestershire Sauce",
+      "Tabasco",
+      "Celery Salt",
+      "Black Pepper",
+      "Celery Stick"
+    ],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/LhLmgj7Qdkk",
-      "variationVideo": "https://www.youtube.com/embed/pJQ6b5gwChY"
+      "instructionalVideo": "https://www.youtube.com/embed/Jzm3dJlw5TI",
+      "variationVideo": "https://www.youtube.com/embed/Mfx0HrUc0aU"
     },
     "instructions": [
       "Fill a glass with ice.",
@@ -45,10 +45,15 @@
   },
   {
     "drinkName": "Shirley Temple",
-    "ingredients": ["Ginger Ale", "Grenadine", "Maraschino Cherry", "Orange Slice"],
+    "ingredients": [
+      "Ginger Ale",
+      "Grenadine",
+      "Maraschino Cherry",
+      "Orange Slice"
+    ],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/0Zj3-MC_vQc",
-      "variationVideo": "https://www.youtube.com/embed/Lsw9lD52oYk"
+      "instructionalVideo": "https://www.youtube.com/embed/E0Te-XJwcaQ",
+      "variationVideo": "https://www.youtube.com/embed/8kiqA49cFEc"
     },
     "instructions": [
       "Fill a glass with ice.",
@@ -59,10 +64,16 @@
   },
   {
     "drinkName": "Cucumber Cooler",
-    "ingredients": ["Cucumber Slices", "Lime Juice", "Sugar Syrup", "Soda Water", "Mint Leaves"],
+    "ingredients": [
+      "Cucumber Slices",
+      "Lime Juice",
+      "Sugar Syrup",
+      "Soda Water",
+      "Mint Leaves"
+    ],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/hztNwSKyehE",
-      "variationVideo": "https://www.youtube.com/embed/k2TVy9EsxGQ"
+      "instructionalVideo": "https://www.youtube.com/embed/XsG5h70rSSI",
+      "variationVideo": "https://www.youtube.com/embed/vjb7torKa_Y"
     },
     "instructions": [
       "Muddle cucumber slices and 5 mint leaves with 1 oz lime juice and 0.5 oz sugar syrup in a glass.",
@@ -73,10 +84,15 @@
   },
   {
     "drinkName": "Virgin Pina Colada",
-    "ingredients": ["Pineapple Juice", "Coconut Cream", "Ice", "Pineapple Wedge"],
+    "ingredients": [
+      "Pineapple Juice",
+      "Coconut Cream",
+      "Ice",
+      "Pineapple Wedge"
+    ],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/t7KXogtQkOY",
-      "variationVideo": "https://www.youtube.com/embed/WyPZVLa6yGo"
+      "instructionalVideo": "https://www.youtube.com/embed/gNm2XZjCH9g",
+      "variationVideo": "https://www.youtube.com/embed/mvnIG1YOdiI"
     },
     "instructions": [
       "Add 4 oz pineapple juice and 2 oz coconut cream to a blender.",
@@ -89,8 +105,8 @@
     "drinkName": "Apple Fizz",
     "ingredients": ["Apple Juice", "Lemon Juice", "Soda Water", "Lemon Slice"],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/6TnK16V0x6E",
-      "variationVideo": "https://www.youtube.com/embed/UXFcdD5wZyQ"
+      "instructionalVideo": "https://www.youtube.com/embed/6eEa4usANBc",
+      "variationVideo": "https://www.youtube.com/embed/aHYom_RdGY8"
     },
     "instructions": [
       "Fill a glass with ice.",
@@ -102,10 +118,16 @@
   },
   {
     "drinkName": "Tropical Sunrise",
-    "ingredients": ["Orange Juice", "Pineapple Juice", "Grenadine", "Orange Slice", "Cherry"],
+    "ingredients": [
+      "Orange Juice",
+      "Pineapple Juice",
+      "Grenadine",
+      "Orange Slice",
+      "Cherry"
+    ],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/6nEmvLF_K9k",
-      "variationVideo": "https://www.youtube.com/embed/QCq3eI2u9G8"
+      "instructionalVideo": "https://www.youtube.com/embed/toMD5hdnNA4",
+      "variationVideo": "https://www.youtube.com/embed/wocu1HTj0Rc"
     },
     "instructions": [
       "Fill a glass with ice.",
@@ -119,8 +141,8 @@
     "drinkName": "Ginger Lemonade",
     "ingredients": ["Lemon Juice", "Ginger Syrup", "Soda Water", "Lemon Wheel"],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/3wPR6gwqfhM",
-      "variationVideo": "https://www.youtube.com/embed/v7mx1hp36F4"
+      "instructionalVideo": "https://www.youtube.com/embed/-3Vr4u_AQdg",
+      "variationVideo": "https://www.youtube.com/embed/fzB8DyD1m8E"
     },
     "instructions": [
       "Add 1.5 oz lemon juice and 1 oz ginger syrup to a glass.",
@@ -132,10 +154,16 @@
   },
   {
     "drinkName": "Berry Lemonade",
-    "ingredients": ["Mixed Berries", "Lemon Juice", "Sugar Syrup", "Soda Water", "Lemon Slice"],
+    "ingredients": [
+      "Mixed Berries",
+      "Lemon Juice",
+      "Sugar Syrup",
+      "Soda Water",
+      "Lemon Slice"
+    ],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/EGHDIq5Tlwo",
-      "variationVideo": "https://www.youtube.com/embed/F-cx-QOn1_g"
+      "instructionalVideo": "https://www.youtube.com/embed/1bTkLO8WGfU",
+      "variationVideo": "https://www.youtube.com/embed/4JAIqKOs2RM"
     },
     "instructions": [
       "Muddle mixed berries with 1 oz lemon juice and 0.5 oz sugar syrup in a glass.",
@@ -149,8 +177,8 @@
     "drinkName": "Virgin Strawberry Daiquiri",
     "ingredients": ["Strawberries", "Lime Juice", "Sugar Syrup", "Ice"],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/IuYPtXOloJQ",
-      "variationVideo": "https://www.youtube.com/embed/2vnLOdQ3hrQ"
+      "instructionalVideo": "https://www.youtube.com/embed/stNjU7QyPUM",
+      "variationVideo": "https://www.youtube.com/embed/kez6L204ssA"
     },
     "instructions": [
       "Add 5 strawberries, 1 oz lime juice, 0.5 oz sugar syrup, and ice to a blender.",
@@ -162,8 +190,8 @@
     "drinkName": "Coconut Water Cooler",
     "ingredients": ["Coconut Water", "Lime Juice", "Mint Leaves", "Ice"],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/zO5C6D2Lwkc",
-      "variationVideo": "https://www.youtube.com/embed/WbD2Us-wLCM"
+      "instructionalVideo": "https://www.youtube.com/embed/0q3TRb8lBbI",
+      "variationVideo": "https://www.youtube.com/embed/_IVuWCzZR8A"
     },
     "instructions": [
       "Muddle 5 mint leaves with 1 oz lime juice in a glass.",
@@ -176,8 +204,8 @@
     "drinkName": "Virgin Bellini",
     "ingredients": ["Peach Nectar", "Sparkling Water", "Peach Slice"],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/HZaw9HxI77c",
-      "variationVideo": "https://www.youtube.com/embed/M5XfKTR5Yxw"
+      "instructionalVideo": "https://www.youtube.com/embed/QUJdg0Tgqjw",
+      "variationVideo": "https://www.youtube.com/embed/mLIk50MaKnc"
     },
     "instructions": [
       "Pour 3 oz peach nectar into a flute glass.",
@@ -187,10 +215,15 @@
   },
   {
     "drinkName": "Sparkling Raspberry Lemonade",
-    "ingredients": ["Raspberry Syrup", "Lemon Juice", "Sparkling Water", "Raspberries"],
+    "ingredients": [
+      "Raspberry Syrup",
+      "Lemon Juice",
+      "Sparkling Water",
+      "Raspberries"
+    ],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/8vP3WX-cqqc",
-      "variationVideo": "https://www.youtube.com/embed/HNxF1zHltgI"
+      "instructionalVideo": "https://www.youtube.com/embed/pTMVfczttdQ",
+      "variationVideo": "https://www.youtube.com/embed/Ca5NXh0Hybo"
     },
     "instructions": [
       "Add 1 oz raspberry syrup and 1 oz lemon juice to a glass.",
@@ -201,10 +234,16 @@
   },
   {
     "drinkName": "Virgin Cucumber Collins",
-    "ingredients": ["Cucumber Juice", "Lemon Juice", "Sugar Syrup", "Soda Water", "Cucumber Slice"],
+    "ingredients": [
+      "Cucumber Juice",
+      "Lemon Juice",
+      "Sugar Syrup",
+      "Soda Water",
+      "Cucumber Slice"
+    ],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/0I-AQZJPWTQ",
-      "variationVideo": "https://www.youtube.com/embed/8Lj8D89CgkY"
+      "instructionalVideo": "https://www.youtube.com/embed/XV5jj_o-bAc",
+      "variationVideo": "https://www.youtube.com/embed/TdMGeUo2vtQ"
     },
     "instructions": [
       "Add 2 oz cucumber juice, 1 oz lemon juice, and 0.5 oz sugar syrup to a glass with ice.",
@@ -215,10 +254,16 @@
   },
   {
     "drinkName": "Virgin Strawberry Basil Smash",
-    "ingredients": ["Strawberries", "Basil Leaves", "Lemon Juice", "Sugar Syrup", "Soda Water"],
+    "ingredients": [
+      "Strawberries",
+      "Basil Leaves",
+      "Lemon Juice",
+      "Sugar Syrup",
+      "Soda Water"
+    ],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/7y-khrA6LxM",
-      "variationVideo": "https://www.youtube.com/embed/5cTK7bRfq28"
+      "instructionalVideo": "https://www.youtube.com/embed/yLCzDTXskCY",
+      "variationVideo": "https://www.youtube.com/embed/jFLnt6v3Vfc"
     },
     "instructions": [
       "Muddle 3 strawberries and 5 basil leaves with 1 oz lemon juice and 0.5 oz sugar syrup in a glass.",
@@ -231,8 +276,8 @@
     "drinkName": "Virgin Orange Creamsicle",
     "ingredients": ["Orange Juice", "Vanilla Syrup", "Cream", "Ice"],
     "videos": {
-      "instructionalVideo": "https://www.youtube.com/embed/gDCjUYX71xY",
-      "variationVideo": "https://www.youtube.com/embed/tJ7Yr7x-0nI"
+      "instructionalVideo": "https://www.youtube.com/embed/uZHijQPrGMg",
+      "variationVideo": "https://www.youtube.com/embed/OyxtEjaivKc"
     },
     "instructions": [
       "Fill a glass with ice.",
@@ -243,7 +288,13 @@
   },
   {
     "drinkName": "Lemon Basil Fizz",
-    "ingredients": ["Lemon Juice", "Basil Leaves", "Sugar Syrup", "Soda Water", "Lemon Slice"],
+    "ingredients": [
+      "Lemon Juice",
+      "Basil Leaves",
+      "Sugar Syrup",
+      "Soda Water",
+      "Lemon Slice"
+    ],
     "videos": {
       "instructionalVideo": "https://www.youtube.com/embed/ZP7fR9N0ncw",
       "variationVideo": "https://www.youtube.com/embed/5_GVZ3z6JHE"
@@ -257,7 +308,12 @@
   },
   {
     "drinkName": "Virgin Grapefruit Spritz",
-    "ingredients": ["Grapefruit Juice", "Simple Syrup", "Soda Water", "Grapefruit Slice"],
+    "ingredients": [
+      "Grapefruit Juice",
+      "Simple Syrup",
+      "Soda Water",
+      "Grapefruit Slice"
+    ],
     "videos": {
       "instructionalVideo": "https://www.youtube.com/embed/UR9wjTZ4m7I",
       "variationVideo": "https://www.youtube.com/embed/LNsRoI2BT48"
@@ -285,7 +341,14 @@
   },
   {
     "drinkName": "Virgin Cherry Limeade",
-    "ingredients": ["Cherry Juice", "Lime Juice", "Simple Syrup", "Soda Water", "Lime Wedge", "Cherries"],
+    "ingredients": [
+      "Cherry Juice",
+      "Lime Juice",
+      "Simple Syrup",
+      "Soda Water",
+      "Lime Wedge",
+      "Cherries"
+    ],
     "videos": {
       "instructionalVideo": "https://www.youtube.com/embed/6lo7P_3PnOg",
       "variationVideo": "https://www.youtube.com/embed/kRJ8afqShkQ"
