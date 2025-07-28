@@ -16,6 +16,8 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 10000;
+    top: 0; /* FIXED: Ensure navigation is at the top */
+    left: 0; /* FIXED: Ensure navigation starts from left edge */
   }
   #cs-navigation:before {
     content: "";
@@ -82,6 +84,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* FIXED: Ensure toggle is clickable */
+    cursor: pointer;
+    z-index: 10001;
+    position: relative;
+    /* FIXED: Prevent pointer events issues */
+    pointer-events: auto;
   }
   #cs-navigation .cs-active .cs-line1 {
     top: 50%;
@@ -102,6 +110,8 @@
     /* 14px - 16px */
     height: clamp(0.875rem, 1.5vw, 1rem);
     position: relative;
+    /* FIXED: Ensure box doesn't block clicks */
+    pointer-events: none;
   }
   #cs-navigation .cs-line {
     width: 100%;
@@ -111,6 +121,8 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    /* FIXED: Ensure lines don't block clicks */
+    pointer-events: none;
   }
   #cs-navigation .cs-line1 {
     top: 0;
@@ -258,6 +270,8 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     z-index: 10000;
+    top: 0; /* FIXED: Ensure navigation is at the top */
+    left: 0; /* FIXED: Ensure navigation starts from left edge */
   }
   #cs-navigation .cs-container {
     width: 100%;

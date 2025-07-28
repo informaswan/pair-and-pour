@@ -2,8 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Wine Pairing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Title - Include primary keywords -->
+    <title>Wine Pairing Guide: Best Cheese, Charcuterie & Food Pairings | Pair and Pour</title>
+    
+    <!-- Meta Description - 150-160 characters with key phrases -->
+    <meta name="description" content="Discover perfect wine pairings with cheese, charcuterie boards, and gourmet foods. Expert guide for red wine, white wine, and food combinations that enhance every meal.">
+    
+    <!-- Keywords (while less important now, still useful for focus) -->
+    <meta name="keywords" content="wine pairing, cheese pairing, charcuterie board wine, red wine pairing, white wine pairing, food and wine, wine guide, best wine pairings">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Wine Pairing Guide: Perfect Cheese & Charcuterie Combinations">
+    <meta property="og:description" content="Learn which wines pair best with cheese, charcuterie, and gourmet foods. Complete guide to red and white wine pairings.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/wine-pairing.html">
+    <meta property="og:image" content="https://yourdomain.com/images/wine-pairing-guide.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wine Pairing Guide: Cheese & Charcuterie Combinations">
+    <meta name="twitter:description" content="Expert wine pairing guide for cheese, charcuterie boards, and gourmet foods.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/wine-pairing.html">
+    
+    <!-- Schema.org structured data for better search understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Complete Wine Pairing Guide: Cheese, Charcuterie & Food Combinations",
+      "description": "Expert guide to pairing wines with cheese, charcuterie boards, and gourmet foods for perfect taste combinations.",
+      "author": {
+        "@type": "Organization",
+        "name": "Pair and Pour"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Pair and Pour"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://yourdomain.com/wine-pairing.html"
+      },
+      "articleSection": "Food & Wine",
+      "keywords": ["wine pairing", "cheese pairing", "charcuterie", "red wine", "white wine", "food pairing"]
+    }
+    </script>
+    
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="wine-page.css" />
+    <link rel="stylesheet" href="wine-pairings.css" />
     <script src="script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   </head>
@@ -33,32 +84,137 @@
       </div>
     </header>
 
-    <div class="wine-section">
+    <!-- SEO-optimized content section -->
+    <main class="wine-section">
+      <!-- Add an introductory section for SEO content -->
+      <section class="wine-intro-seo" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; background: rgba(255,255,255,0.95); border-radius: 12px; margin-bottom: 2rem;">
+        <h1 style="font-family: 'Cinzel', serif; color: #4b0000; text-align: center; font-size: 2.5rem; margin-bottom: 1rem;">
+          Wine Pairing Guide: Perfect Combinations for Cheese & Charcuterie
+        </h1>
+        <p style="font-size: 1.1rem; line-height: 1.6; text-align: center; color: #333; margin-bottom: 1.5rem;">
+          Discover the art of <strong>wine pairing</strong> with our comprehensive guide. Learn which <strong>cheeses pair with red wine</strong>, 
+          how to create the perfect <strong>charcuterie board with wine pairings</strong>, and master the fundamentals of 
+          <strong>food and wine combinations</strong> that will elevate your dining experience.
+        </p>
+      </section>
+
       <div class="grid-layout-wine">
-        <div class="left">
-          <h1>Red Wines</h1>
+        <section class="left" role="region" aria-labelledby="red-wines-heading">
+          <h2 id="red-wines-heading" style="font-family: 'Cinzel', serif; font-size: 2rem; text-align: center; margin-bottom: 1rem; letter-spacing: 1px; color: #4b0000; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">
+            Red Wine Pairings
+          </h2>
+          <p style="text-align: center; margin-bottom: 1.5rem; font-size: 0.95rem; color: #666;">
+            Click any red wine below to discover perfect cheese and charcuterie pairings
+          </p>
           <!-- red wine list -->
           <div class="bottle-img-container">
-            <img src="/images/redwine.png" alt="Red Wine Bottle" />
+            <img src="/images/redwine.png" alt="Red Wine Bottle for Pairing with Cheese and Charcuterie" />
             <div class="bottle-label-list" id="redWineList">
               <!-- JS will inject the <ul> here -->
             </div>
           </div>
-        </div>
-        <div class="center">
-          <div id="winePairingsBox"></div>
-        </div>
-        <div class="right">
-          <h1>White Wines</h1>
+        </section>
+        
+        <section class="center" role="main" aria-labelledby="pairing-results">
+          <div id="winePairingsBox">
+            <!-- Default SEO content when no wine is selected - will be replaced by your script.js -->
+            <h2 style="font-family: 'Cinzel', serif; color: #4b0000; text-align: center;">
+              Wine and Food Pairing Fundamentals
+            </h2>
+            
+            <div class="pairing-category">
+              <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem;">Best Cheese Pairings for Red Wine</h3>
+              <p style="margin-bottom: 1rem; line-height: 1.6;">
+                <strong>Bold red wines</strong> like Cabernet Sauvignon pair beautifully with aged cheeses such as 
+                aged cheddar, gouda, and blue cheese. The tannins in red wine complement the rich, sharp flavors 
+                of these cheeses.
+              </p>
+              <ul style="list-style-type: disc; padding-left: 2rem; margin-bottom: 1.5rem;">
+                <li><strong>Cabernet Sauvignon:</strong> Aged cheddar, gouda, blue cheese</li>
+                <li><strong>Pinot Noir:</strong> Brie, camembert, gruyere</li>
+                <li><strong>Merlot:</strong> Manchego, pecorino, soft goat cheese</li>
+              </ul>
+            </div>
+
+            <div class="pairing-category">
+              <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem;">Perfect White Wine and Cheese Combinations</h3>
+              <p style="margin-bottom: 1rem; line-height: 1.6;">
+                <strong>White wines</strong> excel with lighter, creamier cheeses. Crisp whites like Sauvignon Blanc 
+                cut through rich, creamy textures, while oaked Chardonnays complement nuttier, more complex cheeses.
+              </p>
+              <ul style="list-style-type: disc; padding-left: 2rem; margin-bottom: 1.5rem;">
+                <li><strong>Chardonnay:</strong> Brie, triple cream, aged gruyere</li>
+                <li><strong>Sauvignon Blanc:</strong> Fresh goat cheese, feta, ricotta</li>
+                <li><strong>Riesling:</strong> Blue cheese, aged cheddar (sweet contrast)</li>
+              </ul>
+            </div>
+
+            <div class="pairing-category">
+              <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem;">Charcuterie Board Wine Pairing Tips</h3>
+              <p style="margin-bottom: 1rem; line-height: 1.6;">
+                Creating the <strong>perfect charcuterie board with wine</strong> requires balancing flavors and textures. 
+                Consider the saltiness of cured meats, the richness of pâtés, and the acidity needed to cleanse the palate.
+              </p>
+              <ul style="list-style-type: disc; padding-left: 2rem;">
+                <li><strong>Prosciutto & Salami:</strong> Chianti, Sangiovese, or Côtes du Rhône</li>
+                <li><strong>Pâté & Terrines:</strong> Beaujolais, light Pinot Noir</li>
+                <li><strong>Smoked Meats:</strong> Zinfandel, Syrah, or oaked Chardonnay</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section class="right" role="region" aria-labelledby="white-wines-heading">
+          <h2 id="white-wines-heading" style="font-family: 'Cinzel', serif; font-size: 2rem; text-align: center; margin-bottom: 1rem; letter-spacing: 1px; color: #4b0000; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">
+            White Wine Pairings
+          </h2>
+          <p style="text-align: center; margin-bottom: 1.5rem; font-size: 0.95rem; color: #666;">
+            Explore white wine and food combinations for lighter fare
+          </p>
           <!-- white wine list -->
           <div class="bottle-img-container">
-            <img src="/images/whiteWine.png" alt="White Wine Bottle" />
+            <img src="/images/whiteWine.png" alt="White Wine Bottle Perfect for Cheese and Light Foods" />
             <div class="bottle-label-list" id="whiteWineList">
               <!-- JS will inject the <ul> here -->
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+
+      <!-- Additional SEO content section -->
+      <section class="wine-pairing-tips" style="max-width: 1200px; margin: 3rem auto 0; padding: 2rem; background: rgba(255,255,255,0.95); border-radius: 12px;">
+        <h2 style="font-family: 'Cinzel', serif; color: #4b0000; text-align: center; font-size: 2rem; margin-bottom: 2rem;">
+          Expert Wine Pairing Tips
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+          <div>
+            <h3 style="color: #2d2b29; font-size: 1.2rem; margin-bottom: 1rem;">How to Pair Wine with Cheese</h3>
+            <p style="line-height: 1.6; margin-bottom: 1rem;">
+              The key to successful <strong>wine and cheese pairing</strong> is balancing intensity. Match light wines with delicate cheeses 
+              and bold wines with strong, aged varieties. Consider texture too - creamy cheeses often pair well with acidic wines.
+            </p>
+          </div>
+          
+          <div>
+            <h3 style="color: #2d2b29; font-size: 1.2rem; margin-bottom: 1rem;">Building a Charcuterie Board</h3>
+            <p style="line-height: 1.6; margin-bottom: 1rem;">
+              A great <strong>charcuterie board with wine</strong> includes 3-4 cheeses of varying textures, 2-3 cured meats, 
+              fresh and dried fruits, nuts, and crusty bread. Choose wines that complement multiple elements on your board.
+            </p>
+          </div>
+          
+          <div>
+            <h3 style="color: #2d2b29; font-size: 1.2rem; margin-bottom: 1rem;">Seasonal Wine Pairings</h3>
+            <p style="line-height: 1.6; margin-bottom: 1rem;">
+              Adapt your <strong>food and wine combinations</strong> to the season. Lighter whites work well with spring vegetables, 
+              while robust reds complement hearty winter dishes and aged cheeses.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
   </body>
 </html>

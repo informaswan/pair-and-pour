@@ -2,7 +2,106 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Cocktail Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Cocktail Finder by Ingredients | What Cocktails Can I Make? | Pair and Pour</title>
+    <meta name="description" content="Find cocktails and mocktails you can make with ingredients you have at home. Search by ingredients, get step-by-step recipes, and watch video tutorials for over 100+ drinks.">
+    <meta name="keywords" content="cocktail finder, what cocktail can I make, cocktail recipes by ingredients, mocktail finder, drink recipes, cocktail ingredient search, how to make cocktails, bartending guide">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pairandpour.com/cocktail-finder.html">
+    <meta property="og:title" content="Find Cocktails by Ingredients | What Drinks Can I Make?">
+    <meta property="og:description" content="Discover cocktails and mocktails you can make with your available ingredients. Get recipes, instructions, and video tutorials.">
+    <meta property="og:image" content="https://pairandpour.com/images/cocktail-finder-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pairandpour.com/cocktail-finder.html">
+    <meta property="twitter:title" content="Find Cocktails by Ingredients | What Drinks Can I Make?">
+    <meta property="twitter:description" content="Discover cocktails and mocktails you can make with your available ingredients. Get recipes, instructions, and video tutorials.">
+    <meta property="twitter:image" content="https://pairandpour.com/images/cocktail-finder-twitter.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pairandpour.com/cocktail-finder.html">
+    
+    <!-- Structured Data - Website Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Pair and Pour",
+      "url": "https://pairandpour.com",
+      "description": "Your ultimate guide to cocktails, mocktails, and drink pairings",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://pairandpour.com/cocktail-finder.html?ingredients={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Structured Data - WebApplication Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Cocktail Finder by Ingredients",
+      "description": "Interactive tool to find cocktails and mocktails based on ingredients you have available",
+      "url": "https://pairandpour.com/cocktail-finder.html",
+      "applicationCategory": "Food & Drink",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Search cocktails by ingredients",
+        "Filter by all or any ingredients",
+        "Step-by-step recipe instructions",
+        "Video tutorials for each drink",
+        "Mocktail and cocktail options"
+      ]
+    }
+    </script>
+    
+    <!-- Structured Data - FAQ Schema for common questions -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What cocktails can I make with vodka?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can make many cocktails with vodka including Moscow Mule, Bloody Mary, Cosmopolitan, Vodka Tonic, and Screwdriver. Use our ingredient filter to select vodka and see all available options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find cocktails with ingredients I have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select your available ingredients from our dropdown menu. Choose whether you want cocktails that use ALL your ingredients or ANY of your ingredients, then browse the filtered results."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "Can I find mocktails without alcohol?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Switch to the Mocktails tab to find non-alcoholic drink recipes. We have a full collection of mocktails with step-by-step instructions and videos."
+          }
+        }
+      ]
+    }
+    </script>
+    
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="cocktail-finder.css" />
     <script src="cocktail-finder.js" defer></script>
@@ -61,25 +160,80 @@
 
     <main class="cocktail-main">
       <div class="cocktail-container">
+        <!-- Breadcrumb Navigation -->
+        <!-- <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> > 
+          <span>Cocktail Finder</span>
+        </nav> -->
+
         <header class="cocktail-header">
-          <h1>🍹 Cocktail & Mocktail Finder</h1>
-          <p class="subtitle">Discover the drinks you can make with the ingredients you have</p>
+          <h1>🍹 Find Cocktails & Mocktails by Ingredients</h1>
+          <p class="subtitle">What cocktails can I make? Discover drinks you can create with ingredients you already have at home</p>
         </header>
 
+        <!-- Search Intent Section -->
+        <section class="search-section">
+          <h2>Search by What You Have</h2>
+          <p style="color: rgba(255,255,255,0.9); margin-bottom: 20px;">
+            Select your available ingredients below and we'll show you every cocktail and mocktail you can make right now!
+          </p>
+        </section>
+
+        <!-- How to Use Section -->
+        <section class="how-to-use">
+          <h2>How to Use the Cocktail Ingredient Finder</h2>
+          <div class="how-to-use-content">
+            <p><strong>Step 1:</strong> Choose between cocktails (with alcohol) or mocktails (alcohol-free) using the tabs below.</p>
+            <p><strong>Step 2:</strong> Select ingredients you have available from the dropdown menu. You can add multiple ingredients.</p>
+            <p><strong>Step 3:</strong> Choose your filter mode - either drinks that need ALL your ingredients or drinks that use ANY of your ingredients.</p>
+            <p><strong>Step 4:</strong> Browse the results and click on any drink card to see the complete recipe with step-by-step instructions and video tutorials.</p>
+            
+            <h3>Popular Cocktail Questions We Answer:</h3>
+            <ul>
+              <li>What cocktails can I make with vodka and lime juice?</li>
+              <li>How to make a mojito at home?</li>
+              <li>What drinks can I make without a cocktail shaker?</li>
+              <li>Easy mocktails for parties</li>
+              <li>Classic cocktail recipes with common ingredients</li>
+            </ul>
+            
+            <p>
+              Our database includes over 100+ cocktail and mocktail recipes, each with detailed instructions, 
+              ingredient lists, and video tutorials to help you become a home bartending expert.
+            </p>
+          </div>
+        </section>
+
+        <!-- Popular Ingredients Quick Access -->
+        <section class="popular-ingredients">
+          <h3>Popular Ingredients</h3>
+          <div class="ingredient-chips" id="popularIngredients">
+            <!-- Will be populated by JavaScript based on current tab -->
+          </div>
+        </section>
+
         <div class="tabs">
-          <button class="tab active" onclick="switchTab('cocktails')">Cocktails</button>
-          <button class="tab" onclick="switchTab('mocktails')">Mocktails</button>
+          <button class="tab active" onclick="switchTab('cocktails')" aria-label="Switch to cocktails">
+            🍸 Cocktails
+          </button>
+          <button class="tab" onclick="switchTab('mocktails')" aria-label="Switch to mocktails">
+            🥤 Mocktails
+          </button>
         </div>
 
-        <div class="filters">
+        <section class="filters" role="search" aria-label="Ingredient filter">
           <div class="filter-section">
-            <label class="filter-label">Select Ingredients:</label>
-            <select class="ingredient-select" id="ingredientSelect">
+            <label class="filter-label" for="ingredientSelect">Select Your Available Ingredients:</label>
+            <select class="ingredient-select" id="ingredientSelect" aria-describedby="ingredient-help">
               <option value="">Choose an ingredient...</option>
             </select>
+            <div id="ingredient-help" class="ingredient-help">
+              Add ingredients you have at home to see what drinks you can make
+            </div>
             <div class="selected-ingredients" id="selectedIngredients"></div>
             
-            <div class="filter-mode">
+            <fieldset class="filter-mode">
+              <legend>Filter Mode:</legend>
               <label>
                 <input type="radio" name="filterMode" value="all" checked>
                 Must have ALL selected ingredients
@@ -88,25 +242,82 @@
                 <input type="radio" name="filterMode" value="any">
                 Must have ANY selected ingredient
               </label>
-            </div>
+            </fieldset>
             
-            <button class="clear-filters" onclick="clearFilters()">Clear All Filters</button>
+            <button class="clear-filters" onclick="clearFilters()" aria-label="Clear all ingredient filters">
+              Clear All Filters
+            </button>
           </div>
-        </div>
+        </section>
 
-        <div class="drinks-grid" id="drinksGrid"></div>
-        <div class="no-results" id="noResults" style="display: none;">
-          No drinks found matching your criteria. Try adjusting your filters!
-        </div>
+        <!-- Results Section -->
+        <section aria-live="polite" aria-label="Search results">
+          <div class="drinks-grid" id="drinksGrid"></div>
+          <div class="no-results" id="noResults" style="display: none;">
+            <h3>No drinks found matching your criteria</h3>
+            <p>Try adjusting your filters or selecting different ingredients!</p>
+            <p><strong>Tip:</strong> Switch to "ANY ingredient" mode to see more options.</p>
+          </div>
+        </section>
       </div>
 
-      <div class="modal" id="drinkModal">
+      <!-- Modal for drink details -->
+      <div class="modal" id="drinkModal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
         <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
+          <button class="close" onclick="closeModal()" aria-label="Close recipe modal">&times;</button>
           <div id="modalContent"></div>
         </div>
       </div>
     </main>
+
+    <script>
+    // Add popular ingredients functionality
+    function updatePopularIngredients() {
+      const popularCocktailIngredients = ['Vodka', 'Gin', 'Rum', 'Whiskey', 'Lime Juice', 'Simple Syrup'];
+      const popularMocktailIngredients = ['Soda Water', 'Ginger Beer', 'Lime Juice', 'Mint Leaves', 'Orange Juice', 'Grenadine'];
+      
+      const ingredients = currentTab === 'cocktails' ? popularCocktailIngredients : popularMocktailIngredients;
+      const container = document.getElementById('popularIngredients');
+      
+      container.innerHTML = ingredients.map(ingredient => 
+        `<button class="ingredient-chip" onclick="addIngredient('${ingredient}')" 
+         ${selectedIngredients.includes(ingredient) ? 'style="opacity: 0.5; cursor: not-allowed;"' : ''}>
+          ${ingredient}
+        </button>`
+      ).join('');
+    }
+
+    // Update the switchTab function to also update popular ingredients
+    const originalSwitchTab = window.switchTab;
+    window.switchTab = function(tab) {
+      originalSwitchTab.call(this, tab);
+      updatePopularIngredients();
+    };
+
+    // Initialize popular ingredients on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(updatePopularIngredients, 100); // Small delay to ensure currentTab is set
+    });
+
+    // Update popular ingredients when ingredients change
+    const originalAddIngredient = window.addIngredient;
+    window.addIngredient = function(ingredient) {
+      originalAddIngredient.call(this, ingredient);
+      updatePopularIngredients();
+    };
+
+    const originalRemoveIngredient = window.removeIngredient;
+    window.removeIngredient = function(ingredient) {
+      originalRemoveIngredient.call(this, ingredient);
+      updatePopularIngredients();
+    };
+
+    const originalClearFilters = window.clearFilters;
+    window.clearFilters = function() {
+      originalClearFilters.call(this);
+      updatePopularIngredients();
+    };
+    </script>
 
   </body>
 </html>

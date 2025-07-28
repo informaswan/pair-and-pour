@@ -234,7 +234,6 @@
   #hero-1618 .cs-background:before {
     background: linear-gradient(
       90deg,
-      #111926 21.41%,
       rgba(17, 25, 38, 0.72) 34.98%,
       rgba(17, 25, 38, 0) 62.53%
     );
@@ -247,7 +246,7 @@
 /* Large Desktop Parallax Effect - 100px */
 @media only screen and (min-width: 100rem) {
   #hero-1618 .cs-background {
-    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg");
+    background: url("images/heroPhoto.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
