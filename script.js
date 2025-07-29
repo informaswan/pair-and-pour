@@ -84,6 +84,17 @@ document.addEventListener('click', function(e) {
   }
 });
 
+// Function to smooth scroll to pairings box
+function scrollToPairings() {
+  const pairingsBox = document.getElementById('pairingsBox');
+  if (pairingsBox) {
+    pairingsBox.scrollIntoView({ 
+      behavior: 'smooth', 
+      block: 'center' 
+    });
+  }
+}
+
 // Function to add click listeners to pairing items for recipe search
 function addRecipeSearchListeners(container) {
   const pairingItems = container.querySelectorAll('.pairing-category ul li');
@@ -159,6 +170,14 @@ function createBeerList(beers, container) {
       const pairingsBox = document.getElementById('pairingsBox');
       if (!pairingsBox) return;
       
+      // Remove active class from all beer items
+      document.querySelectorAll('.beer-label-list li').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Add active class to clicked item
+      li.classList.add('active');
+      
       // Create classic pairings section
       let pairingsHTML = `
         <h2>${beer.name}</h2>
@@ -197,6 +216,11 @@ function createBeerList(beers, container) {
       
       // Add recipe search functionality to the newly created pairing items
       addRecipeSearchListeners(pairingsBox);
+      
+      // ADDED: Smooth scroll to pairings box after selection
+      setTimeout(() => {
+        scrollToPairings();
+      }, 100); // Small delay to ensure content is rendered
     });
 
     ul.appendChild(li);

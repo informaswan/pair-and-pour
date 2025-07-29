@@ -1,5 +1,10 @@
 /* Enhanced Beer Pairing CSS with SEO Content Support */
 
+/* Add smooth scrolling to the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Page intro section styling */
 .page-intro {
   background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
@@ -9,8 +14,18 @@
 }
 
 @media (max-width: 768px) {
+  /* FIXED: Add padding to body to account for fixed navigation header */
+  body {
+    padding-top: 100px; /* Increased to 100px for better clearance */
+  }
+  
+  /* Alternative approach - target main content directly */
+  main {
+    margin-top: 20px;
+  }
+  
   .page-intro {
-    padding: 5rem 1rem 2rem;
+    padding: 3rem 1rem 2rem; /* Reset to normal padding since body handles the offset */
   }
   
   .page-intro h1 {
@@ -158,6 +173,12 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 900;
+  /* FIXED: Set consistent height for titles on desktop */
+  min-height: 4.5em; /* Increased for desktop to handle wrapping */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
 }
 
 .grid-layout-beer .left h2 {
@@ -178,6 +199,14 @@
   margin-bottom: 1.5rem;
   line-height: 1.4;
   font-style: italic;
+  /* FIXED: Set consistent height for descriptions on desktop */
+  min-height: 80px; /* Increased for desktop */
+  max-height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Enhanced pairing box default state */
@@ -329,9 +358,20 @@
     grid-area: center;
   }
 
+  /* FIXED: Adjust titles for mobile with consistent heights */
   .grid-layout-beer .left h2,
   .grid-layout-beer .right h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Reduced from 1.4rem */
+    min-height: 3em; /* Increased for multi-line titles */
+    line-height: 1.1;
+  }
+
+  /* FIXED: Adjust descriptions for mobile */
+  .grid-layout-beer .left p,
+  .grid-layout-beer .right p {
+    font-size: 0.85rem;
+    min-height: 75px; /* Increased for mobile */
+    max-height: 75px;
   }
 
   .seo-content-section {
@@ -402,6 +442,7 @@
     border: 1px solid #ddd;
   }
 }
+
 /* Remove bullets and add spacing to the beer list */
 .beer-label-list ul {
   list-style: none;
@@ -429,6 +470,7 @@
   background: rgba(255,255,255,0.08);
   transform: translateY(-2px);
 }
+
 #pairingsBox h2 {
   color: #FF6B35;
   font-size: 1.8rem;
@@ -455,7 +497,6 @@
   gap: 0.75rem;
 }
 
-
 .beer-page .pairing-category li {
   background: rgba(255,255,255,0.05);
   border-left: 4px solid #D2691E;
@@ -468,14 +509,15 @@
   white-space: nowrap;
 }
 
-
 .beer-page .pairing-category li:hover {
   background: rgba(255,255,255,0.1);
 }
+
 .beer-page .beer-label-list li.active {
   background: rgba(255,215,0,0.15);
   border-left-color: #FF6B35;
 }
+
 .beer-page .left .beer-bottle-container,
 .beer-page .right .beer-bottle-container {
   max-height: 500px;
@@ -490,6 +532,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .left .beer-bottle-container::-webkit-scrollbar,
 .right .beer-bottle-container::-webkit-scrollbar {
   width: 6px;
@@ -499,13 +542,4 @@
 .right .beer-bottle-container::-webkit-scrollbar-thumb {
   background-color: rgba(255, 215, 0, 0.3);
   border-radius: 10px;
-}
-.grid-layout-beer .left p,
-.grid-layout-beer .right p {
-  min-height: 60px; /* Match both sides */
-  max-height: 60px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.4;
-  margin-bottom: 1rem;
 }
