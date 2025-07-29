@@ -1,116 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Home</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
-    
-</head>
-<body>
-<!-- ============================================ -->
-<!--                 Navigation                   -->
-<!-- ============================================ -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<header id="cs-navigation">
-    <div class="cs-container">
-        <!--Nav Logo-->
-        <a href="index.html" class="cs-logo" aria-label="back to home">
-            <h1>Pair and Pour</h1>
+    <!-- SEO Title - Include primary keywords -->
+    <title>
+      Pair and Pour: Wine Pairing, Beer Pairing & Cocktail Recipes Guide
+    </title>
+
+    <!-- Meta Description - 150-160 characters with key phrases -->
+    <meta
+      name="description"
+      content="Find perfect wine pairings, beer pairings for food, and cocktail recipes using ingredients you have. Expert drink pairing guides and cocktail finder tool."
+    />
+
+    <!-- Keywords (while less important now, still useful for focus) -->
+    <meta
+      name="keywords"
+      content="wine pairing, beer pairing, cocktail recipes, drink pairing guide, food and wine, beer and food, cocktail finder, drink recipes"
+    />
+
+    <!-- Open Graph for social sharing -->
+    <meta
+      property="og:title"
+      content="Pair and Pour: Expert Drink Pairing & Cocktail Guide"
+    />
+    <meta
+      property="og:description"
+      content="Discover perfect wine pairings, beer pairings, and cocktail recipes. Find drinks that match your food or make cocktails from ingredients you have."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/images/heroPhoto.jpg"
+    />
+    <meta property="og:site_name" content="Pair and Pour" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pair and Pour: Wine Pairing, Beer & Cocktail Guide"
+    />
+    <meta
+      name="twitter:description"
+      content="Expert drink pairing guides and cocktail finder. Perfect pairings for every meal and occasion."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourdomain.com/images/heroPhoto.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Pair and Pour",
+        "url": "https://yourdomain.com",
+        "description": "Expert guide to wine pairing, beer pairing, and cocktail recipes. Find perfect drink combinations for any meal or occasion.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://yourdomain.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "mainEntity": [
+          {
+            "@type": "Article",
+            "@id": "https://yourdomain.com/wine-pairing.html",
+            "headline": "Wine Pairing Guide",
+            "description": "Complete guide to pairing wines with food, cheese, and charcuterie boards."
+          },
+          {
+            "@type": "Article",
+            "@id": "https://yourdomain.com/beer-pairing.html",
+            "headline": "Beer Pairing Guide",
+            "description": "Expert beer and food pairing recommendations for every meal."
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://yourdomain.com/cocktail-finder.html",
+            "name": "Cocktail Finder",
+            "description": "Find cocktail recipes based on ingredients you have at home."
+          }
+        ]
+      }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://yourdomain.com/"
+          }
+        ]
+      }
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-container">
+        <!--Nav Logo - Fixed H1 issue-->
+        <a
+          href="index.html"
+          class="cs-logo"
+          aria-label="Pair and Pour - back to home"
+        >
+          <span
+            class="logo-text"
+            style="font-size: 1.5rem; font-weight: bold; color: inherit"
+            >Pair and Pour</span
+          >
         </a>
         <!--Navigation List-->
-        <nav class="cs-nav" role="navigation">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" aria-label="mobile menu toggle">
-                <div class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
-                </div>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            <div class="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    <li class="cs-li">
-                        <a href="index.html" class="cs-li-link cs-active">
-                            Home
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="beer-pairing.html" class="cs-li-link">
-                            Beer Pairing Guide
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="wine-pairing.html" class="cs-li-link">
-                            Wine Pairing Guide
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="cocktail-finder.html" class="cs-li-link">
-                            Cocktail Finder by Ingredients
-                        </a>
-                    </li>
-                </ul>
+        <nav class="cs-nav" role="navigation" aria-label="Main navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
             </div>
+          </button>
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <a
+                  href="index.html"
+                  class="cs-li-link cs-active"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="cs-li">
+                <a href="beer-pairing.html" class="cs-li-link">
+                  Beer Pairing Guide
+                </a>
+              </li>
+              <li class="cs-li">
+                <a href="wine-pairing.html" class="cs-li-link">
+                  Wine Pairing Guide
+                </a>
+              </li>
+              <li class="cs-li">
+                <a href="cocktail-finder.html" class="cs-li-link">
+                  Cocktail Finder by Ingredients
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
-            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
-        </button> -->
-    </div>
-</header>
-<!-- ============================================ -->
-<!--                    Hero                      -->
-<!-- ============================================ -->
+      </div>
+    </header>
 
-<section id="hero-1618">
-    <div class="cs-container">
-        <div class="cs-content">
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
 
-            <h1 class="cs-title">Perfect Drink Pairings & Cocktails Based on What You Have</h1>
-            <h2 class="cs-subHeader">Discover expert beer and wine pairings for your meals, or enter your ingredients to find cocktails you can actually make right now.</h2>
+    <main>
+      <section id="hero-1618">
+        <div class="cs-container">
+          <div class="cs-content">
+            <h1 class="cs-title">
+              Perfect Drink Pairings & Cocktails Based on What You Have
+            </h1>
+            <h2 class="cs-subHeader">
+              Discover expert <strong>beer and wine pairings</strong> for your
+              meals, or enter your ingredients to find
+              <strong>cocktail recipes</strong> you can actually make right now.
+            </h2>
+
+            <!-- Added introductory content for SEO -->
+            <div class="cs-intro-text" style="margin: 2rem 0; max-width: 800px">
+              <p
+                style="
+                  font-size: 1.1rem;
+                  line-height: 1.6;
+                  color: #333;
+                  margin-bottom: 1rem;
+                "
+              >
+                Welcome to <strong>Pair and Pour</strong>, your ultimate guide
+                to perfect drink pairings and cocktail creation. Whether you're
+                looking for the ideal <strong>wine pairing for dinner</strong>,
+                the perfect <strong>beer to complement your meal</strong>, or
+                want to discover
+                <strong
+                  >cocktail recipes using ingredients you already have</strong
+                >, we've got you covered.
+              </p>
+              <p style="font-size: 1rem; line-height: 1.6; color: #555">
+                Our expert-curated guides take the guesswork out of drink
+                selection, helping you elevate every dining experience with
+                confidence and style.
+              </p>
+            </div>
+          </div>
+
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <a
+                href="beer-pairing.html"
+                class="cs-item-link"
+                aria-label="Beer pairing guide - find perfect beer for any meal"
+              >
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="images/beer-mug-empty-solid.svg"
+                  alt="Beer mug icon for beer pairing guide"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="cs-h3">Find the Best Beer for Any Meal or Snack</h3>
+                <p class="cs-item-text">
+                  Discover the perfect <strong>beer pairings</strong> for steak,
+                  seafood, spicy dishes, and casual bites. Use our expert guide
+                  to easily enhance every meal with the ideal brew for the
+                  flavor.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a
+                href="wine-pairing.html"
+                class="cs-item-link"
+                aria-label="Wine pairing guide - pair wine with food like an expert"
+              >
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="images/wine-glass-solid.svg"
+                  alt="Wine glass icon for wine pairing guide"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="cs-h3">Pair Wine with Food Like a True Expert</h3>
+                <p class="cs-item-text">
+                  Learn exactly which
+                  <strong>wines go best with your favorite meals</strong>. From
+                  bold reds to crisp whites, our detailed pairing guide helps
+                  you confidently choose the right wine for every dish.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a
+                href="cocktail-finder.html"
+                class="cs-item-link"
+                aria-label="Cocktail finder tool - make drinks from ingredients you have"
+              >
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="images/martini-glass-solid.svg"
+                  alt="Martini glass icon for cocktail finder tool"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="cs-h3">Make Cocktails from What You Already Have</h3>
+                <p class="cs-item-text">
+                  Enter the <strong>ingredients you have at home</strong> and
+                  instantly find <strong>cocktail recipes you can make</strong>.
+                  No guesswork—just easy, delicious drinks made with what's in
+                  your kitchen.
+                </p>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <a href="beer-pairing.html" class="cs-item-link">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="images/beer-mug-empty-solid.svg" alt="icon" width="48" height="48">
-                    <h3 class="cs-h3">Find the Best Beer for Any Meal or Snack</h3>
-                    <p class="cs-item-text">
-                        Discover the perfect beer pairings for steak, seafood, spicy dishes, and casual bites. Use our expert guide to easily enhance every meal with the ideal brew for the flavor.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="wine-pairing.html" class="cs-item-link">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="images/wine-glass-solid.svg" alt="icon" width="48" height="48">
-                    <h3 class="cs-h3">Pair Wine with Food Like a True Expert</h3>
-                    <p class="cs-item-text">
-                    Learn exactly which wines go best with your favorite meals. From bold reds to crisp whites, our detailed pairing guide helps you confidently choose the right wine for every dish.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="cocktail-finder.html" class="cs-item-link">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="images/martini-glass-solid.svg" alt="icon" width="48" height="48">
-                    <h3 class="cs-h3">Make Cocktails from What You Already Have</h3>
-                    <p class="cs-item-text">
-                        Enter the ingredients you have at home and instantly find cocktails you can make. No guesswork—just easy, delicious drinks made with what’s in your kitchen.
-                    </p>
-                </a>
 
-            </li>
-        </ul>
-    </div>
+        <!-- Background Image with better alt text -->
+        <picture class="cs-background">
+          <source media="(max-width: 600px)" srcset="images/heroPhoto.jpg" />
+          <source media="(min-width: 601px)" srcset="images/heroPhoto.jpg" />
+          <img
+            decoding="async"
+            src="images/heroPhoto.jpg"
+            loading="lazy"
+            alt="Elegant table setting with wine glasses, beer bottles, and cocktails representing drink pairing expertise"
+            width="800"
+            height="600"
+            aria-hidden="true"
+          />
+        </picture>
+      </section>
 
-    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="images/heroPhoto.jpg">
-        <source media="(min-width: 601px)" srcset="images/heroPhoto.jpg">
-        <img decoding="async" src="images/heroPhoto.jpg" loading="lazy" alt="meeting" width="800" height="600" aria-hidden="true">
-    </picture>
-</section>
-                                           
-</body>
+      <!-- Additional SEO Content Section -->
+      <section
+        class="seo-content"
+        style="
+          max-width: 1200px;
+          margin: 3rem auto;
+          padding: 2rem;
+          background: rgba(255, 255, 255, 0.95);
+          border-radius: 12px;
+        "
+      >
+        <h2
+          style="
+            text-align: center;
+            color: #333;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+          "
+        >
+          Why Choose Pair and Pour for Your Drink Pairing Needs?
+        </h2>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+          "
+        >
+          <div>
+            <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem">
+              Expert Wine Pairing Knowledge
+            </h3>
+            <p style="line-height: 1.6">
+              Our <strong>wine pairing guide</strong> is crafted by beverage
+              experts who understand the nuances of matching wines with food.
+              Learn which <strong>red wines pair with steak</strong>,
+              <strong>white wines complement seafood</strong>, and how to create
+              perfect <strong>cheese and wine combinations</strong> for any
+              occasion.
+            </p>
+          </div>
+
+          <div>
+            <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem">
+              Comprehensive Beer Pairing Guide
+            </h3>
+            <p style="line-height: 1.6">
+              Discover how different
+              <strong>beer styles enhance various cuisines</strong>. From
+              <strong>IPA pairings with spicy food</strong> to
+              <strong>stout combinations with chocolate desserts</strong>, our
+              beer guide covers every style and food combination you can
+              imagine.
+            </p>
+          </div>
+
+          <div>
+            <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem">
+              Smart Cocktail Discovery
+            </h3>
+            <p style="line-height: 1.6">
+              Never wonder "what can I make with these ingredients?" again. Our
+              <strong>cocktail finder tool</strong> instantly shows you
+              <strong>drink recipes based on your available ingredients</strong
+              >, making home bartending simple and fun.
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="
+            background: #f8f8f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #8b4513;
+          "
+        >
+          <h3 style="color: #2d2b29; font-size: 1.2rem; margin-bottom: 1rem">
+            Start Your Perfect Pairing Journey Today
+          </h3>
+          <p style="line-height: 1.6; margin-bottom: 0">
+            Whether you're planning a romantic dinner, hosting friends, or
+            simply want to elevate your everyday meals, Pair and Pour provides
+            the expertise you need. Explore our guides and discover how the
+            right drink can transform any meal into a memorable experience.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer with additional SEO elements -->
+    <footer
+      style="
+        background: #2d2b29;
+        color: white;
+        padding: 2rem 0;
+        margin-top: 3rem;
+      "
+    >
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 1rem;
+          text-align: center;
+        "
+      >
+        <p style="margin-bottom: 1rem">
+          <strong>Pair and Pour</strong> - Your trusted source for wine pairing,
+          beer pairing, and cocktail recipes
+        </p>
+        <nav aria-label="Footer navigation">
+          <a
+            href="wine-pairing.html"
+            style="color: #ccc; text-decoration: none; margin: 0 1rem"
+            >Wine Pairing</a
+          >
+          <a
+            href="beer-pairing.html"
+            style="color: #ccc; text-decoration: none; margin: 0 1rem"
+            >Beer Pairing</a
+          >
+          <a
+            href="cocktail-finder.html"
+            style="color: #ccc; text-decoration: none; margin: 0 1rem"
+            >Cocktail Finder</a
+          >
+        </nav>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #999">
+          © 2025 Pair and Pour. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
