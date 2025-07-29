@@ -362,16 +362,22 @@ html {
   .grid-layout-beer .left h2,
   .grid-layout-beer .right h2 {
     font-size: 1.2rem; /* Reduced from 1.4rem */
-    min-height: 3em; /* Increased for multi-line titles */
+    min-height: 4.5em; /* Consistent height for both columns */
+    max-height: 4.5em; /* Added max-height to prevent expansion */
     line-height: 1.1;
+    overflow: hidden; /* Prevent text overflow from breaking alignment */
   }
 
   /* FIXED: Adjust descriptions for mobile */
   .grid-layout-beer .left p,
   .grid-layout-beer .right p {
     font-size: 0.85rem;
-    min-height: 75px; /* Increased for mobile */
-    max-height: 75px;
+    min-height: 120px; /* Consistent height for both columns */
+    max-height: 120px; /* Consistent max-height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3; /* Slightly increased line-height for readability */
+    margin-bottom: 1rem; /* Ensure consistent bottom margin */
   }
 
   .seo-content-section {
