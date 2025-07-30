@@ -353,3 +353,20 @@
 .wine-page .bottle-label-list li:last-child {
   margin-bottom: 0;
 }
+/*     Wine Pairings Box      */
+/* -------------------------- */
+#winePairingsBox {
+  border-radius: 8px;
+  padding: 1rem;
+}
+#winePairingsBox h2 {
+  font-size: 1.5rem;
+}
+#winePairingsBox .pairing-category {
+  margin-top: 1rem;
+}
+#winePairingsBox .pairing-category ul li {
+  list-style-type: none;
+}
+
+/* -------------------------- */
