@@ -9,6 +9,7 @@
   }
   #cs-navigation {
     width: 100%;
+    height: 70px;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     padding: 0.75rem 1rem;
@@ -254,6 +255,7 @@
   }
   body{
     padding-top: 120px;
+    height: 70px;
   }
 }
 /*-- -------------------------- -->
@@ -263,6 +265,7 @@
 @media only screen and (min-width: 64rem) {
   #cs-navigation {
     width: 100%;
+    height: 125px;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     padding: 0 1rem;
@@ -385,6 +388,8 @@
   }
   body {
    padding-top: 125px; /* adjust to match actual header height */
+   height: 125px;
+  
   }
 }
 .cs-logo {
