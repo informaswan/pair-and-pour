@@ -387,3 +387,8 @@
    padding-top: 125px; /* adjust to match actual header height */
   }
 }
+.cs-logo {
+  text-decoration: none; /* remove underline */
+  color: inherit; /* use the same color as surrounding text */
+  cursor: pointer; /* keep it obvious it's clickable */
+}

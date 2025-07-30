@@ -260,11 +260,6 @@
   padding-top: 80px; /* adjust to match actual header height */
 }
 }
-.cs-logo {
-  text-decoration: none; /* remove underline */
-  color: inherit; /* use the same color as surrounding text */
-  cursor: pointer; /* keep it obvious it's clickable */
-}
 
 .cs-logo:hover,
 .cs-logo:visited,

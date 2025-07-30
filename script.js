@@ -267,7 +267,7 @@ function loadWineData() {
 
       if (redWineList && whiteWineList && winePairingsBox) {
         function renderPairings(wine) {
-          winePairingsBox.innerHTML = `<h1>${wine.name}</h1>`;
+          winePairingsBox.innerHTML = `<h3>${wine.name}</h3>`;
 
           for (const category in wine.pairings) {
             if (wine.pairings.hasOwnProperty(category)) {
