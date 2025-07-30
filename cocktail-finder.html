@@ -154,6 +154,7 @@
       <link rel="stylesheet" href="cocktail-finder.css">
       <link rel="stylesheet" href="navigation.css">
     </noscript>
+    <script src="navigation.js" defer></script>
     <script src="cocktail-finder.js" defer></script>
   </head>
   <body>
@@ -326,12 +327,12 @@
             <fieldset class="filter-mode">
               <legend>Filter Mode:</legend>
               <label>
-                <input type="radio" name="filterMode" value="all" checked />
-                Must have ALL selected ingredients
+                <input type="radio" name="filterMode" value="any" checked />
+                Must have ANY selected ingredient
               </label>
               <label>
-                <input type="radio" name="filterMode" value="any" />
-                Must have ANY selected ingredient
+                <input type="radio" name="filterMode" value="all" />
+                Must have ALL selected ingredients
               </label>
             </fieldset>
 

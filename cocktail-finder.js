@@ -108,7 +108,14 @@ function switchTab(tab) {
   document
     .querySelectorAll(".tab")
     .forEach((t) => t.classList.remove("active"));
-  event.target.classList.add("active");
+  
+  // Find the correct tab button and make it active
+  const tabs = document.querySelectorAll(".tab");
+  tabs.forEach(tabButton => {
+    if (tabButton.textContent.toLowerCase().includes(tab)) {
+      tabButton.classList.add("active");
+    }
+  });
 
   // Update ingredient select and display
   populateIngredientSelect();
@@ -144,6 +151,7 @@ document.addEventListener("change", function (e) {
     e.target.value = "";
   }
 });
+
 // Handle filter mode change
 document.addEventListener("change", function (e) {
   if (e.target.name === "filterMode") {
@@ -188,6 +196,13 @@ function updateSelectedIngredients() {
 // Clear all filters
 function clearFilters() {
   selectedIngredients = [];
+  
+  // Reset radio buttons to "any" as default
+  const anyRadio = document.querySelector('input[name="filterMode"][value="any"]');
+  if (anyRadio) {
+    anyRadio.checked = true;
+  }
+  
   populateIngredientSelect();
   updateSelectedIngredients();
   displayDrinks();
@@ -260,29 +275,31 @@ function openModal(clickedName) {
 
   const modalContent = document.getElementById("modalContent");
   modalContent.innerHTML = `
-    <div class="modal-drink-name">${drink.drinkName}</div>
-    <div class="modal-section">
-      <h3>Ingredients</h3>
-      <div class="ingredients-list">
-        ${drink.ingredients.map(ing => `<span class="ingredient-item">${ing}</span>`).join("")}
-      </div>
-    </div>
-    <div class="modal-section">
-      <h3>Instructions</h3>
-      <ol class="instructions-list">
-        ${drink.instructions.map(inst => `<li>${inst}</li>`).join("")}
-      </ol>
-    </div>
-    <div class="modal-section">
-      <h3>Videos</h3>
-      <div class="video-section">
-        <div class="video-container">
-          <h4>How to Make</h4>
-          <iframe src="${drink.videos.instructionalVideo}" title="How to make ${drink.drinkName}" allowfullscreen></iframe>
+    <div class="modal-scroll-content">
+      <div class="modal-drink-name">${drink.drinkName}</div>
+      <div class="modal-section">
+        <h3>Ingredients</h3>
+        <div class="ingredients-list">
+          ${drink.ingredients.map(ing => `<span class="ingredient-item">${ing}</span>`).join("")}
         </div>
-        <div class="video-container">
-          <h4>Variations</h4>
-          <iframe src="${drink.videos.variationVideo}" title="${drink.drinkName} variations" allowfullscreen></iframe>
+      </div>
+      <div class="modal-section">
+        <h3>Instructions</h3>
+        <ol class="instructions-list">
+          ${drink.instructions.map(inst => `<li>${inst}</li>`).join("")}
+        </ol>
+      </div>
+      <div class="modal-section">
+        <h3>Videos</h3>
+        <div class="video-section">
+          <div class="video-container">
+            <h4>How to Make</h4>
+            <iframe src="${drink.videos.instructionalVideo}" title="How to make ${drink.drinkName}" allowfullscreen></iframe>
+          </div>
+          <div class="video-container">
+            <h4>Variations</h4>
+            <iframe src="${drink.videos.variationVideo}" title="${drink.drinkName} variations" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -307,5 +324,14 @@ document.addEventListener("click", function (e) {
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
     closeModal();
+  }
+});
+
+// Initialize default radio button to "any" when page loads
+document.addEventListener("DOMContentLoaded", function() {
+  // Set default filter mode to "any"
+  const anyRadio = document.querySelector('input[name="filterMode"][value="any"]');
+  if (anyRadio) {
+    anyRadio.checked = true;
   }
 });

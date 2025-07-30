@@ -1,5 +1,60 @@
 /* Cocktail Finder Specific Styles */
 
+/* CLS Prevention - Reserve space for key elements */
+.cocktail-header h1 {
+    height: 80px; /* Reserve space for title */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.tabs {
+    height: 60px; /* Reserve space for tabs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.filters {
+    min-height: 280px; /* Reserve minimum space for filters */
+    background: rgba(255,255,255,0.95);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+    /* Ensure enough space below for dropdown */
+    padding-bottom: 40px;
+}
+
+/* Adjusted drinks grid with better responsive sizing */
+.drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+    /* Dynamic height based on content */
+    min-height: auto;
+}
+
+/* When no results or few results, don't take up excessive space */
+.drinks-grid:empty {
+    min-height: 0;
+}
+
+/* Limit grid height when there are few items */
+.drinks-grid:has(> .drink-card:nth-child(-n+3)) {
+    min-height: auto;
+    margin-bottom: 20px;
+}
+
 .cocktail-main {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Dark blue-gray gradient */
     /* Alternative options you can try:
@@ -14,8 +69,6 @@
     padding-top: 100px; /* Account for fixed navigation */
 }
 
-/* Modal should be below navigation - no navigation overrides needed */
-
 .cocktail-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -28,22 +81,9 @@
     color: white;
 }
 
-.cocktail-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
 .subtitle {
     font-size: 1.2em;
     opacity: 0.9;
-}
-
-.tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    gap: 10px;
 }
 
 .tab {
@@ -64,15 +104,6 @@
     transform: scale(1.05);
 }
 
-.filters {
-    background: rgba(255,255,255,0.95);
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
-}
-
 .filter-section {
     margin-bottom: 20px;
 }
@@ -84,6 +115,7 @@
     color: #555;
 }
 
+/* FIXED: Force dropdown to open downward */
 .ingredient-select {
     width: 100%;
     padding: 12px;
@@ -92,11 +124,32 @@
     font-size: 16px;
     background: white;
     transition: border-color 0.3s ease;
+    position: relative;
+    z-index: 1;
+    /* Force dropdown direction */
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    appearance: menulist;
+}
+
+/* Ensure dropdown options appear below the select */
+.ingredient-select option {
+    background: white;
+    color: #333;
+    padding: 8px;
 }
 
 .ingredient-select:focus {
     outline: none;
     border-color: #667eea;
+    z-index: 2;
+}
+
+/* Container positioning to prevent upward dropdown */
+.filter-section {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .ingredient-help {
@@ -105,11 +158,15 @@
     margin-top: 5px;
 }
 
+/* Better sizing for selected ingredients container */
 .selected-ingredients {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    min-height: 0; /* Allow container to shrink when empty */
+    max-height: 120px; /* Limit height when many ingredients */
+    overflow-y: auto; /* Scroll if too many ingredients */
 }
 
 .ingredient-tag {
@@ -166,13 +223,6 @@
     font-weight: normal;
 }
 
-.drinks-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
 .drink-card {
     background: rgba(255,255,255,0.95);
     border-radius: 15px;
@@ -209,88 +259,55 @@
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.8);
-    z-index: 10; /* Lower than navigation (10000) */
+    z-index: 10000; /* Higher than navigation */
     backdrop-filter: blur(5px);
 }
 
+/* FIXED: Modal content with proper scrolling restored */
 .modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
-    padding: 30px;
     border-radius: 20px;
     max-width: 800px;
     width: 90%;
     max-height: 85vh;
-    overflow-y: auto;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    z-index: 10;
-    margin-top: 60px;
+    z-index: 10001;
+    overflow: hidden; /* Hide overflow on container */
+}
+
+/* Scrollable content area inside modal with better styling */
+.modal-scroll-content {
+    padding: 30px;
+    max-height: calc(85vh - 40px); /* Account for padding */
+    overflow-y: auto;
     
-    /* FIXED: Better scrollbar containment */
-    border: 1px solid #e0e0e0;
-    box-sizing: border-box;
-}
-
-/* FIXED: Enhanced scrollbar styling - contained within modal */
-.modal-content::-webkit-scrollbar {
-    width: 12px;
-    background: #f8f9fa;
-}
-
-.modal-content::-webkit-scrollbar-track {
-    background: #f1f3f4;
-    border-radius: 8px;
-    margin: 8px 4px; /* Keep scrollbar away from modal edges */
-}
-
-.modal-content::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #667eea 0%, #5a6fd8 100%);
-    border-radius: 8px;
-    border: 2px solid #f8f9fa; /* Creates internal padding effect */
-    min-height: 40px; /* Minimum thumb size */
-}
-
-.modal-content::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #5a6fd8 0%, #4c63d2 100%);
-}
-
-.modal-content::-webkit-scrollbar-corner {
-    background: #f8f9fa;
-}
-
-/* Firefox scrollbar styling - IMPROVED */
-.modal-content {
+    /* Custom scrollbar styling */
     scrollbar-width: thin;
-    scrollbar-color: #667eea #f1f3f4;
+    scrollbar-color: #cbd5e0 #f7fafc;
 }
 
-/* Adjust modal positioning to account for navigation */
-@media only screen and (max-width: 63.9375rem) {
-    .modal-content {
-        margin-top: 70px; /* More space for mobile navigation */
-        max-height: 75vh; /* Reduce height to fit with margin */
-        width: 95%; /* Slightly wider on mobile */
-        padding: 20px; /* Less padding on mobile */
-    }
-    
-    /* Mobile scrollbar adjustments */
-    .modal-content::-webkit-scrollbar {
-        width: 8px;
-    }
-    
-    .modal-content::-webkit-scrollbar-track {
-        margin: 4px 2px;
-    }
+/* Webkit scrollbar styling for modal content */
+.modal-scroll-content::-webkit-scrollbar {
+    width: 6px;
 }
 
-@media only screen and (min-width: 64rem) {
-    .modal-content {
-        margin-top: 65px; /* Space for desktop navigation */
-        max-height: 80vh; /* Adjust height for desktop */
-    }
+.modal-scroll-content::-webkit-scrollbar-track {
+    background: #f7fafc;
+    border-radius: 3px;
+}
+
+.modal-scroll-content::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+    transition: background 0.2s ease;
+}
+
+.modal-scroll-content::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
 }
 
 .close {
@@ -301,11 +318,20 @@
     cursor: pointer;
     color: #666;
     transition: color 0.3s ease;
-    z-index: 1; /* Ensure close button is above scrollbar */
+    z-index: 10002; /* Above modal content */
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
 }
 
 .close:hover {
     color: #333;
+    background: #f0f0f0;
 }
 
 .modal-drink-name {
@@ -552,18 +578,23 @@ iframe {
     
     .cocktail-header h1 {
         font-size: 2em;
+        height: 60px;
     }
     
     .drinks-grid {
         grid-template-columns: 1fr;
+        min-height: 300px;
     }
     
     .modal-content {
         width: 95%;
-        padding: 20px;
-        max-height: 70vh; /* Further reduced for mobile */
+        max-height: 90vh;
         margin: 10px;
-        margin-top: 80px; /* Account for mobile navigation */
+    }
+    
+    .modal-scroll-content {
+        padding: 20px;
+        max-height: calc(90vh - 40px);
     }
     
     .filter-mode {
@@ -578,6 +609,8 @@ iframe {
     .tabs {
         flex-direction: column;
         align-items: center;
+        height: auto;
+        padding: 10px 0;
     }
     
     .tab {
@@ -585,9 +618,8 @@ iframe {
         text-align: center;
     }
 
-    /* Mobile modal adjustments */
-    .modal {
-        padding: 10px;
+    .filters {
+        min-height: 320px;
     }
 }
 
