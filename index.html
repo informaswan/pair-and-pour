@@ -318,10 +318,11 @@
         <picture class="cs-background">
           <source media="(max-width: 600px)" srcset="images/heroPhoto.webp" />
           <source media="(min-width: 601px)" srcset="images/heroPhoto.webp" />
+          <link rel="preload" as="image" href="images/heroPhoto.webp" fetchpriority="high">
           <img
             decoding="async"
             src="images/heroPhoto.webp"
-            loading="lazy"
+            fetchpriority="high"
             alt="Elegant table setting with wine glasses, beer bottles, and cocktails representing drink pairing expertise"
             width="1214"
             height="911"
