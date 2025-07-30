@@ -148,9 +148,12 @@
         ]
       }
     </script>
-
-    <link rel="stylesheet" href="cocktail-finder.css" />
-    <link rel="stylesheet" href="navigation.css">
+    <link rel="preload" href="cocktail-finder.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="navigation.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="cocktail-finder.css">
+      <link rel="stylesheet" href="navigation.css">
+    </noscript>
     <script src="cocktail-finder.js" defer></script>
   </head>
   <body>

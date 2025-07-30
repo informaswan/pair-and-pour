@@ -169,9 +169,12 @@
         ]
       }
     </script>
-
-    <link rel="stylesheet" href="beer_pairing_css.css" />
-    <link rel="stylesheet" href="navigation.css">
+    <link rel="preload" href="beer_pairing_css.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="navigation.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="beer_pairing_css.css">
+      <link rel="stylesheet" href="navigation.css">
+    </noscript>
     <script src="script.js" defer></script>
   </head>
   <body class="beer-page">

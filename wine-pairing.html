@@ -99,9 +99,12 @@
         ]
       }
     </script>
-
-    <link rel="stylesheet" href="wine-page.css" />
-    <link rel="stylesheet" href="navigation.css">
+    <link rel="preload" href="wine-page.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="navigation.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="wine-page.css">
+      <link rel="stylesheet" href="navigation.css">
+    </noscript>
     <script src="script.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@700&display=swap"

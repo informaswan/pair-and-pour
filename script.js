@@ -6,46 +6,45 @@ const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
 // FIXED: Add null check and better event handling
 if (CShamburgerMenu && CSnavbarMenu && CSbody) {
   CShamburgerMenu.addEventListener("click", function (e) {
-    // FIXED: Prevent default and stop propagation
     e.preventDefault();
     e.stopPropagation();
 
+    // DOM writes
     CShamburgerMenu.classList.toggle("cs-active");
     CSnavbarMenu.classList.toggle("cs-active");
     CSbody.classList.toggle("cs-open");
-    // run the function to check the aria-expanded value
-    ariaExpanded();
+
+    // Defer aria-expanded update
+    requestAnimationFrame(() => {
+      ariaExpanded();
+    });
   });
 
-  // FIXED: Add touch event for mobile devices
   CShamburgerMenu.addEventListener("touchstart", function (e) {
     e.preventDefault();
     e.stopPropagation();
 
+    // DOM writes
     CShamburgerMenu.classList.toggle("cs-active");
     CSnavbarMenu.classList.toggle("cs-active");
     CSbody.classList.toggle("cs-open");
-    ariaExpanded();
+
+    requestAnimationFrame(() => {
+      ariaExpanded();
+    });
   });
 }
 
-// checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not
+// checks the value of aria expanded on the cs-ul and changes it accordingly
 function ariaExpanded() {
   const csUL = document.querySelector("#cs-expanded");
-
-  // FIXED: Add null check
   if (csUL) {
     const csExpanded = csUL.getAttribute("aria-expanded");
-
-    if (csExpanded === "false") {
-      csUL.setAttribute("aria-expanded", "true");
-    } else {
-      csUL.setAttribute("aria-expanded", "false");
-    }
+    csUL.setAttribute("aria-expanded", csExpanded === "false" ? "true" : "false");
   }
 }
 
-// mobile nav toggle code
+// mobile nav dropdown toggles
 const dropDowns = Array.from(
   document.querySelectorAll("#cs-navigation .cs-dropdown")
 );
@@ -56,44 +55,43 @@ for (const item of dropDowns) {
   item.addEventListener("click", onClick);
 }
 
-// FIXED: Close mobile menu when clicking on navigation links
+// Close mobile menu when clicking nav links
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("#cs-navigation .cs-li-link");
-
   navLinks.forEach((link) => {
     link.addEventListener("click", function () {
-      // Close mobile menu when a link is clicked
       if (CShamburgerMenu && CSnavbarMenu && CSbody) {
         CShamburgerMenu.classList.remove("cs-active");
         CSnavbarMenu.classList.remove("cs-active");
         CSbody.classList.remove("cs-open");
-        ariaExpanded();
+        requestAnimationFrame(() => {
+          ariaExpanded();
+        });
       }
     });
   });
 });
 
-// FIXED: Close mobile menu when clicking outside
+// Close mobile menu when clicking outside
 document.addEventListener("click", function (e) {
   if (CSnavbarMenu && CSnavbarMenu.classList.contains("cs-active")) {
-    // If click is outside navigation and not on the hamburger menu
-    if (
-      !CSnavbarMenu.contains(e.target) &&
-      !CShamburgerMenu.contains(e.target)
-    ) {
+    if (!CSnavbarMenu.contains(e.target) && !CShamburgerMenu.contains(e.target)) {
       CShamburgerMenu.classList.remove("cs-active");
       CSnavbarMenu.classList.remove("cs-active");
       CSbody.classList.remove("cs-open");
-      ariaExpanded();
+      requestAnimationFrame(() => {
+        ariaExpanded();
+      });
     }
   }
 });
 
-// Function to smooth scroll to pairings box
+// Smooth scroll to pairings box
 function scrollToPairings() {
   const pairingsBox =
     document.getElementById("pairingsBox") ||
     document.getElementById("winePairingsBox");
+
   if (pairingsBox) {
     pairingsBox.scrollIntoView({
       behavior: "smooth",
@@ -105,7 +103,8 @@ function scrollToPairings() {
 function isMobile() {
   return window.innerWidth <= 768;
 }
-// Function to add click listeners to pairing items for recipe search
+
+// Add recipe search listeners
 function addRecipeSearchListeners(container) {
   const pairingItems = container.querySelectorAll(".pairing-category ul li");
 
@@ -114,19 +113,15 @@ function addRecipeSearchListeners(container) {
     item.title = `Click to search for ${item.textContent} recipes`;
 
     item.addEventListener("click", (e) => {
-      e.stopPropagation(); // Prevent any parent click events
-
+      e.stopPropagation();
       const ingredient = item.textContent.trim();
       const searchQuery = `${ingredient} recipes`;
       const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(
         searchQuery
       )}`;
-
-      // Open in new tab
       window.open(googleSearchUrl, "_blank");
     });
 
-    // Add hover effect to indicate clickability
     item.addEventListener("mouseenter", () => {
       item.style.opacity = "0.8";
     });
@@ -137,7 +132,7 @@ function addRecipeSearchListeners(container) {
   });
 }
 
-// FIXED: Add error handling and better data loading
+// Load beer data
 function loadBeerData() {
   fetch("beers.json")
     .then((response) => {
@@ -149,28 +144,22 @@ function loadBeerData() {
     .then((data) => {
       const lagerList = document.getElementById("lagerList");
       const aleList = document.getElementById("aleList");
-      const pairingsBox = document.getElementById("pairingsBox");
-
-      if (lagerList && aleList && pairingsBox) {
+      if (lagerList && aleList) {
         createBeerList(data.lagers, lagerList);
         createBeerList(data.ales, aleList);
       }
     })
     .catch((error) => {
       console.error("Error loading beer data:", error);
-      // Could add fallback UI here
     });
 }
 
-// Replace the createBeerList function with this improved version:
+// Create beer list with deferred scroll
 function createBeerList(beers, container) {
   if (!beers || !container) return;
 
-  // Create the container div with beer-label-list class
   const beerListContainer = document.createElement("div");
   beerListContainer.classList.add("beer-label-list");
-
-  // Create the ul element
   const ul = document.createElement("ul");
 
   beers.forEach((beer) => {
@@ -182,15 +171,12 @@ function createBeerList(beers, container) {
       const pairingsBox = document.getElementById("pairingsBox");
       if (!pairingsBox) return;
 
-      // Remove active class from all beer items
+      // DOM writes (update classes & innerHTML)
       document.querySelectorAll(".beer-label-list li").forEach((item) => {
         item.classList.remove("active");
       });
-
-      // Add active class to clicked item
       li.classList.add("active");
 
-      // Create classic pairings section
       let pairingsHTML = `
         <h2>${beer.name}</h2>
         <div class="pairing-category">
@@ -201,14 +187,8 @@ function createBeerList(beers, container) {
         </div>
       `;
 
-      // Add seasonal pairings if they exist
       if (beer.seasonal_pairings) {
-        pairingsHTML += `
-          <div class="pairing-category">
-            <h4>Seasonal Pairings:</h4>
-        `;
-
-        // Add each season
+        pairingsHTML += `<div class="pairing-category"><h4>Seasonal Pairings:</h4>`;
         for (const season in beer.seasonal_pairings) {
           const seasonTitle = season.charAt(0).toUpperCase() + season.slice(1);
           pairingsHTML += `
@@ -219,45 +199,35 @@ function createBeerList(beers, container) {
                   .map((item) => `<li>${item}</li>`)
                   .join("")}
               </ul>
-            </div>
-          `;
+            </div>`;
         }
-
         pairingsHTML += `</div>`;
       }
 
       pairingsBox.innerHTML = pairingsHTML;
 
-      // Add recipe search functionality to the newly created pairing items
-      addRecipeSearchListeners(pairingsBox);
-
-      // ADDED: Smooth scroll to pairings box after selection
-      setTimeout(() => {
+      // Defer layout-sensitive actions
+      requestAnimationFrame(() => {
+        addRecipeSearchListeners(pairingsBox);
         scrollToPairings();
-      }, 100); // Small delay to ensure content is rendered
+      });
     });
 
     ul.appendChild(li);
   });
 
-  // Add the ul to the beer list container
   beerListContainer.appendChild(ul);
-
-  // Create the main container with beer-bottle-container class
   const mainContainer = document.createElement("div");
   mainContainer.classList.add("beer-bottle-container");
   mainContainer.appendChild(beerListContainer);
-
   container.appendChild(mainContainer);
 }
 
-// FIXED: Add error handling for wine data loading
+// Load wine data (unchanged except scroll deferred)
 function loadWineData() {
   fetch("wines.json")
     .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
+      if (!response.ok) throw new Error("Network response was not ok");
       return response.json();
     })
     .then((data) => {
@@ -268,7 +238,6 @@ function loadWineData() {
       if (redWineList && whiteWineList && winePairingsBox) {
         function renderPairings(wine) {
           winePairingsBox.innerHTML = `<h3>${wine.name}</h3>`;
-
           for (const category in wine.pairings) {
             if (wine.pairings.hasOwnProperty(category)) {
               const categoryTitle =
@@ -293,13 +262,10 @@ function loadWineData() {
               winePairingsBox.appendChild(section);
             }
           }
-
-          // Add recipe search functionality to wine pairings too
         }
 
         function createWineList(wines, container, type) {
           if (!wines || !container) return;
-
           const ul = document.createElement("ul");
           ul.style.listStyle = "none";
           ul.style.padding = "0";
@@ -310,25 +276,21 @@ function loadWineData() {
             li.style.cursor = "pointer";
 
             li.addEventListener("click", () => {
-              // Remove 'selected' class from all other wines
               ul.querySelectorAll("li").forEach((el) =>
                 el.classList.remove("selected")
               );
-
               li.classList.add("selected");
               renderPairings(wine);
 
-              // Auto-scroll to pairings on mobile
               if (isMobile()) {
-                setTimeout(() => {
+                requestAnimationFrame(() => {
                   scrollToPairings();
-                }, 100);
+                });
               }
             });
 
             ul.appendChild(li);
 
-            // Auto-select first red wine only
             if (type === "red" && index === 0) {
               li.classList.add("selected");
               renderPairings(wine);
@@ -344,19 +306,11 @@ function loadWineData() {
     })
     .catch((error) => {
       console.error("Error loading wine data:", error);
-      // Could add fallback UI here
     });
 }
 
-// FIXED: Initialize data loading when DOM is ready
+// Initialize data loading
 document.addEventListener("DOMContentLoaded", function () {
-  // Load beer data if elements exist
-  if (document.getElementById("lagerList")) {
-    loadBeerData();
-  }
-
-  // Load wine data if elements exist
-  if (document.getElementById("redWineList")) {
-    loadWineData();
-  }
+  if (document.getElementById("lagerList")) loadBeerData();
+  if (document.getElementById("redWineList")) loadWineData();
 });
