@@ -45,10 +45,10 @@
       content="Discover perfect wine pairings, beer pairings, and cocktail recipes. Find drinks that match your food or make cocktails from ingredients you have."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:url" content="https://pair-n-pour.com/" />
     <meta
       property="og:image"
-      content="https://yourdomain.com/images/heroPhoto.webp"
+      content="https://pair-n-pour.com/images/heroPhoto.webp"
     />
     <meta property="og:site_name" content="Pair and Pour" />
 
@@ -64,11 +64,11 @@
     />
     <meta
       name="twitter:image"
-      content="https://yourdomain.com/images/heroPhoto.webp"
+      content="https://pair-n-pour.com/images/heroPhoto.webp"
     />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://yourdomain.com/" />
+    <link rel="canonical" href="https://pair-n-pour.com/" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -80,29 +80,29 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Pair and Pour",
-        "url": "https://yourdomain.com",
+        "url": "https://pair-n-pour.com",
         "description": "Expert guide to wine pairing, beer pairing, and cocktail recipes. Find perfect drink combinations for any meal or occasion.",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://yourdomain.com/search?q={search_term_string}",
+          "target": "https://pair-n-pour.com/search?q={search_term_string}",
           "query-input": "required name=search_term_string"
         },
         "mainEntity": [
           {
             "@type": "Article",
-            "@id": "https://yourdomain.com/wine-pairing.html",
+            "@id": "https://pair-n-pour.com/wine-pairing.html",
             "headline": "Wine Pairing Guide",
             "description": "Complete guide to pairing wines with food, cheese, and charcuterie boards."
           },
           {
             "@type": "Article",
-            "@id": "https://yourdomain.com/beer-pairing.html",
+            "@id": "https://pair-n-pour.com/beer-pairing.html",
             "headline": "Beer Pairing Guide",
             "description": "Expert beer and food pairing recommendations for every meal."
           },
           {
             "@type": "WebApplication",
-            "@id": "https://yourdomain.com/cocktail-finder.html",
+            "@id": "https://pair-n-pour.com/cocktail-finder.html",
             "name": "Cocktail Finder",
             "description": "Find cocktail recipes based on ingredients you have at home."
           }
@@ -120,17 +120,77 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://yourdomain.com/"
+            "item": "https://pair-n-pour.com/"
           }
         ]
       }
     </script>
-    <link rel="preload" href="hero-section.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="navigation.css" as="style" onload="this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="hero-section.css">
-      <link rel="stylesheet" href="navigation.css">
-    </noscript>
+
+    <!-- FIXED: Load CSS synchronously to prevent layout shifts -->
+    <style>
+      /* Critical CSS to prevent layout shifts */
+      body {
+        margin: 0;
+        padding: 0;
+        padding-top: 70px; /* Mobile navigation height */
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+
+      @media only screen and (min-width: 64rem) {
+        body {
+          padding-top: 125px; /* Desktop navigation height */
+        }
+      }
+
+      /* Navigation Critical Styles */
+      #cs-navigation {
+        width: 100%;
+        height: 70px;
+        box-sizing: border-box;
+        padding: 0.75rem 1rem;
+        background-color: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        left: 0;
+      }
+
+      @media only screen and (min-width: 64rem) {
+        #cs-navigation {
+          height: 125px;
+          padding: 0 1rem;
+        }
+      }
+
+      /* Hero Section Critical Styles */
+      #hero-1618 {
+        padding: 2rem 1rem;
+        padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Prevent image loading from causing shifts */
+      .cs-background img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      /* Icon dimensions to prevent shifts */
+      .cs-icon {
+        width: 48px;
+        height: 48px;
+        display: block;
+        margin-bottom: 1rem;
+      }
+    </style>
+
+    <!-- Load remaining CSS -->
+    <link rel="stylesheet" href="hero-section.css">
+    <link rel="stylesheet" href="navigation.css">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -202,7 +262,8 @@
       <section id="hero-1618">
         <div class="cs-container">
           <div class="cs-content">
-            <h1 class="cs-title">
+            <!-- FIXED: Explicit font-size for h1 to prevent deprecation warning -->
+            <h1 class="cs-title" style="font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);">
               Perfect Drink Pairings & Cocktails Based on What You Have
             </h1>
             <h2 class="cs-subHeader">
@@ -245,11 +306,12 @@
                 class="cs-item-link"
                 aria-label="Beer pairing guide - find perfect beer for any meal"
               >
+                <!-- FIXED: Explicit dimensions to prevent layout shift -->
                 <img
                   class="cs-icon"
                   loading="lazy"
                   decoding="async"
-                  src="images/beer-mug-empty-solid.svg"
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 11h1a5 5 0 0 1 0 10h-1V11zM5 11h12v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9zM5 7a4 4 0 0 1 8 0v4H5V7z'/%3E%3C/svg%3E"
                   alt="Beer mug icon for beer pairing guide"
                   width="48"
                   height="48"
@@ -269,11 +331,12 @@
                 class="cs-item-link"
                 aria-label="Wine pairing guide - pair wine with food like an expert"
               >
+                <!-- FIXED: Explicit dimensions to prevent layout shift -->
                 <img
                   class="cs-icon"
                   loading="lazy"
                   decoding="async"
-                  src="images/wine-glass-solid.svg"
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 22h8a2 2 0 0 0 2-2V9H6v11a2 2 0 0 0 2 2zM18 9V7a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2'/%3E%3Cpath d='M6 9h12'/%3E%3C/svg%3E"
                   alt="Wine glass icon for wine pairing guide"
                   width="48"
                   height="48"
@@ -293,11 +356,12 @@
                 class="cs-item-link"
                 aria-label="Cocktail finder tool - make drinks from ingredients you have"
               >
+                <!-- FIXED: Explicit dimensions to prevent layout shift -->
                 <img
                   class="cs-icon"
                   loading="lazy"
                   decoding="async"
-                  src="images/martini-glass-solid.svg"
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 17h7l4-10-7 10z'/%3E%3Cpath d='M12 3v14'/%3E%3Cpath d='M8 12l8-8'/%3E%3C/svg%3E"
                   alt="Martini glass icon for cocktail finder tool"
                   width="48"
                   height="48"
@@ -314,11 +378,10 @@
           </ul>
         </div>
 
-        <!-- Background Image with better alt text -->
+        <!-- FIXED: Background Image with proper dimensions to prevent layout shift -->
         <picture class="cs-background">
           <source media="(max-width: 949px)" srcset="images/heroPhoto.webp" />
           <source media="(min-width: 600px)" srcset="images/heroPhoto.webp" />
-          <link rel="preload" as="image" href="images/heroPhoto.webp" fetchpriority="high">
           <img
             decoding="async"
             src="images/heroPhoto.webp"
@@ -327,6 +390,7 @@
             width="949"
             height="534"
             aria-hidden="true"
+            style="aspect-ratio: 949/534;"
           />
         </picture>
       </section>
