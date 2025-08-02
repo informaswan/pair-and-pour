@@ -12,37 +12,36 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-YBSNK48RQ1");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO Title - Include primary keywords -->
+    <!-- SEO Title - Enhanced with more specific keywords -->
     <title>
-      Pair and Pour: Wine Pairing, Beer Pairing & Cocktail Recipes Guide
+      Best Wine & Beer Pairing Guide + Cocktail Finder | Pair and Pour
     </title>
 
-    <!-- Meta Description - 150-160 characters with key phrases -->
+    <!-- Meta Description - Enhanced for charcuterie boards -->
     <meta
       name="description"
-      content="Find perfect wine pairings, beer pairings for food, and cocktail recipes using ingredients you have. Expert drink pairing guides and cocktail finder tool."
+      content="Expert wine pairing for charcuterie boards, cheese & food. Beer pairing guide for every meal. Find cocktail recipes by ingredients you have. Free pairing guides!"
     />
 
-    <!-- Keywords (while less important now, still useful for focus) -->
+    <!-- Enhanced Keywords -->
     <meta
       name="keywords"
-      content="wine pairing, beer pairing, cocktail recipes, drink pairing guide, food and wine, beer and food, cocktail finder, drink recipes"
+      content="wine pairing charcuterie board, cheese wine pairing, beer food pairing, cocktail finder ingredients, wine cheese pairing guide, craft beer pairing, cocktail recipes by ingredients"
     />
 
     <!-- Open Graph for social sharing -->
     <meta
       property="og:title"
-      content="Pair and Pour: Expert Drink Pairing & Cocktail Guide"
+      content="Wine & Beer Pairing Expert Guide + Cocktail Finder"
     />
     <meta
       property="og:description"
-      content="Discover perfect wine pairings, beer pairings, and cocktail recipes. Find drinks that match your food or make cocktails from ingredients you have."
+      content="Perfect wine pairings for charcuterie boards & cheese. Beer pairing for every meal. Find cocktail recipes using ingredients you have at home."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pair-n-pour.com/" />
@@ -56,11 +55,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Pair and Pour: Wine Pairing, Beer & Cocktail Guide"
+      content="Wine Pairing for Charcuterie + Beer & Cocktail Guide"
     />
     <meta
       name="twitter:description"
-      content="Expert drink pairing guides and cocktail finder. Perfect pairings for every meal and occasion."
+      content="Expert wine pairing for charcuterie boards, beer pairing guide, and cocktail finder by ingredients."
     />
     <meta
       name="twitter:image"
@@ -72,16 +71,20 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
 
-    <!-- Schema.org structured data -->
+    <!-- Enhanced Schema.org structured data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Pair and Pour",
         "url": "https://pair-n-pour.com",
-        "description": "Expert guide to wine pairing, beer pairing, and cocktail recipes. Find perfect drink combinations for any meal or occasion.",
+        "description": "Expert guide to wine pairing for charcuterie boards, beer pairing with food, and cocktail recipes by ingredients. Perfect drink combinations for any meal.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://pair-n-pour.com/search?q={search_term_string}",
@@ -89,22 +92,23 @@
         },
         "mainEntity": [
           {
-            "@type": "Article",
-            "@id": "https://pair-n-pour.com/wine-pairing.html",
-            "headline": "Wine Pairing Guide",
-            "description": "Complete guide to pairing wines with food, cheese, and charcuterie boards."
+            "@type": "HowTo",
+            "name": "Wine Pairing for Charcuterie Boards",
+            "description": "Complete guide to pairing wines with charcuterie boards, cheese selections, and gourmet foods.",
+            "url": "https://pair-n-pour.com/wine-pairing.html"
           },
           {
-            "@type": "Article",
-            "@id": "https://pair-n-pour.com/beer-pairing.html",
-            "headline": "Beer Pairing Guide",
-            "description": "Expert beer and food pairing recommendations for every meal."
+            "@type": "HowTo",
+            "name": "Beer and Food Pairing Guide",
+            "description": "Expert beer pairing recommendations for every type of cuisine and meal.",
+            "url": "https://pair-n-pour.com/beer-pairing.html"
           },
           {
             "@type": "WebApplication",
-            "@id": "https://pair-n-pour.com/cocktail-finder.html",
-            "name": "Cocktail Finder",
-            "description": "Find cocktail recipes based on ingredients you have at home."
+            "name": "Cocktail Finder by Ingredients",
+            "description": "Find cocktail recipes based on specific ingredients you have at home.",
+            "url": "https://pair-n-pour.com/cocktail-finder.html",
+            "applicationCategory": "Lifestyle"
           }
         ]
       }
@@ -126,14 +130,33 @@
       }
     </script>
 
-    <!-- FIXED: Load CSS synchronously to prevent layout shifts -->
+    <!-- CRITICAL CSS INLINED - No render blocking -->
     <style>
-      /* Critical CSS to prevent layout shifts */
+      /* CRITICAL CSS - This should be inlined in the <head> of your HTML */
+      /* Only the most essential styles for above-the-fold content to prevent render blocking */
+
+      /* CSS Custom Properties */
+      :root {
+        --primary: #8b4513;
+        --headerColor: #1a1a1a;
+        --bodyTextColor: #333;
+        --sectionPadding: 3.75rem 1rem;
+      }
+
+      /* Base Reset & Typography */
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
         padding: 0;
         padding-top: 70px; /* Mobile navigation height */
-        font-family: system-ui, -apple-system, sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        line-height: 1.5;
+        color: var(--bodyTextColor);
+        background-color: #fff;
       }
 
       @media only screen and (min-width: 64rem) {
@@ -142,7 +165,7 @@
         }
       }
 
-      /* Navigation Critical Styles */
+      /* Critical Navigation Styles - Only what's needed for initial render */
       #cs-navigation {
         width: 100%;
         height: 70px;
@@ -154,6 +177,7 @@
         z-index: 10000;
         top: 0;
         left: 0;
+        contain: layout style paint;
       }
 
       @media only screen and (min-width: 64rem) {
@@ -163,35 +187,309 @@
         }
       }
 
-      /* Hero Section Critical Styles */
+      #cs-navigation .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.5rem;
+        height: 100%;
+      }
+
+      #cs-navigation .cs-logo {
+        width: auto;
+        max-width: 21.875rem;
+        height: 100%;
+        margin: 0 auto 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Critical Hero Styles - Only above-the-fold content */
       #hero-1618 {
-        padding: 2rem 1rem;
+        padding: var(--sectionPadding);
         padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
         position: relative;
         z-index: 1;
+        min-height: 100vh;
       }
 
-      /* Prevent image loading from causing shifts */
-      .cs-background img {
+      #hero-1618 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: clamp(3.75rem, 13vw, 11.25rem);
+      }
+
+      #hero-1618 .cs-content {
+        text-align: left;
+        width: 100%;
+        max-width: 48.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #hero-1618 .cs-title {
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 100%;
+        margin: 0 0 2.5rem 0;
+        color: #fff;
+        position: relative;
+      }
+
+      #hero-1618 .cs-subHeader {
+        font-weight: 700;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 100%;
+        margin: 0 0 2.5rem 0;
+        color: #fff;
+        position: relative;
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
+      }
+
+      /* Critical intro text styling - FIXED for better visibility */
+      #hero-1618 .cs-intro-text {
+        margin: 2rem 0;
+        max-width: 800px;
+      }
+
+      #hero-1618 .cs-intro-p1 {
+        font-size: clamp(1rem, 2.5vw, 1.1rem);
+        line-height: 1.6;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      #hero-1618 .cs-intro-p2 {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+        line-height: 1.6;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.25);
+        padding: 1.2rem;
+        border-radius: 8px;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Critical Background Image Styles */
+      #hero-1618 .cs-background {
+        width: 100%;
+        height: 55%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+      }
+
+      #hero-1618 .cs-background:before {
+        content: "";
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        object-position: center;
+        background: #111926;
+        opacity: 0.8;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
       }
 
-      /* Icon dimensions to prevent shifts */
+      #hero-1618 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      /* Critical Card Grid Styles - Only essential layout */
+      #hero-1618 .cs-card-group {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: clamp(1rem, 2.3vw, 1.25rem);
+      }
+
+      #hero-1618 .cs-item {
+        width: 100%;
+        text-align: left;
+        list-style: none;
+        margin: 0;
+        padding: clamp(1.5rem, 3vw, 2rem);
+        background-color: #fff;
+        box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+        box-sizing: border-box;
+        grid-column: span 12;
+        grid-row: span 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        border-radius: 12px;
+      }
+
+      @media only screen and (min-width: 48rem) {
+        #hero-1618 .cs-item {
+          grid-column: span 4;
+        }
+
+        #hero-1618 .cs-background {
+          height: 87%;
+        }
+      }
+
+      /* Critical Icon Styles - FIXED */
       .cs-icon {
         width: 48px;
         height: 48px;
         display: block;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        flex-shrink: 0;
+        stroke: var(--primary);
+      }
+
+      /* Critical Typography */
+      .cs-h3 {
+        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+        line-height: 1.2em;
+        font-weight: bold;
+        text-align: inherit;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+      }
+
+      .cs-item-text {
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        max-width: 28.125rem;
+        margin: 0;
+        padding: 0;
+        color: var(--bodyTextColor);
+      }
+
+      .cs-item-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        height: 100%;
+      }
+
+      /* Mobile Navigation Toggle - Critical Only */
+      @media only screen and (max-width: 63.9375rem) {
+        #cs-navigation .cs-toggle {
+          width: clamp(2.75rem, 6vw, 3rem);
+          height: clamp(2.75rem, 6vw, 3rem);
+          margin: 0 0 0 auto;
+          background-color: transparent;
+          border: none;
+          border-radius: 0.25rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          z-index: 10001;
+          position: relative;
+        }
+
+        #cs-navigation .cs-box {
+          width: clamp(1.5rem, 2vw, 1.75rem);
+          height: clamp(0.875rem, 1.5vw, 1rem);
+          position: relative;
+        }
+
+        #cs-navigation .cs-line {
+          width: 100%;
+          height: 2px;
+          background-color: #1a1a1a;
+          border-radius: 2px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: all 0.3s ease;
+        }
+
+        #cs-navigation .cs-line1 {
+          top: 0;
+        }
+
+        #cs-navigation .cs-line2 {
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+
+        #cs-navigation .cs-line3 {
+          bottom: 0;
+        }
+
+        /* Hide mobile menu initially */
+        #cs-navigation .cs-ul-wrapper {
+          display: none;
+        }
+
+        #cs-navigation.cs-active .cs-ul-wrapper {
+          display: block;
+        }
+      }
+
+      /* Loading States */
+      .loading {
+        opacity: 0.7;
+        pointer-events: none;
+      }
+
+      /* Accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* Focus States */
+      *:focus {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
       }
     </style>
 
-    <!-- Load remaining CSS -->
-    <link rel="stylesheet" href="hero-section.css">
-    <link rel="stylesheet" href="navigation.css">
-    <script src="script.js" defer></script>
+    <!-- Preload critical resources -->
+    <link
+      rel="preload"
+      href="images/heroPhoto.webp"
+      as="image"
+      fetchpriority="high"
+    />
+
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
   </head>
   <body>
     <!-- ============================================ -->
@@ -200,7 +498,7 @@
 
     <header id="cs-navigation">
       <div class="cs-container">
-        <!--Nav Logo - Fixed H1 issue-->
+        <!--Nav Logo-->
         <a
           href="index.html"
           class="cs-logo"
@@ -262,39 +560,44 @@
       <section id="hero-1618">
         <div class="cs-container">
           <div class="cs-content">
-            <!-- FIXED: Explicit font-size for h1 to prevent deprecation warning -->
-            <h1 class="cs-title" style="font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);">
-              Perfect Drink Pairings & Cocktails Based on What You Have
+            <h1
+              class="cs-title"
+              style="font-size: clamp(2.4375rem, 6.4vw, 3.8125rem)"
+            >
+              Perfect Wine Pairing for Charcuterie Boards & Cocktail Finder
             </h1>
             <h2 class="cs-subHeader">
-              Discover expert <strong>beer and wine pairings</strong> for your
-              meals, or enter your ingredients to find
-              <strong>cocktail recipes</strong> you can actually make right now.
+              Expert <strong>wine pairing for charcuterie boards</strong> and
+              cheese selections, <strong>beer pairing guides</strong> for every
+              meal, plus find
+              <strong>cocktail recipes by ingredients</strong> you have at home.
             </h2>
 
-            <!-- Added introductory content for SEO -->
+            <!-- Enhanced introductory content for SEO -->
             <div class="cs-intro-text" style="margin: 2rem 0; max-width: 800px">
               <p
                 style="
                   font-size: 1.1rem;
                   line-height: 1.6;
-                  color: #333;
+                  color: white;
                   margin-bottom: 1rem;
                 "
               >
                 Welcome to <strong>Pair and Pour</strong>, your ultimate guide
-                to perfect drink pairings and cocktail creation. Whether you're
-                looking for the ideal <strong>wine pairing for dinner</strong>,
-                the perfect <strong>beer to complement your meal</strong>, or
-                want to discover
-                <strong
-                  >cocktail recipes using ingredients you already have</strong
-                >, we've got you covered.
+                to <strong>wine pairing for charcuterie boards</strong>,
+                <strong>cheese and wine combinations</strong>, and
+                <strong>beer pairing with food</strong>. Whether you're crafting
+                the perfect charcuterie board, planning a dinner party, or
+                searching for
+                <strong>cocktail recipes using ingredients you have</strong>, we
+                provide expert guidance every step of the way.
               </p>
-              <p style="font-size: 1rem; line-height: 1.6; color: #555">
-                Our expert-curated guides take the guesswork out of drink
-                selection, helping you elevate every dining experience with
-                confidence and style.
+              <p style="font-size: 1rem; line-height: 1.6; color: white">
+                Our curated pairing guides eliminate guesswork, helping you
+                create memorable dining experiences with confidence. From
+                selecting the perfect wine for aged cheeses to finding craft
+                beer pairings for spicy cuisine, discover why thousands trust
+                Pair and Pour for their beverage expertise.
               </p>
             </div>
           </div>
@@ -306,22 +609,36 @@
                 class="cs-item-link"
                 aria-label="Beer pairing guide - find perfect beer for any meal"
               >
-                <!-- FIXED: Explicit dimensions to prevent layout shift -->
-                <img
+                <!-- FIXED: Clear beer mug icon with handle and foam -->
+                <svg
                   class="cs-icon"
-                  loading="lazy"
-                  decoding="async"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 11h1a5 5 0 0 1 0 10h-1V11zM5 11h12v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9zM5 7a4 4 0 0 1 8 0v4H5V7z'/%3E%3C/svg%3E"
-                  alt="Beer mug icon for beer pairing guide"
                   width="48"
                   height="48"
-                />
-                <h3 class="cs-h3">Find the Best Beer for Any Meal or Snack</h3>
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#8b4513"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <!-- Mug body -->
+                  <rect x="6" y="8" width="10" height="12" rx="2" ry="2" />
+
+                  <!-- Mug handle -->
+                  <path d="M16 10a2 2 0 0 1 4 0v4a2 2 0 0 1-4 0" />
+
+                  <!-- Foam top -->
+                  <path d="M6 8c0-2 2-3 3-2s2 1 3 0 3 1 4 2" />
+                </svg>
+
+                <h3 class="cs-h3">Expert Beer & Food Pairing Guide</h3>
                 <p class="cs-item-text">
-                  Discover the perfect <strong>beer pairings</strong> for steak,
-                  seafood, spicy dishes, and casual bites. Use our expert guide
-                  to easily enhance every meal with the ideal brew for the
-                  flavor.
+                  Discover perfect
+                  <strong>beer pairings for every cuisine</strong> - from
+                  <strong>IPA with spicy food</strong> to
+                  <strong>stout with chocolate desserts</strong>. Our
+                  comprehensive guide covers craft beer styles, seasonal
+                  pairings, and expert recommendations for elevating any meal.
                 </p>
               </a>
             </li>
@@ -329,24 +646,34 @@
               <a
                 href="wine-pairing.html"
                 class="cs-item-link"
-                aria-label="Wine pairing guide - pair wine with food like an expert"
+                aria-label="Wine pairing guide - perfect wines for charcuterie boards and cheese"
               >
-                <!-- FIXED: Explicit dimensions to prevent layout shift -->
-                <img
+                <!-- FIXED: Better wine glass icon -->
+                <svg
                   class="cs-icon"
-                  loading="lazy"
-                  decoding="async"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 22h8a2 2 0 0 0 2-2V9H6v11a2 2 0 0 0 2 2zM18 9V7a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2'/%3E%3Cpath d='M6 9h12'/%3E%3C/svg%3E"
-                  alt="Wine glass icon for wine pairing guide"
                   width="48"
                   height="48"
-                />
-                <h3 class="cs-h3">Pair Wine with Food Like a True Expert</h3>
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#8b4513"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M8 22h8" />
+                  <path d="M12 11v11" />
+                  <path d="M12 11c3 0 6-2 6-7V2H6v2c0 5 3 7 6 7Z" />
+                </svg>
+                <h3 class="cs-h3">
+                  Wine Pairing for Charcuterie Boards & Cheese
+                </h3>
                 <p class="cs-item-text">
-                  Learn exactly which
-                  <strong>wines go best with your favorite meals</strong>. From
-                  bold reds to crisp whites, our detailed pairing guide helps
-                  you confidently choose the right wine for every dish.
+                  Master the art of
+                  <strong>wine and charcuterie board pairing</strong>. Learn
+                  which <strong>wines complement specific cheeses</strong>, how
+                  to pair reds with cured meats, and create stunning
+                  <strong>cheese and wine combinations</strong> that impress
+                  every guest.
                 </p>
               </a>
             </li>
@@ -356,29 +683,43 @@
                 class="cs-item-link"
                 aria-label="Cocktail finder tool - make drinks from ingredients you have"
               >
-                <!-- FIXED: Explicit dimensions to prevent layout shift -->
-                <img
+                <!-- FIXED: Martini-style cocktail glass SVG icon -->
+                <svg
                   class="cs-icon"
-                  loading="lazy"
-                  decoding="async"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 17h7l4-10-7 10z'/%3E%3Cpath d='M12 3v14'/%3E%3Cpath d='M8 12l8-8'/%3E%3C/svg%3E"
-                  alt="Martini glass icon for cocktail finder tool"
                   width="48"
                   height="48"
-                />
-                <h3 class="cs-h3">Make Cocktails from What You Already Have</h3>
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <!-- V-shaped bowl -->
+                  <path d="M3 3h18l-9 9z" />
+
+                  <!-- Stem -->
+                  <path d="M12 12v6" />
+
+                  <!-- Base -->
+                  <path d="M9 21h6" />
+                </svg>
+
+                <h3 class="cs-h3">Cocktail Finder by Available Ingredients</h3>
                 <p class="cs-item-text">
-                  Enter the <strong>ingredients you have at home</strong> and
-                  instantly find <strong>cocktail recipes you can make</strong>.
-                  No guesswork—just easy, delicious drinks made with what's in
-                  your kitchen.
+                  Never wonder what to make again! Enter
+                  <strong>cocktail ingredients you have</strong> and instantly
+                  discover
+                  <strong>drink recipes you can make right now</strong>. Perfect
+                  for home bartenders looking to create amazing cocktails
+                  without a trip to the store.
                 </p>
               </a>
             </li>
           </ul>
         </div>
 
-        <!-- FIXED: Background Image with proper dimensions to prevent layout shift -->
+        <!-- Background Image with proper dimensions -->
         <picture class="cs-background">
           <source media="(max-width: 949px)" srcset="images/heroPhoto.webp" />
           <source media="(min-width: 600px)" srcset="images/heroPhoto.webp" />
@@ -386,16 +727,16 @@
             decoding="async"
             src="images/heroPhoto.webp"
             fetchpriority="high"
-            alt="Elegant table setting with wine glasses, beer bottles, and cocktails representing drink pairing expertise"
+            alt="Elegant charcuterie board with wine glasses, craft beer bottles, and artisanal cocktails showcasing perfect drink pairings"
             width="949"
             height="534"
             aria-hidden="true"
-            style="aspect-ratio: 949/534;"
+            style="aspect-ratio: 949/534"
           />
         </picture>
       </section>
 
-      <!-- Additional SEO Content Section -->
+      <!-- Enhanced SEO Content Section -->
       <section
         class="seo-content"
         style="
@@ -414,7 +755,7 @@
             font-size: 2rem;
           "
         >
-          Why Choose Pair and Pour for Your Drink Pairing Needs?
+          Master the Art of Drink Pairing with Expert Guidance
         </h2>
 
         <div
@@ -427,41 +768,46 @@
         >
           <div>
             <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem">
-              Expert Wine Pairing Knowledge
+              Wine Pairing for Charcuterie Boards
             </h3>
             <p style="line-height: 1.6">
-              Our <strong>wine pairing guide</strong> is crafted by beverage
-              experts who understand the nuances of matching wines with food.
-              Learn which <strong>red wines pair with steak</strong>,
-              <strong>white wines complement seafood</strong>, and how to create
-              perfect <strong>cheese and wine combinations</strong> for any
-              occasion.
+              Create stunning
+              <strong>charcuterie board and wine pairings</strong> with our
+              expert guide. Learn which
+              <strong>wines pair with aged cheeses</strong>, how to complement
+              <strong>cured meats with the right wine</strong>, and discover
+              perfect <strong>cheese and wine combinations</strong> for
+              entertaining. From bold Cabernet with aged cheddar to crisp
+              Sancerre with goat cheese, master every pairing.
             </p>
           </div>
 
           <div>
             <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem">
-              Comprehensive Beer Pairing Guide
+              Complete Beer & Food Pairing Guide
             </h3>
             <p style="line-height: 1.6">
-              Discover how different
-              <strong>beer styles enhance various cuisines</strong>. From
-              <strong>IPA pairings with spicy food</strong> to
-              <strong>stout combinations with chocolate desserts</strong>, our
-              beer guide covers every style and food combination you can
-              imagine.
+              Elevate every meal with perfect
+              <strong>beer and food pairings</strong>. Our comprehensive guide
+              covers <strong>craft beer pairing with spicy food</strong>,
+              <strong>wheat beer with seafood</strong>, and
+              <strong>porter with grilled meats</strong>. Discover seasonal beer
+              pairings and learn why certain beer styles complement specific
+              flavors and textures.
             </p>
           </div>
 
           <div>
             <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem">
-              Smart Cocktail Discovery
+              Smart Cocktail Recipe Discovery
             </h3>
             <p style="line-height: 1.6">
-              Never wonder "what can I make with these ingredients?" again. Our
-              <strong>cocktail finder tool</strong> instantly shows you
-              <strong>drink recipes based on your available ingredients</strong
-              >, making home bartending simple and fun.
+              Transform your home bar with our
+              <strong>cocktail finder by ingredients</strong>. Simply enter what
+              spirits, mixers, and garnishes you have, and discover
+              <strong>cocktail recipes you can make immediately</strong>.
+              Perfect for spontaneous entertaining or trying new drinks without
+              shopping for specific ingredients.
             </p>
           </div>
         </div>
@@ -475,19 +821,26 @@
           "
         >
           <h3 style="color: #2d2b29; font-size: 1.2rem; margin-bottom: 1rem">
-            Start Your Perfect Pairing Journey Today
+            Why Pair and Pour is Your Go-To Pairing Resource
           </h3>
+          <p style="line-height: 1.6; margin-bottom: 1rem">
+            Whether you're hosting an elegant dinner party with
+            <strong>wine and charcuterie board pairings</strong>, enjoying
+            casual meals with <strong>craft beer food pairings</strong>, or
+            mixing creative <strong>cocktails from ingredients at home</strong>,
+            our expert-curated guides provide the confidence and knowledge you
+            need.
+          </p>
           <p style="line-height: 1.6; margin-bottom: 0">
-            Whether you're planning a romantic dinner, hosting friends, or
-            simply want to elevate your everyday meals, Pair and Pour provides
-            the expertise you need. Explore our guides and discover how the
-            right drink can transform any meal into a memorable experience.
+            Join thousands of food and drink enthusiasts who trust Pair and Pour
+            for reliable pairing advice, detailed flavor profiles, and practical
+            tips that transform ordinary meals into extraordinary experiences.
           </p>
         </div>
       </section>
     </main>
 
-    <!-- Footer with additional SEO elements -->
+    <!-- Enhanced Footer with structured data -->
     <footer
       style="
         background: #2d2b29;
@@ -505,24 +858,24 @@
         "
       >
         <p style="margin-bottom: 1rem">
-          <strong>Pair and Pour</strong> - Your trusted source for wine pairing,
-          beer pairing, and cocktail recipes
+          <strong>Pair and Pour</strong> - Expert wine pairing for charcuterie
+          boards, beer pairing guides, and cocktail finder by ingredients
         </p>
         <nav aria-label="Footer navigation">
           <a
             href="wine-pairing.html"
             style="color: #ccc; text-decoration: none; margin: 0 1rem"
-            >Wine Pairing</a
+            >Wine & Charcuterie Pairing</a
           >
           <a
             href="beer-pairing.html"
             style="color: #ccc; text-decoration: none; margin: 0 1rem"
-            >Beer Pairing</a
+            >Beer & Food Pairing</a
           >
           <a
             href="cocktail-finder.html"
             style="color: #ccc; text-decoration: none; margin: 0 1rem"
-            >Cocktail Finder</a
+            >Cocktail Ingredient Finder</a
           >
         </nav>
         <p style="margin-top: 1rem; font-size: 0.9rem; color: #999">
@@ -530,5 +883,25 @@
         </p>
       </div>
     </footer>
+
+    <!-- Load non-critical CSS asynchronously -->
+    <link
+      rel="preload"
+      href="hero-section.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="hero-section.css" /></noscript>
+
+    <link
+      rel="preload"
+      href="navigation.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="navigation.css" /></noscript>
+
+    <!-- Load JavaScript with improved performance -->
+    <script src="script.js" defer></script>
   </body>
 </html>

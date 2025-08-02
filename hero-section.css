@@ -2,6 +2,14 @@
 <---           Hero             -->
 <--- -------------------------- -*/
 
+/* CSS Custom Properties */
+:root {
+  --primary: #8b4513;
+  --headerColor: #1a1a1a;
+  --bodyTextColor: #333;
+  --sectionPadding: 3.75rem 1rem;
+}
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #hero-1618 {
@@ -11,9 +19,7 @@
     position: relative;
     z-index: 1;
   }
-  body {
-  padding-top: 125px; /* adjust to match actual header height */
-  }
+
   #hero-1618 .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -25,6 +31,7 @@
     /* 60px - 180px */
     gap: clamp(3.75rem, 13vw, 11.25rem);
   }
+
   #hero-1618 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
@@ -35,6 +42,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
+
   #hero-1618 .cs-topper {
     /* 13px - 16px */
     font-size: clamp(0.8125rem, 1.5vw, 1rem);
@@ -51,11 +59,13 @@
     gap: 0.5rem;
     position: relative;
   }
+
   #hero-1618 .cs-chevron {
     --chevronColor: var(--primary);
     width: 3rem;
     height: auto;
   }
+
   #hero-1618 .cs-title {
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
@@ -67,6 +77,7 @@
     color: #fff;
     position: relative;
   }
+
   #hero-1618 .cs-subHeader {
     /* 39px - 61px */
     font-weight: 700;
@@ -76,7 +87,38 @@
     margin: 0 0 2.5rem 0;
     color: #fff;
     position: relative;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
   }
+
+  /* FIXED: Better styling for intro text paragraphs */
+  #hero-1618 .cs-intro-text {
+    margin: 2rem 0;
+    max-width: 800px;
+  }
+
+  #hero-1618 .cs-intro-p1 {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    line-height: 1.6;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #hero-1618 .cs-intro-p2 {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    line-height: 1.6;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 1.2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
   #hero-1618 .cs-text {
     /* 16px - 20px */
     font-size: clamp(1rem, 1.95vw, 1.25rem);
@@ -88,6 +130,7 @@
     margin: 0 0 2.5rem 0;
     color: #fff;
   }
+
   #hero-1618 .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
@@ -102,6 +145,7 @@
     position: relative;
     z-index: 1;
   }
+
   #hero-1618 .cs-button-solid:before {
     content: "";
     position: absolute;
@@ -115,9 +159,11 @@
     z-index: -1;
     transition: width 0.3s;
   }
+
   #hero-1618 .cs-button-solid:hover:before {
     width: 100%;
   }
+
   #hero-1618 .cs-card-group {
     margin: 0;
     padding: 0;
@@ -127,6 +173,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 2.3vw, 1.25rem);
   }
+
   #hero-1618 .cs-item {
     width: 100%;
     text-align: left;
@@ -146,14 +193,30 @@
     justify-content: center;
     position: relative;
     z-index: 1;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
+  #hero-1618 .cs-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 20px 100px 0px rgba(26, 26, 26, 0.15);
+  }
+
+  /* FIXED: Better icon styling */
   #hero-1618 .cs-icon {
     width: 48px;
     height: 48px;
-    object-fit: contain;
     display: block;
-    margin-bottom: 1rem; /* optional spacing */
+    margin-bottom: 1.5rem;
+    flex-shrink: 0;
+    stroke: var(--primary);
+    transition: transform 0.3s ease;
   }
+
+  #hero-1618 .cs-item:hover .cs-icon {
+    transform: scale(1.1);
+  }
+
   #hero-1618 .cs-h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
@@ -163,6 +226,7 @@
     margin: 0 0 1rem 0;
     color: var(--headerColor);
   }
+
   #hero-1618 .cs-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
@@ -172,9 +236,12 @@
     padding: 0;
     color: var(--bodyTextColor);
   }
+
   .cs-item-link {
     text-decoration: none;
     color: inherit;
+    display: block;
+    height: 100%;
   }
 
   #hero-1618 .cs-background {
@@ -186,6 +253,7 @@
     left: 0;
     z-index: -2;
   }
+
   #hero-1618 .cs-background:before {
     /* Overlay */
     content: "";
@@ -201,6 +269,7 @@
     /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
+
   #hero-1618 .cs-background img {
     position: absolute;
     top: 0;
@@ -212,25 +281,31 @@
     object-position: top;
   }
 }
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero-1618 {
     padding-bottom: 0;
   }
+
   #hero-1618 .cs-container {
     align-items: flex-start;
   }
+
   #hero-1618 .cs-content {
     text-align: left;
     margin-left: 0;
     align-items: flex-start;
   }
+
   #hero-1618 .cs-item {
     grid-column: span 4;
   }
+
   #hero-1618 .cs-background {
     height: 87%;
   }
+
   #hero-1618 .cs-background:before {
     background: linear-gradient(
       90deg,
@@ -239,10 +314,8 @@
     );
     opacity: 1;
   }
-  body {
-  padding-top: 120px; /* adjust to match actual header height */
-  }
 }
+
 /* Large Desktop Parallax Effect - 100px */
 @media only screen and (min-width: 100rem) {
   #hero-1618 .cs-background {
@@ -253,29 +326,47 @@
     /* creates the parallax effect */
     background-attachment: fixed;
   }
+
   #hero-1618 .cs-background img {
     display: none;
   }
-  body {
-  padding-top: 80px; /* adjust to match actual header height */
-}
 }
 
+/* General Styles */
 .cs-logo:hover,
 .cs-logo:visited,
 .cs-logo:focus {
   text-decoration: none;
   color: inherit;
 }
+
 .grid-layout-beer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 1rem;
   padding: 1rem;
 }
-body {
-  margin: 0;
-  padding: 0;
+
+/* Loading States */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
 }
 
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  #hero-1618 .cs-item {
+    transition: none;
+  }
+  
+  #hero-1618 .cs-icon {
+    transition: none;
+  }
+}
 
+/* Focus States */
+.cs-item-link:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
