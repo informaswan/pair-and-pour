@@ -75,7 +75,11 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
 
     <!-- Structured Data - Website Schema -->
     <script type="application/ld+json">
@@ -152,11 +156,83 @@
         ]
       }
     </script>
-    <link rel="preload" href="cocktail-finder.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="navigation.css" as="style" onload="this.rel='stylesheet'">
+
+    <!-- Critical CSS to prevent layout shifts -->
+    <style>
+      /* Prevent font loading shifts */
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-display: swap;
+      }
+
+      /* Reserve space for main elements */
+      .cocktail-main {
+        min-height: 100vh;
+        contain: layout style;
+      }
+
+      .cocktail-header h1 {
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .tabs {
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .filters {
+        contain: layout;
+        min-height: 200px;
+      }
+
+      .drinks-grid {
+        contain: layout;
+        min-height: 100px;
+      }
+
+      /* Loading skeleton */
+      .drinks-grid.loading {
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        background-size: 200px 100%;
+        animation: skeleton 1.5s infinite;
+        min-height: 400px;
+      }
+
+      @keyframes skeleton {
+        0% {
+          background-position: -200px 0;
+        }
+        100% {
+          background-position: calc(200px + 100%) 0;
+        }
+      }
+    </style>
+
+    <link
+      rel="preload"
+      href="cocktail-finder.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="navigation.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
     <noscript>
-      <link rel="stylesheet" href="cocktail-finder.css">
-      <link rel="stylesheet" href="navigation.css">
+      <link rel="stylesheet" href="cocktail-finder.css" />
+      <link rel="stylesheet" href="navigation.css" />
     </noscript>
     <script src="navigation.js" defer></script>
     <script src="cocktail-finder.js" defer></script>

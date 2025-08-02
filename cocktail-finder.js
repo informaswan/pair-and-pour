@@ -8,8 +8,12 @@ let mocktailDrinks = [];
 let cocktailIngredients = [];
 let mocktailIngredients = [];
 
-// Load JSON data
+// Load JSON data with loading state
 async function loadData() {
+  // Add loading state to prevent layout shift
+  const grid = document.getElementById("drinksGrid");
+  grid.classList.add("loading");
+  
   try {
     // Load cocktail data
     const cocktailResponse = await fetch("cocktail-drinks.json");
@@ -37,6 +41,9 @@ async function loadData() {
     console.error("Error loading data:", error);
     // Fallback data in case JSON files are not available
     initializeFallbackData();
+  } finally {
+    // Remove loading state
+    grid.classList.remove("loading");
   }
 }
 
