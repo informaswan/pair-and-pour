@@ -457,7 +457,11 @@ iframe {
     border-radius: 10px;
     border: none;
 }
-
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: inherit;
+}
 .no-results {
     text-align: center;
     color: white;
@@ -661,7 +665,7 @@ iframe {
 
 /* Critical CSS optimizations */
 body { 
-    font-family: system-ui, -apple-system, sans-serif; 
+    font-family: 'Times New Roman', Times, serif; 
     font-display: swap; 
     margin: 0;
     padding: 0;
