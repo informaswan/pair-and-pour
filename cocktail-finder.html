@@ -123,7 +123,7 @@
       }
     </script>
 
-    <!-- Structured Data - FAQ Schema for common questions -->
+<!-- Structured Data - FAQ Schema for common questions -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -156,37 +156,40 @@
         ]
       }
     </script>
-
+    
     <!-- Critical CSS to prevent layout shifts -->
     <style>
       /* Prevent font loading shifts */
-      body {
-        font-family: system-ui, -apple-system, sans-serif;
-        font-display: swap;
+      body { 
+        font-family: system-ui, -apple-system, sans-serif; 
+        font-display: swap; 
         margin: 0;
         padding: 0;
         padding-top: 100px;
       }
-
+      
       /* Reserve exact space for main elements to prevent any shifts */
-      .cocktail-main {
-        min-height: 100vh;
-        contain: layout style paint;
+      .cocktail-main { 
+        min-height: 100vh; 
+        contain: strict;
         background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
         color: #333;
         position: relative;
+        overflow-x: hidden;
       }
-
+      
       .cocktail-container {
         max-width: 1400px;
         margin: 0 auto;
         padding: 20px;
-        contain: layout style;
+        contain: strict;
         /* Reserve minimum height to prevent container collapse */
         min-height: calc(100vh - 140px);
+        /* Prevent any overflow issues */
+        overflow: hidden;
       }
-
-      .cocktail-header {
+      
+      .cocktail-header { 
         text-align: center;
         margin-bottom: 2rem;
         color: white;
@@ -197,15 +200,15 @@
         flex-direction: column;
         justify-content: center;
       }
-
-      .cocktail-header h1 {
+      
+      .cocktail-header h1 { 
         font-size: clamp(2rem, 5vw, 3rem);
         margin: 0 0 1rem 0;
         padding: 1rem 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         line-height: 1.2;
       }
-
+      
       .subtitle {
         font-size: clamp(1rem, 2.5vw, 1.2rem);
         opacity: 0.9;
@@ -213,49 +216,64 @@
         padding: 0.5rem 0;
         line-height: 1.4;
       }
-
-      .search-section {
+      
+      .search-section { 
         text-align: center;
         margin: 20px 0;
         min-height: 80px;
         contain: layout;
       }
-
+      
       .how-to-use {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(255,255,255,0.95);
         padding: 30px;
         border-radius: 15px;
         margin-bottom: 30px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
         backdrop-filter: blur(10px);
-        contain: layout;
-        /* Reserve space for how-to-use section */
-        min-height: 400px;
+        contain: strict;
+        /* Fixed height to prevent expansion */
+        height: 450px;
+        overflow-y: auto;
       }
-
+      
       .popular-ingredients {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255,255,255,0.1);
         padding: 20px;
         border-radius: 10px;
         margin: 20px 0;
         text-align: center;
-        contain: layout;
-        min-height: 100px;
+        contain: strict;
+        /* Reserve exact space for popular ingredients */
+        height: 120px;
+        overflow: hidden;
       }
-
-      .tabs {
-        min-height: 60px;
+      
+      .ingredient-chips {
         display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         justify-content: center;
+        /* Fixed height to prevent expansion */
+        height: 60px;
+        overflow: hidden;
+        align-items: flex-start;
+        align-content: flex-start;
+      }
+      
+      .tabs { 
+        min-height: 60px;
+        display: flex; 
+        justify-content: center; 
         align-items: center;
         margin: 2rem 0;
         gap: 10px;
         contain: layout;
       }
-
+      
       .tab {
         padding: 12px 30px;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255,255,255,0.2);
         border: none;
         border-radius: 25px;
         color: white;
@@ -264,26 +282,34 @@
         transition: all 0.3s ease;
         backdrop-filter: blur(10px);
       }
-
+      
       .tab.active {
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255,255,255,0.9);
         color: #333;
         transform: scale(1.05);
       }
-
-      .filters {
-        background: rgba(255, 255, 255, 0.95);
+      
+      .filters { 
+        background: rgba(255,255,255,0.95);
         padding: 25px;
         border-radius: 15px;
         margin-bottom: 30px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
         backdrop-filter: blur(10px);
-        contain: layout style;
-        /* Reserve exact space for filters to prevent shifts */
-        min-height: 250px;
+        contain: strict;
+        /* Fixed height to prevent expansion */
+        height: 280px;
+        overflow: visible;
       }
-
-      .drinks-grid {
+      
+      .selected-ingredients {
+        /* Fixed container for selected ingredients */
+        height: 60px;
+        overflow-y: auto;
+        contain: strict;
+      }
+      
+      .drinks-grid { 
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 25px;
@@ -292,21 +318,16 @@
         /* Always reserve space for at least one row of cards */
         min-height: 200px;
       }
-
+      
       /* Loading skeleton with exact dimensions */
       .drinks-grid.loading {
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.1),
-          transparent
-        );
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
         background-size: 200px 100%;
         animation: skeleton 1.5s infinite;
         min-height: 400px;
         border-radius: 15px;
       }
-
+      
       .no-results {
         text-align: center;
         color: white;
@@ -316,67 +337,60 @@
         min-height: 150px;
         contain: layout;
       }
-
+      
       @keyframes skeleton {
-        0% {
-          background-position: -200px 0;
-        }
-        100% {
-          background-position: calc(200px + 100%) 0;
-        }
+        0% { background-position: -200px 0; }
+        100% { background-position: calc(200px + 100%) 0; }
       }
-
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 0.6; }
+      }
+      
       /* Prevent any dynamic content shifts */
       .selected-ingredients {
-        min-height: 40px;
-        contain: layout;
+        height: 60px;
+        contain: strict;
+        overflow-y: auto;
       }
-
+      
       .ingredient-chips {
-        min-height: 50px;
-        contain: layout;
+        height: 60px;
+        contain: strict;
+        overflow: hidden;
       }
-
+      
       /* Mobile responsive reserves */
       @media (max-width: 768px) {
         .cocktail-container {
           min-height: calc(100vh - 100px);
         }
-
+        
         .cocktail-header {
           min-height: 100px;
         }
-
+        
         .how-to-use {
           min-height: 350px;
         }
-
+        
         .filters {
           min-height: 300px;
         }
-
+        
         .tabs {
           flex-direction: column;
           min-height: 120px;
         }
       }
     </style>
-
-    <link
-      rel="preload"
-      href="cocktail-finder.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <link
-      rel="preload"
-      href="navigation.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
+    
+    <link rel="preload" href="cocktail-finder.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="navigation.css" as="style" onload="this.rel='stylesheet'">
     <noscript>
-      <link rel="stylesheet" href="cocktail-finder.css" />
-      <link rel="stylesheet" href="navigation.css" />
+      <link rel="stylesheet" href="cocktail-finder.css">
+      <link rel="stylesheet" href="navigation.css">
     </noscript>
     <script src="navigation.js" defer></script>
     <script src="cocktail-finder.js" defer></script>
