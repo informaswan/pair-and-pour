@@ -171,22 +171,19 @@
       /* Reserve exact space for main elements to prevent any shifts */
       .cocktail-main { 
         min-height: 100vh; 
-        contain: strict;
+        contain: layout style;
         background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
         color: #333;
         position: relative;
-        overflow-x: hidden;
       }
       
       .cocktail-container {
         max-width: 1400px;
         margin: 0 auto;
         padding: 20px;
-        contain: strict;
+        contain: layout;
         /* Reserve minimum height to prevent container collapse */
         min-height: calc(100vh - 140px);
-        /* Prevent any overflow issues */
-        overflow: hidden;
       }
       
       .cocktail-header { 
@@ -231,10 +228,9 @@
         margin-bottom: 30px;
         box-shadow: 0 8px 32px rgba(0,0,0,0.1);
         backdrop-filter: blur(10px);
-        contain: strict;
-        /* Fixed height to prevent expansion */
-        height: 450px;
-        overflow-y: auto;
+        contain: layout;
+        /* Reserve space but allow content to flow naturally */
+        min-height: 400px;
       }
       
       .popular-ingredients {
@@ -243,10 +239,8 @@
         border-radius: 10px;
         margin: 20px 0;
         text-align: center;
-        contain: strict;
-        /* Reserve exact space for popular ingredients */
-        height: 120px;
-        overflow: hidden;
+        contain: layout;
+        min-height: 100px;
       }
       
       .ingredient-chips {
@@ -254,11 +248,7 @@
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
-        /* Fixed height to prevent expansion */
-        height: 60px;
-        overflow: hidden;
-        align-items: flex-start;
-        align-content: flex-start;
+        min-height: 50px;
       }
       
       .tabs { 
@@ -296,17 +286,14 @@
         margin-bottom: 30px;
         box-shadow: 0 8px 32px rgba(0,0,0,0.1);
         backdrop-filter: blur(10px);
-        contain: strict;
-        /* Fixed height to prevent expansion */
-        height: 280px;
-        overflow: visible;
+        contain: layout;
+        /* Reserve space but allow natural content flow */
+        min-height: 250px;
       }
       
       .selected-ingredients {
-        /* Fixed container for selected ingredients */
-        height: 60px;
-        overflow-y: auto;
-        contain: strict;
+        min-height: 40px;
+        contain: layout;
       }
       
       .drinks-grid { 
@@ -314,7 +301,7 @@
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 25px;
         margin-bottom: 40px;
-        contain: layout style;
+        contain: layout;
         /* Always reserve space for at least one row of cards */
         min-height: 200px;
       }
@@ -341,24 +328,6 @@
       @keyframes skeleton {
         0% { background-position: -200px 0; }
         100% { background-position: calc(200px + 100%) 0; }
-      }
-      
-      @keyframes pulse {
-        0%, 100% { opacity: 0.4; }
-        50% { opacity: 0.6; }
-      }
-      
-      /* Prevent any dynamic content shifts */
-      .selected-ingredients {
-        height: 60px;
-        contain: strict;
-        overflow-y: auto;
-      }
-      
-      .ingredient-chips {
-        height: 60px;
-        contain: strict;
-        overflow: hidden;
       }
       
       /* Mobile responsive reserves */
