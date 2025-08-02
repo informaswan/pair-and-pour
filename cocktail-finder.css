@@ -92,17 +92,30 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
+    /* CLS Fix: Add container isolation */
+    contain: layout style;
+    /* Reserve minimum height to prevent container collapse */
+    min-height: calc(100vh - 140px);
 }
 
 .cocktail-header {
     text-align: center;
     margin-bottom: 40px;
     color: white;
+    /* CLS Fix: Reserve exact space for header */
+    contain: layout;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .subtitle {
     font-size: 1.2em;
     opacity: 0.9;
+    margin: 0;
+    padding: 0.5rem 0;
+    line-height: 1.4;
 }
 
 .tab {
@@ -183,9 +196,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    min-height: 0; /* Allow container to shrink when empty */
+    /* CLS Fix: Stable height for ingredients container */
+    min-height: 40px;
     max-height: 120px; /* Limit height when many ingredients */
     overflow-y: auto; /* Scroll if too many ingredients */
+    contain: layout; /* Prevent layout shifts */
 }
 
 .ingredient-tag {
@@ -250,6 +265,9 @@
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     backdrop-filter: blur(10px);
+    /* CLS Fix: Reserve space for cards */
+    min-height: 120px;
+    contain: layout;
 }
 
 .drink-card:hover {
@@ -446,6 +464,9 @@ iframe {
     font-size: 1.2em;
     margin-top: 50px;
     opacity: 0.8;
+    /* CLS Fix: Reserve space for no-results */
+    min-height: 150px;
+    contain: layout;
 }
 
 .no-results h3 {
@@ -477,9 +498,18 @@ iframe {
 .search-section {
     margin: 20px 0;
     text-align: center;
+    /* CLS Fix: Reserve space for search section */
+    min-height: 80px;
+    contain: layout;
 }
 
 .search-section h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.search-description{
     color: white;
     font-size: 1.5em;
     margin-bottom: 15px;
@@ -491,6 +521,9 @@ iframe {
     border-radius: 10px;
     margin: 20px 0;
     text-align: center;
+    /* CLS Fix: Reserve space for popular ingredients */
+    min-height: 100px;
+    contain: layout;
 }
 
 .popular-ingredients h3 {
@@ -503,6 +536,8 @@ iframe {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    /* CLS Fix: Minimum height for chips container */
+    min-height: 50px;
 }
 
 .ingredient-chip {
@@ -550,6 +585,9 @@ iframe {
     margin-bottom: 30px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     backdrop-filter: blur(10px);
+    /* CLS Fix: Reserve space for how-to-use section */
+    contain: layout;
+    min-height: 400px;
 }
 
 .how-to-use h2 {
@@ -586,6 +624,60 @@ iframe {
     margin-bottom: 5px;
 }
 
+/* MOVED FROM INLINE STYLES - Footer Styles */
+.site-footer {
+    background: #2d2b29;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.footer-container p {
+    margin-bottom: 1rem;
+}
+
+.footer-container p:last-child {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.footer-nav {
+    margin: 0 1rem;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-nav:hover {
+    text-decoration: underline;
+}
+
+/* Critical CSS optimizations */
+body { 
+    font-family: system-ui, -apple-system, sans-serif; 
+    font-display: swap; 
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
+
+/* Base typography to prevent font shifts */
+h1, h2, h3, h4, h5, h6 {
+    font-display: swap;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+}
+
 @media (max-width: 768px) {
     .cocktail-main {
         padding-top: 80px;
@@ -597,7 +689,10 @@ iframe {
     
     .cocktail-header h1 {
         font-size: 2em;
-        height: 60px;
+    }
+    
+    .cocktail-header {
+        min-height: 100px;
     }
     
     .drinks-grid {
@@ -630,6 +725,7 @@ iframe {
         align-items: center;
         height: auto;
         padding: 10px 0;
+        min-height: 120px;
     }
     
     .tab {
@@ -638,7 +734,15 @@ iframe {
     }
 
     .filters {
-        min-height: 320px;
+        min-height: 300px;
+    }
+    
+    .how-to-use {
+        min-height: 350px;
+    }
+    
+    .cocktail-container {
+        min-height: calc(100vh - 100px);
     }
 }
 

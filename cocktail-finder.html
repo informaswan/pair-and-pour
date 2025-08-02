@@ -157,203 +157,7 @@
       }
     </script>
     
-    <!-- Critical CSS to prevent layout shifts -->
-    <style>
-      /* Prevent font loading shifts */
-      body { 
-        font-family: system-ui, -apple-system, sans-serif; 
-        font-display: swap; 
-        margin: 0;
-        padding: 0;
-        padding-top: 100px;
-      }
-      
-      /* Reserve exact space for main elements to prevent any shifts */
-      .cocktail-main { 
-        min-height: 100vh; 
-        contain: layout style;
-        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-        color: #333;
-        position: relative;
-      }
-      
-      .cocktail-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 20px;
-        contain: layout;
-        /* Reserve minimum height to prevent container collapse */
-        min-height: calc(100vh - 140px);
-      }
-      
-      .cocktail-header { 
-        text-align: center;
-        margin-bottom: 2rem;
-        color: white;
-        contain: layout;
-        /* Reserve exact space for header */
-        min-height: 120px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      
-      .cocktail-header h1 { 
-        font-size: clamp(2rem, 5vw, 3rem);
-        margin: 0 0 1rem 0;
-        padding: 1rem 0;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        line-height: 1.2;
-      }
-      
-      .subtitle {
-        font-size: clamp(1rem, 2.5vw, 1.2rem);
-        opacity: 0.9;
-        margin: 0;
-        padding: 0.5rem 0;
-        line-height: 1.4;
-      }
-      
-      .search-section { 
-        text-align: center;
-        margin: 20px 0;
-        min-height: 80px;
-        contain: layout;
-      }
-      
-      .how-to-use {
-        background: rgba(255,255,255,0.95);
-        padding: 30px;
-        border-radius: 15px;
-        margin-bottom: 30px;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        backdrop-filter: blur(10px);
-        contain: layout;
-        /* Reserve space but allow content to flow naturally */
-        min-height: 400px;
-      }
-      
-      .popular-ingredients {
-        background: rgba(255,255,255,0.1);
-        padding: 20px;
-        border-radius: 10px;
-        margin: 20px 0;
-        text-align: center;
-        contain: layout;
-        min-height: 100px;
-      }
-      
-      .ingredient-chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-        min-height: 50px;
-      }
-      
-      .tabs { 
-        min-height: 60px;
-        display: flex; 
-        justify-content: center; 
-        align-items: center;
-        margin: 2rem 0;
-        gap: 10px;
-        contain: layout;
-      }
-      
-      .tab {
-        padding: 12px 30px;
-        background: rgba(255,255,255,0.2);
-        border: none;
-        border-radius: 25px;
-        color: white;
-        cursor: pointer;
-        font-size: 16px;
-        transition: all 0.3s ease;
-        backdrop-filter: blur(10px);
-      }
-      
-      .tab.active {
-        background: rgba(255,255,255,0.9);
-        color: #333;
-        transform: scale(1.05);
-      }
-      
-      .filters { 
-        background: rgba(255,255,255,0.95);
-        padding: 25px;
-        border-radius: 15px;
-        margin-bottom: 30px;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        backdrop-filter: blur(10px);
-        contain: layout;
-        /* Reserve space but allow natural content flow */
-        min-height: 250px;
-      }
-      
-      .selected-ingredients {
-        min-height: 40px;
-        contain: layout;
-      }
-      
-      .drinks-grid { 
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 25px;
-        margin-bottom: 40px;
-        contain: layout;
-        /* Always reserve space for at least one row of cards */
-        min-height: 200px;
-      }
-      
-      /* Loading skeleton with exact dimensions */
-      .drinks-grid.loading {
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-        background-size: 200px 100%;
-        animation: skeleton 1.5s infinite;
-        min-height: 400px;
-        border-radius: 15px;
-      }
-      
-      .no-results {
-        text-align: center;
-        color: white;
-        font-size: 1.2em;
-        margin-top: 50px;
-        opacity: 0.8;
-        min-height: 150px;
-        contain: layout;
-      }
-      
-      @keyframes skeleton {
-        0% { background-position: -200px 0; }
-        100% { background-position: calc(200px + 100%) 0; }
-      }
-      
-      /* Mobile responsive reserves */
-      @media (max-width: 768px) {
-        .cocktail-container {
-          min-height: calc(100vh - 100px);
-        }
-        
-        .cocktail-header {
-          min-height: 100px;
-        }
-        
-        .how-to-use {
-          min-height: 350px;
-        }
-        
-        .filters {
-          min-height: 300px;
-        }
-        
-        .tabs {
-          flex-direction: column;
-          min-height: 120px;
-        }
-      }
-    </style>
+    <!-- Critical CSS to prevent layout shifts - moved to external CSS file -->
     
     <link rel="preload" href="cocktail-finder.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="navigation.css" as="style" onload="this.rel='stylesheet'">
@@ -377,11 +181,7 @@
           class="cs-logo"
           aria-label="Pair and Pour - back to home"
         >
-          <span
-            class="logo-text"
-            style="font-size: 1.5rem; font-weight: bold; color: inherit"
-            >Pair and Pour</span
-          >
+          <span class="logo-text">Pair and Pour</span>
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">
@@ -443,7 +243,7 @@
         <!-- Search Intent Section -->
         <section class="search-section">
           <h2>Search by What You Have</h2>
-          <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 20px">
+          <p class="search-description">
             Select your available ingredients below and we'll show you every
             cocktail and mocktail you can make right now!
           </p>
@@ -663,46 +463,18 @@
       };
     </script>
     <!-- Footer with additional SEO elements -->
-    <footer
-      style="
-        background: #2d2b29;
-        color: white;
-        padding: 2rem 0;
-        margin-top: 3rem;
-      "
-    >
-      <div
-        style="
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 0 1rem;
-          text-align: center;
-        "
-      >
-        <p style="margin-bottom: 1rem">
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>
           <strong>Pair and Pour</strong> - Your trusted source for wine pairing,
           beer pairing, and cocktail recipes
         </p>
         <nav aria-label="Footer navigation">
-          <a
-            href="wine-pairing.html"
-            style="color: #ccc; text-decoration: none; margin: 0 1rem"
-            >Wine Pairing</a
-          >
-          <a
-            href="beer-pairing.html"
-            style="color: #ccc; text-decoration: none; margin: 0 1rem"
-            >Beer Pairing</a
-          >
-          <a
-            href="cocktail-finder.html"
-            style="color: #ccc; text-decoration: none; margin: 0 1rem"
-            >Cocktail Finder</a
-          >
+          <a href="wine-pairing.html" class="footer-nav">Wine Pairing</a>
+          <a href="beer-pairing.html" class="footer-nav">Beer Pairing</a>
+          <a href="cocktail-finder.html" class="footer-nav">Cocktail Finder</a>
         </nav>
-        <p style="margin-top: 1rem; font-size: 0.9rem; color: #999">
-          © 2025 Pair and Pour. All rights reserved.
-        </p>
+        <p>© 2025 Pair and Pour. All rights reserved.</p>
       </div>
     </footer>
   </body>
