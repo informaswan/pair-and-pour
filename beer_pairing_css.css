@@ -222,6 +222,9 @@ html {
   color: #ccc;
   padding: 2rem;
 }
+#pairingsBox, #winePairingsBox {
+  scroll-margin-top: 140px;
+}
 
 #pairingsBox .default-content h2 {
   color: #FF6B35;
