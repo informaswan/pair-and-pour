@@ -177,23 +177,6 @@
         ]
       }
     </script>
-    <link
-      rel="preload"
-      href="beer_pairing_css.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <link
-      rel="preload"
-      href="navigation.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="beer_pairing_css.css" />
-      <link rel="stylesheet" href="navigation.css" />
-    </noscript>
-    <script src="script.js" defer></script>
     <style>
       body {
         padding-top: 70px;
@@ -211,7 +194,51 @@
         flex-direction: column;
         justify-content: center;
       }
+      <style>
+  /* Critical early styles to prevent layout shift from nav/header */
+  body {
+        margin: 0;
+        padding-top: 70px; /* reserve mobile header space on first paint */
+      }
+      #cs-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px; /* mobile default */
+        display: flex;
+        align-items: center;
+        z-index: 1000;
+        background: white; /* match eventual background to avoid flash */
+        box-sizing: border-box;
+        padding: 0 1rem;
+        /* avoid sudden size change; desktop adjustment can come later via full CSS */
+      }
+      /* If you have a logo/text in the nav, keep it stable too */
+      .cs-logo {
+        display: inline-block;
+        line-height: 1;
+        font-weight: bold;
+        font-size: 1.25rem;
+      }
     </style>
+    <link
+      rel="preload"
+      href="navigation.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="navigation.css" /></noscript>
+
+    <link
+      rel="preload"
+      href="beer_pairing_css.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="beer_pairing_css.css" /></noscript>
+
+    <script src="script.js" defer></script>
   </head>
   <body class="beer-page">
     <!-- ============================================ -->
