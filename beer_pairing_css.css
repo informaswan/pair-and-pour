@@ -4,6 +4,13 @@
 html {
   scroll-behavior: smooth;
 }
+.hero-stabilizer {
+  /* approximate space for the heading + paragraph so they don’t jump */
+  min-height: 250px; /* adjust up/down after you confirm visually */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 /* Page intro section styling */
 .page-intro {

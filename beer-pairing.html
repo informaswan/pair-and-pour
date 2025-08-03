@@ -75,7 +75,11 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
 
     <!-- Structured Data - Website Schema -->
     <script type="application/ld+json">
@@ -173,13 +177,41 @@
         ]
       }
     </script>
-    <link rel="preload" href="beer_pairing_css.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="navigation.css" as="style" onload="this.rel='stylesheet'">
+    <link
+      rel="preload"
+      href="beer_pairing_css.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="navigation.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
     <noscript>
-      <link rel="stylesheet" href="beer_pairing_css.css">
-      <link rel="stylesheet" href="navigation.css">
+      <link rel="stylesheet" href="beer_pairing_css.css" />
+      <link rel="stylesheet" href="navigation.css" />
     </noscript>
     <script src="script.js" defer></script>
+    <style>
+      body {
+        padding-top: 70px;
+      }
+      .page-intro {
+        min-height: 300px;
+        background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+        color: #f0f0f0;
+        padding: 6rem 2rem 3rem;
+        text-align: center;
+      }
+      .hero-stabilizer {
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body class="beer-page">
     <!-- ============================================ -->
@@ -256,30 +288,31 @@
             <li style="color: #FFD700;">Beer Pairing Guide</li>
           </ol>
         </nav> -->
-
-        <h1
-          style="
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            color: #ffd700;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-          "
-        >
-          🍺 Beer & Food Pairing Guide
-        </h1>
-        <p
-          style="
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            line-height: 1.6;
-            color: #e0e0e0;
-          "
-        >
-          Discover the perfect beer and food combinations with our interactive
-          pairing guide. Whether you're enjoying a light lager or a robust ale,
-          find the ideal match for any meal.
-        </p>
+        <div class="page-intro hero-stabilizer">
+          <h1
+            style="
+              font-size: 3rem;
+              margin-bottom: 1.5rem;
+              color: #ffd700;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            "
+          >
+            🍺 Beer & Food Pairing Guide
+          </h1>
+          <p
+            style="
+              font-size: 1.3rem;
+              max-width: 800px;
+              margin: 0 auto 2rem;
+              line-height: 1.6;
+              color: #e0e0e0;
+            "
+          >
+            Discover the perfect beer and food combinations with our interactive
+            pairing guide. Whether you're enjoying a light lager or a robust
+            ale, find the ideal match for any meal.
+          </p>
+        </div>
 
         <div
           style="
