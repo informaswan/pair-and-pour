@@ -40,7 +40,10 @@ function ariaExpanded() {
   const csUL = document.querySelector("#cs-expanded");
   if (csUL) {
     const csExpanded = csUL.getAttribute("aria-expanded");
-    csUL.setAttribute("aria-expanded", csExpanded === "false" ? "true" : "false");
+    csUL.setAttribute(
+      "aria-expanded",
+      csExpanded === "false" ? "true" : "false"
+    );
   }
 }
 
@@ -75,7 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
 // Close mobile menu when clicking outside
 document.addEventListener("click", function (e) {
   if (CSnavbarMenu && CSnavbarMenu.classList.contains("cs-active")) {
-    if (!CSnavbarMenu.contains(e.target) && !CShamburgerMenu.contains(e.target)) {
+    if (
+      !CSnavbarMenu.contains(e.target) &&
+      !CShamburgerMenu.contains(e.target)
+    ) {
       CShamburgerMenu.classList.remove("cs-active");
       CSnavbarMenu.classList.remove("cs-active");
       CSbody.classList.remove("cs-open");
@@ -204,7 +210,13 @@ function createBeerList(beers, container) {
         pairingsHTML += `</div>`;
       }
 
-      pairingsBox.innerHTML = pairingsHTML;
+      // Build content in a fragment instead of using innerHTML directly
+      const temp = document.createElement("div");
+      temp.innerHTML = pairingsHTML;
+      const newContent = temp.firstElementChild ? temp : temp; // preserve full fragment
+
+      // Swap in
+      pairingsBox.replaceChildren(...Array.from(temp.childNodes));
 
       // Defer layout-sensitive actions
       requestAnimationFrame(() => {
@@ -237,7 +249,13 @@ function loadWineData() {
 
       if (redWineList && whiteWineList && winePairingsBox) {
         function renderPairings(wine) {
-          winePairingsBox.innerHTML = `<h3>${wine.name}</h3>`;
+          const frag = document.createDocumentFragment();
+          const title = document.createElement("h3");
+          title.textContent = wine.name;
+          frag.appendChild(title);
+          // build pairing sections into frag as before...
+          winePairingsBox.replaceChildren(frag);
+
           for (const category in wine.pairings) {
             if (wine.pairings.hasOwnProperty(category)) {
               const categoryTitle =

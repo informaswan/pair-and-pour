@@ -178,21 +178,25 @@
       }
     </script>
     <style>
+      /* initial-load stabilization */
+      :root {
+        background: white;
+      }
+      html.js-loading body {
+        visibility: hidden;
+      } /* hide until ready to avoid intermediate jumps */
+
+      /* Reserve space immediately */
       body {
-        padding-top: 70px;
+        margin: 0;
+        padding-top: 70px; /* mobile header */
+        min-height: 100vh;
+        background: white;
       }
-      .page-intro {
-        min-height: 300px;
-        background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-        color: #f0f0f0;
-        padding: 6rem 2rem 3rem;
-        text-align: center;
-      }
-      .hero-stabilizer {
-        min-height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      @media (min-width: 64rem) {
+        body {
+          padding-top: 125px;
+        }
       }
 
       #cs-navigation {
@@ -200,26 +204,45 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 70px; /* collapsed height */
+        height: 70px;
         display: flex;
         align-items: center;
-        z-index: 1000;
+        padding: 0 1rem;
         background: white;
         box-sizing: border-box;
-        padding: 0 1rem;
-        overflow: hidden; /* avoid flashes of expanded content */
+        z-index: 1000;
+        overflow: hidden;
       }
-
-      /* If wide screen (desktop) wants taller header, do it immediately too */
       @media (min-width: 64rem) {
-        body {
-          padding-top: 125px;
-        }
         #cs-navigation {
           height: 125px;
         }
       }
+
+      /* Hero / intro reserve */
+      .page-intro,
+      .hero-stabilizer {
+        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* Container reserve so cs-container doesn't jump */
+      .cs-container {
+        min-height: 400px;
+      }
     </style>
+    <script>
+      // remove the loading guard after styles/DOM settle
+      document.documentElement.classList.add("js-loading");
+      window.addEventListener("load", function () {
+        requestAnimationFrame(() => {
+          document.documentElement.classList.remove("js-loading");
+        });
+      });
+    </script>
 
     <link
       rel="preload"
@@ -315,6 +338,29 @@
           </ol>
         </nav> -->
         <div class="page-intro hero-stabilizer">
+          <div
+            class="skeleton-heading"
+            aria-hidden="true"
+            style="
+              width: 60%;
+              height: 2.2rem;
+              margin: 0 auto;
+              background: #eee;
+              border-radius: 4px;
+              margin-bottom: 1rem;
+            "
+          ></div>
+          <div
+            class="skeleton-text"
+            aria-hidden="true"
+            style="
+              width: 80%;
+              height: 1rem;
+              margin: 0 auto;
+              background: #f0f0f0;
+              border-radius: 3px;
+            "
+          ></div>
           <h1
             style="
               font-size: 3rem;
