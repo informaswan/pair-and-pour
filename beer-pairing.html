@@ -194,34 +194,33 @@
         flex-direction: column;
         justify-content: center;
       }
-      <style>
-  /* Critical early styles to prevent layout shift from nav/header */
-  body {
-        margin: 0;
-        padding-top: 70px; /* reserve mobile header space on first paint */
-      }
+
       #cs-navigation {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        height: 70px; /* mobile default */
+        height: 70px; /* collapsed height */
         display: flex;
         align-items: center;
         z-index: 1000;
-        background: white; /* match eventual background to avoid flash */
+        background: white;
         box-sizing: border-box;
         padding: 0 1rem;
-        /* avoid sudden size change; desktop adjustment can come later via full CSS */
+        overflow: hidden; /* avoid flashes of expanded content */
       }
-      /* If you have a logo/text in the nav, keep it stable too */
-      .cs-logo {
-        display: inline-block;
-        line-height: 1;
-        font-weight: bold;
-        font-size: 1.25rem;
+
+      /* If wide screen (desktop) wants taller header, do it immediately too */
+      @media (min-width: 64rem) {
+        body {
+          padding-top: 125px;
+        }
+        #cs-navigation {
+          height: 125px;
+        }
       }
     </style>
+
     <link
       rel="preload"
       href="navigation.css"
