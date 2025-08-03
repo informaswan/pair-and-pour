@@ -16,7 +16,7 @@ html {
 @media (max-width: 768px) {
   /* FIXED: Add padding to body to account for fixed navigation header */
   body {
-    padding-top: 100px; /* Increased to 100px for better clearance */
+    padding-top: 70px; /* Increased to 100px for better clearance */
   }
   
   /* Alternative approach - target main content directly */
@@ -501,6 +501,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  padding-top: 70px;
 }
 
 .beer-page .pairing-category li {
