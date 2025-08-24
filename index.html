@@ -131,354 +131,6 @@
     </script>
 
     <!-- CRITICAL CSS INLINED - No render blocking -->
-    <style>
-      /* CRITICAL CSS - This should be inlined in the <head> of your HTML */
-      /* Only the most essential styles for above-the-fold content to prevent render blocking */
-
-      /* CSS Custom Properties */
-      :root {
-        --primary: #8b4513;
-        --headerColor: #1a1a1a;
-        --bodyTextColor: #333;
-        --sectionPadding: 3.75rem 1rem;
-      }
-
-      /* Base Reset & Typography */
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
-        padding-top: 70px; /* Mobile navigation height */
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, sans-serif;
-        line-height: 1.5;
-        color: var(--bodyTextColor);
-        background-color: #fff;
-      }
-
-      @media only screen and (min-width: 64rem) {
-        body {
-          padding-top: 125px; /* Desktop navigation height */
-        }
-      }
-
-      /* Critical Navigation Styles - Only what's needed for initial render */
-      #cs-navigation {
-        width: 100%;
-        height: 70px;
-        box-sizing: border-box;
-        padding: 0.75rem 1rem;
-        background-color: #fff;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        position: fixed;
-        z-index: 10000;
-        top: 0;
-        left: 0;
-        contain: layout style paint;
-      }
-
-      @media only screen and (min-width: 64rem) {
-        #cs-navigation {
-          height: 125px;
-          padding: 0 1rem;
-        }
-      }
-
-      #cs-navigation .cs-container {
-        width: 100%;
-        max-width: 80rem;
-        margin: auto;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 1.5rem;
-        height: 100%;
-      }
-
-      #cs-navigation .cs-logo {
-        width: auto;
-        max-width: 21.875rem;
-        height: 100%;
-        margin: 0 auto 0 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: inherit;
-      }
-
-      /* Critical Hero Styles - Only above-the-fold content */
-      #hero-1618 {
-        padding: var(--sectionPadding);
-        padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
-        position: relative;
-        z-index: 1;
-        min-height: 100vh;
-      }
-
-      #hero-1618 .cs-container {
-        width: 100%;
-        max-width: 80rem;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: clamp(3.75rem, 13vw, 11.25rem);
-      }
-
-      #hero-1618 .cs-content {
-        text-align: left;
-        width: 100%;
-        max-width: 48.75rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      #hero-1618 .cs-title {
-        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-        font-weight: 700;
-        line-height: 1.2em;
-        text-align: inherit;
-        max-width: 100%;
-        margin: 0 0 2.5rem 0;
-        color: #fff;
-        position: relative;
-      }
-
-      #hero-1618 .cs-subHeader {
-        font-weight: 700;
-        line-height: 1.2em;
-        text-align: inherit;
-        max-width: 100%;
-        margin: 0 0 2.5rem 0;
-        color: #fff;
-        position: relative;
-        font-size: clamp(1.2rem, 3vw, 1.5rem);
-      }
-
-      /* Critical intro text styling - FIXED for better visibility */
-      #hero-1618 .cs-intro-text {
-        margin: 2rem 0;
-        max-width: 800px;
-      }
-
-      #hero-1618 .cs-intro-p1 {
-        font-size: clamp(1rem, 2.5vw, 1.1rem);
-        line-height: 1.6;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.3);
-        padding: 1.5rem;
-        border-radius: 8px;
-        margin-bottom: 1rem;
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      #hero-1618 .cs-intro-p2 {
-        font-size: clamp(0.9rem, 2vw, 1rem);
-        line-height: 1.6;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.25);
-        padding: 1.2rem;
-        border-radius: 8px;
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      /* Critical Background Image Styles */
-      #hero-1618 .cs-background {
-        width: 100%;
-        height: 55%;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -2;
-      }
-
-      #hero-1618 .cs-background:before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: #111926;
-        opacity: 0.8;
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        pointer-events: none;
-      }
-
-      #hero-1618 .cs-background img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: top;
-      }
-
-      /* Critical Card Grid Styles - Only essential layout */
-      #hero-1618 .cs-card-group {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: clamp(1rem, 2.3vw, 1.25rem);
-      }
-
-      #hero-1618 .cs-item {
-        width: 100%;
-        text-align: left;
-        list-style: none;
-        margin: 0;
-        padding: clamp(1.5rem, 3vw, 2rem);
-        background-color: #fff;
-        box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
-        box-sizing: border-box;
-        grid-column: span 12;
-        grid-row: span 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        position: relative;
-        z-index: 1;
-        border-radius: 12px;
-      }
-
-      @media only screen and (min-width: 48rem) {
-        #hero-1618 .cs-item {
-          grid-column: span 4;
-        }
-
-        #hero-1618 .cs-background {
-          height: 87%;
-        }
-      }
-
-      /* Critical Icon Styles - FIXED */
-      .cs-icon {
-        width: 48px;
-        height: 48px;
-        display: block;
-        margin-bottom: 1.5rem;
-        flex-shrink: 0;
-        stroke: var(--primary);
-      }
-
-      /* Critical Typography */
-      .cs-h3 {
-        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-        line-height: 1.2em;
-        font-weight: bold;
-        text-align: inherit;
-        margin: 0 0 1rem 0;
-        color: var(--headerColor);
-      }
-
-      .cs-item-text {
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        max-width: 28.125rem;
-        margin: 0;
-        padding: 0;
-        color: var(--bodyTextColor);
-      }
-
-      .cs-item-link {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-        height: 100%;
-      }
-
-      /* Mobile Navigation Toggle - Critical Only */
-      @media only screen and (max-width: 63.9375rem) {
-        #cs-navigation .cs-toggle {
-          width: clamp(2.75rem, 6vw, 3rem);
-          height: clamp(2.75rem, 6vw, 3rem);
-          margin: 0 0 0 auto;
-          background-color: transparent;
-          border: none;
-          border-radius: 0.25rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          z-index: 10001;
-          position: relative;
-        }
-
-        #cs-navigation .cs-box {
-          width: clamp(1.5rem, 2vw, 1.75rem);
-          height: clamp(0.875rem, 1.5vw, 1rem);
-          position: relative;
-        }
-
-        #cs-navigation .cs-line {
-          width: 100%;
-          height: 2px;
-          background-color: #1a1a1a;
-          border-radius: 2px;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          transition: all 0.3s ease;
-        }
-
-        #cs-navigation .cs-line1 {
-          top: 0;
-        }
-
-        #cs-navigation .cs-line2 {
-          top: 50%;
-          transform: translateX(-50%) translateY(-50%);
-        }
-
-        #cs-navigation .cs-line3 {
-          bottom: 0;
-        }
-
-        /* Hide mobile menu initially */
-        #cs-navigation .cs-ul-wrapper {
-          display: none;
-        }
-
-        #cs-navigation.cs-active .cs-ul-wrapper {
-          display: block;
-        }
-      }
-
-      /* Loading States */
-      .loading {
-        opacity: 0.7;
-        pointer-events: none;
-      }
-
-      /* Accessibility */
-      @media (prefers-reduced-motion: reduce) {
-        * {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
-        }
-      }
-
-      /* Focus States */
-      *:focus {
-        outline: 2px solid var(--primary);
-        outline-offset: 2px;
-      }
-    </style>
 
     <!-- Preload critical resources -->
     <link
@@ -498,41 +150,34 @@
 
     <header id="cs-navigation">
       <div class="cs-container">
-        <!--Nav Logo-->
+        <!-- Logo -->
         <a
           href="index.html"
           class="cs-logo"
           aria-label="Pair and Pour - back to home"
         >
-          <span
-            class="logo-text"
-            style="font-size: 1.5rem; font-weight: bold; color: inherit"
-            >Pair and Pour</span
-          >
+          <span class="logo-text"  style="font-size: 1.5rem; font-weight: bold; color: inherit">Pair and Pour</span>
         </a>
-        <!--Navigation List-->
-        <nav class="cs-nav" role="navigation" aria-label="Main navigation">
-          <!--Mobile Nav Toggle-->
+
+        <!-- Navigation -->
+        <nav class="cs-nav" role="navigation">
+          <!-- Hamburger (script looks for .cs-toggle) -->
           <button class="cs-toggle" aria-label="mobile menu toggle">
-            <div class="cs-box" aria-hidden="true">
-              <span class="cs-line cs-line1" aria-hidden="true"></span>
-              <span class="cs-line cs-line2" aria-hidden="true"></span>
-              <span class="cs-line cs-line3" aria-hidden="true"></span>
-            </div>
+            <span class="cs-box">
+              <span class="cs-line cs-line1"></span>
+              <span class="cs-line cs-line2"></span>
+              <span class="cs-line cs-line3"></span>
+            </span>
           </button>
+
+          <!-- Mobile nav menu -->
           <div class="cs-ul-wrapper">
             <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
               <li class="cs-li">
-                <a
-                  href="index.html"
-                  class="cs-li-link cs-active"
-                  aria-current="page"
-                >
-                  Home
-                </a>
+                <a href="index.html" class="cs-li-link"> Home </a>
               </li>
               <li class="cs-li">
-                <a href="beer-pairing.html" class="cs-li-link">
+                <a href="beer-pairing.html" class="cs-li-link cs-active">
                   Beer Pairing Guide
                 </a>
               </li>
@@ -861,22 +506,33 @@
           <strong>Pair and Pour</strong> - Expert wine pairing for charcuterie
           boards, beer pairing guides, and cocktail finder by ingredients
         </p>
-        <nav aria-label="Footer navigation">
+        <nav
+          aria-label="Footer navigation"
+          style="
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 2rem;
+          "
+        >
           <a
             href="wine-pairing.html"
-            style="color: #ccc; text-decoration: none; margin: 0 1rem"
-            >Wine & Charcuterie Pairing</a
+            style="color: #ccc; text-decoration: none"
           >
+            Wine & Charcuterie Pairing
+          </a>
           <a
             href="beer-pairing.html"
-            style="color: #ccc; text-decoration: none; margin: 0 1rem"
-            >Beer & Food Pairing</a
+            style="color: #ccc; text-decoration: none"
           >
+            Beer & Food Pairing
+          </a>
           <a
             href="cocktail-finder.html"
-            style="color: #ccc; text-decoration: none; margin: 0 1rem"
-            >Cocktail Ingredient Finder</a
+            style="color: #ccc; text-decoration: none"
           >
+            Cocktail Ingredient Finder
+          </a>
         </nav>
         <p style="margin-top: 1rem; font-size: 0.9rem; color: #999">
           © 2025 Pair and Pour. All rights reserved.
@@ -891,7 +547,6 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript><link rel="stylesheet" href="hero-section.css" /></noscript>
 
     <link
       rel="preload"
@@ -899,7 +554,10 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript><link rel="stylesheet" href="navigation.css" /></noscript>
+    <noscript
+      ><link rel="stylesheet" href="navigation.css" />
+      <link rel="stylesheet" href="hero-section.css"
+    /></noscript>
 
     <!-- Load JavaScript with improved performance -->
     <script src="script.js" defer></script>
