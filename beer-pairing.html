@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="beer_pairing_css.css" />
+    <link rel="stylesheet" href="navigation.css" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -177,68 +179,6 @@
         ]
       }
     </script>
-    <style>
-      body {
-        padding-top: 70px;
-      }
-      .page-intro {
-        min-height: 300px;
-        background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-        color: #f0f0f0;
-        padding: 6rem 2rem 3rem;
-        text-align: center;
-        background-color: #1a1a1a;
-      }
-      .hero-stabilizer {
-        min-height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      #cs-navigation {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 70px; /* collapsed height */
-        display: flex;
-        align-items: center;
-        z-index: 1000;
-        background: white;
-        box-sizing: border-box;
-        padding: 0 1rem;
-      }
-
-      /* If wide screen (desktop) wants taller header, do it immediately too */
-      @media (min-width: 64rem) {
-        body {
-          padding-top: 125px;
-        }
-        #cs-navigation {
-          height: 125px;
-        }
-      }
-    </style>
-
-
-    <link
-      rel="preload"
-      href="beer_pairing_css.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <link
-      rel="preload"
-      href="navigation.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-
-    <noscript
-      ><link rel="stylesheet" href="beer_pairing_css.css" />
-      <link rel="stylesheet" href="navigation.css"
-    /></noscript>
 
     <script src="script.js" defer></script>
   </head>

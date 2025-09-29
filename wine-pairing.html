@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="wine-page.css" />
+    <link rel="stylesheet" href="navigation.css" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -68,10 +70,14 @@
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://pair-n-pour.com/wine-pairing.html" />
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
 
     <!-- Schema.org structured data for better search understanding -->
     <script type="application/ld+json">
@@ -103,12 +109,6 @@
         ]
       }
     </script>
-    <link rel="preload" href="wine-page.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="navigation.css" as="style" onload="this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="wine-page.css">
-      <link rel="stylesheet" href="navigation.css">
-    </noscript>
     <script src="script.js" defer></script>
   </head>
   <body class="wine-page">
@@ -137,7 +137,7 @@
           <div class="cs-ul-wrapper">
             <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
               <li class="cs-li">
-                <a href="index.html" class="cs-li-link cs-active"> Home </a>
+                <a href="index.html" class="cs-li-link"> Home </a>
               </li>
               <li class="cs-li">
                 <a href="beer-pairing.html" class="cs-li-link">
@@ -145,7 +145,7 @@
                 </a>
               </li>
               <li class="cs-li">
-                <a href="wine-pairing.html" class="cs-li-link">
+                <a href="wine-pairing.html" class="cs-li-link cs-active">
                   Wine Pairing Guide
                 </a>
               </li>

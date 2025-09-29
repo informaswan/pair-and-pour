@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
+    <!-- Load non-critical CSS asynchronously -->
+    <link rel="stylesheet" href="hero-section.css" />
+    <link rel="stylesheet" href="navigation.css" />
+
+    <!-- Load JavaScript with improved performance -->
+    <script src="script.js" defer></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-YBSNK48RQ1"
@@ -21,7 +27,7 @@
     <title>
       Best Wine & Beer Pairing Guide + Cocktail Finder | Pair and Pour
     </title>
-
+    <meta name="robots" content="index, follow" />
     <!-- Meta Description - Enhanced for charcuterie boards -->
     <meta
       name="description"
@@ -45,10 +51,7 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pair-n-pour.com/" />
-    <meta
-      property="og:image"
-      content="https://pair-n-pour.com/images/heroPhoto.webp"
-    />
+
     <meta property="og:site_name" content="Pair and Pour" />
 
     <!-- Twitter Card -->
@@ -60,10 +63,6 @@
     <meta
       name="twitter:description"
       content="Expert wine pairing for charcuterie boards, beer pairing guide, and cocktail finder by ingredients."
-    />
-    <meta
-      name="twitter:image"
-      content="https://pair-n-pour.com/images/heroPhoto.webp"
     />
 
     <!-- Canonical URL -->
@@ -132,14 +131,6 @@
 
     <!-- CRITICAL CSS INLINED - No render blocking -->
 
-    <!-- Preload critical resources -->
-    <link
-      rel="preload"
-      href="images/heroPhoto.webp"
-      as="image"
-      fetchpriority="high"
-    />
-
     <!-- DNS prefetch for external resources -->
     <link rel="dns-prefetch" href="//www.googletagmanager.com" />
   </head>
@@ -156,7 +147,11 @@
           class="cs-logo"
           aria-label="Pair and Pour - back to home"
         >
-          <span class="logo-text"  style="font-size: 1.5rem; font-weight: bold; color: inherit">Pair and Pour</span>
+          <span
+            class="logo-text"
+            style="font-size: 1.5rem; font-weight: bold; color: inherit"
+            >Pair and Pour</span
+          >
         </a>
 
         <!-- Navigation -->
@@ -174,10 +169,10 @@
           <div class="cs-ul-wrapper">
             <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
               <li class="cs-li">
-                <a href="index.html" class="cs-li-link"> Home </a>
+                <a href="index.html" class="cs-li-link cs-active"> Home </a>
               </li>
               <li class="cs-li">
-                <a href="beer-pairing.html" class="cs-li-link cs-active">
+                <a href="beer-pairing.html" class="cs-li-link">
                   Beer Pairing Guide
                 </a>
               </li>
@@ -365,57 +360,19 @@
         </div>
 
         <!-- Background Image with proper dimensions -->
-        <picture class="cs-background">
-          <source media="(max-width: 949px)" srcset="images/heroPhoto.webp" />
-          <source media="(min-width: 600px)" srcset="images/heroPhoto.webp" />
-          <img
-            decoding="async"
-            src="images/heroPhoto.webp"
-            fetchpriority="high"
-            alt="Elegant charcuterie board with wine glasses, craft beer bottles, and artisanal cocktails showcasing perfect drink pairings"
-            width="949"
-            height="534"
-            aria-hidden="true"
-            style="aspect-ratio: 949/534"
-          />
-        </picture>
+        <picture class="cs-background"> </picture>
       </section>
 
       <!-- Enhanced SEO Content Section -->
-      <section
-        class="seo-content"
-        style="
-          max-width: 1200px;
-          margin: 3rem auto;
-          padding: 2rem;
-          background: rgba(255, 255, 255, 0.95);
-          border-radius: 12px;
-        "
-      >
-        <h2
-          style="
-            text-align: center;
-            color: #333;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-          "
-        >
+      <section class="seo-content">
+        <h2 class="seo-heading">
           Master the Art of Drink Pairing with Expert Guidance
         </h2>
 
-        <div
-          style="
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-          "
-        >
-          <div>
-            <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem">
-              Wine Pairing for Charcuterie Boards
-            </h3>
-            <p style="line-height: 1.6">
+        <div class="seo-content-grid">
+          <div class="seo-card">
+            <h3 class="seo-subheading">Wine Pairing for Charcuterie Boards</h3>
+            <p>
               Create stunning
               <strong>charcuterie board and wine pairings</strong> with our
               expert guide. Learn which
@@ -427,11 +384,9 @@
             </p>
           </div>
 
-          <div>
-            <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem">
-              Complete Beer & Food Pairing Guide
-            </h3>
-            <p style="line-height: 1.6">
+          <div class="seo-card">
+            <h3 class="seo-subheading">Complete Beer & Food Pairing Guide</h3>
+            <p>
               Elevate every meal with perfect
               <strong>beer and food pairings</strong>. Our comprehensive guide
               covers <strong>craft beer pairing with spicy food</strong>,
@@ -442,11 +397,9 @@
             </p>
           </div>
 
-          <div>
-            <h3 style="color: #2d2b29; font-size: 1.3rem; margin-bottom: 1rem">
-              Smart Cocktail Recipe Discovery
-            </h3>
-            <p style="line-height: 1.6">
+          <div class="seo-card">
+            <h3 class="seo-subheading">Smart Cocktail Recipe Discovery</h3>
+            <p>
               Transform your home bar with our
               <strong>cocktail finder by ingredients</strong>. Simply enter what
               spirits, mixers, and garnishes you have, and discover
@@ -457,18 +410,11 @@
           </div>
         </div>
 
-        <div
-          style="
-            background: #f8f8f8;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #8b4513;
-          "
-        >
-          <h3 style="color: #2d2b29; font-size: 1.2rem; margin-bottom: 1rem">
+        <div class="seo-highlight">
+          <h3 class="seo-subheading">
             Why Pair and Pour is Your Go-To Pairing Resource
           </h3>
-          <p style="line-height: 1.6; margin-bottom: 1rem">
+          <p>
             Whether you're hosting an elegant dinner party with
             <strong>wine and charcuterie board pairings</strong>, enjoying
             casual meals with <strong>craft beer food pairings</strong>, or
@@ -476,7 +422,7 @@
             our expert-curated guides provide the confidence and knowledge you
             need.
           </p>
-          <p style="line-height: 1.6; margin-bottom: 0">
+          <p>
             Join thousands of food and drink enthusiasts who trust Pair and Pour
             for reliable pairing advice, detailed flavor profiles, and practical
             tips that transform ordinary meals into extraordinary experiences.
@@ -539,27 +485,5 @@
         </p>
       </div>
     </footer>
-
-    <!-- Load non-critical CSS asynchronously -->
-    <link
-      rel="preload"
-      href="hero-section.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-
-    <link
-      rel="preload"
-      href="navigation.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript
-      ><link rel="stylesheet" href="navigation.css" />
-      <link rel="stylesheet" href="hero-section.css"
-    /></noscript>
-
-    <!-- Load JavaScript with improved performance -->
-    <script src="script.js" defer></script>
   </body>
 </html>
