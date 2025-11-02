@@ -13,7 +13,7 @@ async function loadData() {
   // Add loading state immediately to prevent layout shift
   const grid = document.getElementById("drinksGrid");
   grid.classList.add("loading");
-  
+
   // Show initial loading skeleton with proper dimensions
   grid.innerHTML = `
     <div style="grid-column: 1/-1; text-align: center; color: white; padding: 40px;">
@@ -21,7 +21,7 @@ async function loadData() {
       <p style="margin-top: 20px; font-size: 18px;">Loading cocktail database...</p>
     </div>
   `;
-  
+
   try {
     // Load cocktail data
     const cocktailResponse = await fetch("cocktail-drinks.json");
@@ -58,13 +58,15 @@ async function loadData() {
 }
 
 // Initialize page when DOM is loaded
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Set default filter mode to "any" immediately to prevent CLS
-  const anyRadio = document.querySelector('input[name="filterMode"][value="any"]');
+  const anyRadio = document.querySelector(
+    'input[name="filterMode"][value="any"]'
+  );
   if (anyRadio) {
     anyRadio.checked = true;
   }
-  
+
   // Load data
   loadData();
 });
@@ -131,16 +133,14 @@ function switchTab(tab) {
   selectedIngredients = [];
 
   // Update tab styling with animation prevention during transition
-  document
-    .querySelectorAll(".tab")
-    .forEach((t) => {
-      t.classList.remove("active");
-      t.style.transform = "scale(1)"; // Reset any scaling
-    });
-  
+  document.querySelectorAll(".tab").forEach((t) => {
+    t.classList.remove("active");
+    t.style.transform = "scale(1)"; // Reset any scaling
+  });
+
   // Find the correct tab button and make it active
   const tabs = document.querySelectorAll(".tab");
-  tabs.forEach(tabButton => {
+  tabs.forEach((tabButton) => {
     if (tabButton.textContent.toLowerCase().includes(tab)) {
       tabButton.classList.add("active");
     }
@@ -162,10 +162,10 @@ function populateIngredientSelect() {
 
   // Use document fragment to prevent multiple DOM updates
   const fragment = document.createDocumentFragment();
-  
+
   // Clear current options
   select.innerHTML = "";
-  
+
   // Add default option
   const defaultOption = document.createElement("option");
   defaultOption.value = "";
@@ -182,7 +182,7 @@ function populateIngredientSelect() {
       option.textContent = ingredient;
       fragment.appendChild(option);
     });
-    
+
   // Single DOM update
   select.appendChild(fragment);
 }
@@ -201,12 +201,17 @@ document.addEventListener("change", function (e) {
     displayDrinks();
   }
 });
+document.addEventListener("change", function (e) {
+  if (e.target.id === "haveAllCheckbox") {
+    displayDrinks();
+  }
+});
 
 // Add ingredient to selected list with batch DOM updates
 function addIngredient(ingredient) {
   if (!selectedIngredients.includes(ingredient)) {
     selectedIngredients.push(ingredient);
-    
+
     // Batch DOM updates to prevent layout shifts
     requestAnimationFrame(() => {
       populateIngredientSelect();
@@ -218,8 +223,8 @@ function addIngredient(ingredient) {
 
 // Remove ingredient from selected list with batch DOM updates
 function removeIngredient(ingredient) {
-  selectedIngredients = selectedIngredients.filter(i => i !== ingredient);
-  
+  selectedIngredients = selectedIngredients.filter((i) => i !== ingredient);
+
   // Batch DOM updates to prevent layout shifts
   requestAnimationFrame(() => {
     populateIngredientSelect();
@@ -233,7 +238,7 @@ function updateSelectedIngredients() {
   const container = document.getElementById("selectedIngredients");
   const fragment = document.createDocumentFragment();
 
-  selectedIngredients.forEach(ingredient => {
+  selectedIngredients.forEach((ingredient) => {
     const tag = document.createElement("div");
     tag.className = "ingredient-tag";
     tag.innerHTML = `
@@ -242,7 +247,7 @@ function updateSelectedIngredients() {
     `;
     fragment.appendChild(tag);
   });
-  
+
   // Single DOM update
   container.innerHTML = "";
   container.appendChild(fragment);
@@ -251,13 +256,15 @@ function updateSelectedIngredients() {
 // Clear all filters with batch updates
 function clearFilters() {
   selectedIngredients = [];
-  
+
   // Reset radio buttons to "any" as default
-  const anyRadio = document.querySelector('input[name="filterMode"][value="any"]');
+  const anyRadio = document.querySelector(
+    'input[name="filterMode"][value="any"]'
+  );
   if (anyRadio) {
     anyRadio.checked = true;
   }
-  
+
   // Batch DOM updates
   requestAnimationFrame(() => {
     populateIngredientSelect();
@@ -274,16 +281,29 @@ function displayDrinks() {
 
   let filteredDrinks = drinks;
 
-  // Apply ingredient filters
   if (selectedIngredients.length > 0) {
-    const filterMode = document.querySelector('input[name="filterMode"]:checked').value;
+    const filterMode = document.querySelector(
+      'input[name="filterMode"]:checked'
+    ).value;
+    const haveAll = document.getElementById("haveAllCheckbox")?.checked;
 
-    filteredDrinks = drinks.filter(drink => {
-      const match = ingredient =>
-        drink.ingredients.some(ing => ing.toLowerCase().includes(ingredient.toLowerCase()));
-      return filterMode === "all"
-        ? selectedIngredients.every(match)
-        : selectedIngredients.some(match);
+    filteredDrinks = drinks.filter((drink) => {
+      const match = (ingredient) =>
+        drink.ingredients.some((ing) =>
+          ing.toLowerCase().includes(ingredient.toLowerCase())
+        );
+
+      if (haveAll) {
+        // Only show drinks where *every ingredient* is available
+        return drink.ingredients.every((ing) =>
+          selectedIngredients.some((sel) =>
+            ing.toLowerCase().includes(sel.toLowerCase())
+          )
+        );
+      }
+
+      // Normal filter mode (ANY selected ingredient)
+      return selectedIngredients.some(match);
     });
   }
 
@@ -297,8 +317,8 @@ function displayDrinks() {
 
     // Use document fragment for better performance
     const fragment = document.createDocumentFragment();
-    
-    filteredDrinks.forEach(drink => {
+
+    filteredDrinks.forEach((drink) => {
       const card = document.createElement("div");
       card.className = "drink-card";
       card.dataset.drink = drink.drinkName;
@@ -308,10 +328,10 @@ function displayDrinks() {
           <strong>Ingredients:</strong> ${drink.ingredients.join(", ")}
         </div>
       `;
-      
+
       // Add click event directly to avoid separate binding step
       card.addEventListener("click", () => openModal(drink.drinkName));
-      
+
       fragment.appendChild(card);
     });
 
@@ -331,11 +351,13 @@ function openModal(clickedName) {
   const normalizedClickedName = normalizeName(clickedName);
   const drinks = currentTab === "cocktails" ? cocktailDrinks : mocktailDrinks;
 
-  const drink = drinks.find(d => normalizeName(d.drinkName) === normalizedClickedName);
+  const drink = drinks.find(
+    (d) => normalizeName(d.drinkName) === normalizedClickedName
+  );
   if (!drink) return;
 
   const modalContent = document.getElementById("modalContent");
-  
+
   // Show modal immediately with loading state
   document.getElementById("drinkModal").style.display = "block";
   modalContent.innerHTML = `
@@ -346,7 +368,7 @@ function openModal(clickedName) {
       </div>
     </div>
   `;
-  
+
   // Load content asynchronously to prevent blocking
   requestAnimationFrame(() => {
     modalContent.innerHTML = `
@@ -355,13 +377,15 @@ function openModal(clickedName) {
         <div class="modal-section">
           <h3>Ingredients</h3>
           <div class="ingredients-list">
-            ${drink.ingredients.map(ing => `<span class="ingredient-item">${ing}</span>`).join("")}
+            ${drink.ingredients
+              .map((ing) => `<span class="ingredient-item">${ing}</span>`)
+              .join("")}
           </div>
         </div>
         <div class="modal-section">
           <h3>Instructions</h3>
           <ol class="instructions-list">
-            ${drink.instructions.map(inst => `<li>${inst}</li>`).join("")}
+            ${drink.instructions.map((inst) => `<li>${inst}</li>`).join("")}
           </ol>
         </div>
         <div class="modal-section">
@@ -369,11 +393,17 @@ function openModal(clickedName) {
           <div class="video-section">
             <div class="video-container">
               <h4>How to Make</h4>
-              <iframe src="${drink.videos.instructionalVideo}" title="How to make ${drink.drinkName}" allowfullscreen loading="lazy"></iframe>
+              <iframe src="${
+                drink.videos.instructionalVideo
+              }" title="How to make ${
+      drink.drinkName
+    }" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="video-container">
               <h4>Variations</h4>
-              <iframe src="${drink.videos.variationVideo}" title="${drink.drinkName} variations" allowfullscreen loading="lazy"></iframe>
+              <iframe src="${drink.videos.variationVideo}" title="${
+      drink.drinkName
+    } variations" allowfullscreen loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -402,7 +432,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 // Add CSS for loading spinner animation
-const style = document.createElement('style');
+const style = document.createElement("style");
 style.textContent = `
   @keyframes spin {
     0% { transform: rotate(0deg); }
